@@ -1,0 +1,51 @@
+{
+  "name": "buttono",
+  "description": "A flexible Sass mixin for creating BEM-style buttons.",
+  "version": "1.0.0",
+  "main": "_buttono.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsnaydd/buttono.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hsnaydd/buttono/issues"
+  },
+  "homepage": "https://github.com/hsnaydd/buttono#readme",
+  "keywords": [
+    "button",
+    "mixin",
+    "css",
+    "sass",
+    "scss",
+    "bem"
+  ],
+  "author": "Hasan Aydoğdu <hsnaydd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "prettier": "^1.10.2",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-prettier": "^2.0.0",
+    "stylelint-config-sass-guidelines": "^4.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.0.2",
+    "stylelint-declaration-strict-value": "^1.0.4",
+    "stylelint-scss": "^2.3.0"
+  },
+  "scripts": {
+    "lint": "stylelint --syntax scss \"demo/src/*.scss _buttono.scss\"",
+    "fmt": "prettier-stylelint --quiet --write \"*.scss\"",
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "ie >= 10"
+  ]
+}

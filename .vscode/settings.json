@@ -1,0 +1,7 @@
+{
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "prettier.stylelintIntegration": true
+}
