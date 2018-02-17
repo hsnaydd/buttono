@@ -3,7 +3,6 @@
   "plugins": [
     "stylelint-declaration-strict-value",
     "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-order",
     "stylelint-scss"
   ],
   "rules": {
