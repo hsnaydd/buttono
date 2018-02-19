@@ -91,7 +91,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-ansi-styles@^3.1.0:
+ansi-styles@^3.1.0, ansi-styles@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.0.tgz#c159b8d5be0f9e5a6f346dab94f16ce022161b88"
   dependencies:
@@ -572,6 +572,14 @@ chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
+
+chalk@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.1.tgz#523fe2678aec7b04e8041909292fe8b17059b796"
+  dependencies:
+    ansi-styles "^3.2.0"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.2.0"
 
 character-entities-html4@^1.0.0:
   version "1.1.1"
@@ -1831,6 +1839,10 @@ has-flag@^1.0.0:
 has-flag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
+
+has-flag@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
 has-gulplog@^0.1.0:
   version "0.1.0"
@@ -3504,6 +3516,13 @@ postcss-selector-parser@^3.1.0, postcss-selector-parser@^3.1.1:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-sorting@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-3.1.0.tgz#af7c90ee73ad12569a57664eaf06735c2e25bec0"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^6.0.13"
+
 postcss-value-parser@^3.1.1, postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
@@ -3524,6 +3543,14 @@ postcss@^6.0.0, postcss@^6.0.11, postcss@^6.0.14, postcss@^6.0.15, postcss@^6.0.
     chalk "^2.3.0"
     source-map "^0.6.1"
     supports-color "^5.1.0"
+
+postcss@^6.0.13:
+  version "6.0.19"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.19.tgz#76a78386f670b9d9494a655bf23ac012effd1555"
+  dependencies:
+    chalk "^2.3.1"
+    source-map "^0.6.1"
+    supports-color "^5.2.0"
 
 prepend-http@^1.0.1:
   version "1.0.4"
@@ -4433,6 +4460,14 @@ stylelint-declaration-strict-value@^1.0.4:
   dependencies:
     stylelint "^7.6.0"
 
+stylelint-order@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.8.0.tgz#49da5615cb91ed077ebd274687f4df3d6feeb4e4"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^6.0.14"
+    postcss-sorting "^3.1.0"
+
 stylelint-scss@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-2.3.0.tgz#95089fa0c1cc5690be19ca80f901a4905c95dedc"
@@ -4564,6 +4599,12 @@ supports-color@^5.1.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.1.0.tgz#058a021d1b619f7ddf3980d712ea3590ce7de3d5"
   dependencies:
     has-flag "^2.0.0"
+
+supports-color@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.2.0.tgz#b0d5333b1184dd3666cbe5aa0b45c5ac7ac17a4a"
+  dependencies:
+    has-flag "^3.0.0"
 
 svg-tags@^1.0.0:
   version "1.0.0"
