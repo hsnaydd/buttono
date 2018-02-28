@@ -1,4 +1,156 @@
 //
 // Buttono
-//
 // --------------------------------------------------
+
+$buttono-function-factor: -20% !default;
+$buttono-font-family: null !default;
+$buttono-bg-color: #008cba !default;
+$buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
+$buttono-border-color: $buttono-bg-hover !default;
+$buttono-radius: 3px !default;
+$buttono-font-size: 16px !default;
+$buttono-line-height: (24 / 16) !default;
+$buttono-font-color: #fff !default;
+$buttono-font-color-alt: #333 !default;
+$buttono-padding-ends: 10px !default;
+$buttono-padding-sides: 20px !default;
+$buttono-border-width: 0 !default;
+$buttono-transition-duration: 0.4s;
+$buttono-transition-property: background-color, color, border-color;
+$buttono-disabled-opacity: 0.7;
+
+@mixin buttono-block(
+  $ease:true,
+  $border-width: $buttono-border-width,
+  $font-family: $buttono-font-family,
+  $font-size: $buttono-font-size,
+  $line-height: $buttono-line-height,
+  $padding-ends: $buttono-padding-ends,
+  $padding-sides: $buttono-padding-sides,
+  $transition-property: $buttono-transition-property,
+  $transition-duration: $buttono-transition-duration,
+  $display: inline-block
+  ) {
+  border: $buttono-border-width solid transparent;
+  cursor: pointer;
+  display: $display;
+  font-family: $buttono-font-family;
+  font-size: $buttono-font-size;
+  line-height: $buttono-line-height;
+  padding: $buttono-padding-ends $buttono-padding-sides;
+  text-align: center;
+  user-select: none;
+
+  @if ($ease == true) {
+    transition-duration: $transition-duration;
+    transition-property: $transition-property;
+  }
+
+  @if ($display == inline-block) {
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: $buttono-disabled-opacity;
+  }
+}
+
+@mixin buttono-size($padding-ends: $buttono-padding-vertical, $padding-sides: $buttono-padding-horizontal, $font-size: null) {
+  @if $padding-ends {
+    @if $padding-sides {
+      padding: $padding-ends $padding-sides;
+    } @else {
+      padding-bottom: $padding-ends;
+      padding-top: $padding-ends;
+    }
+  } @else {
+    padding-left: $padding-sides;
+    padding-right: $padding-sides;
+  }
+
+  font-size: $font-size;
+}
+
+@mixin buttono-modifier(
+    $bg: $buttono-bg-color,
+    $bg-hover: $buttono-bg-hover,
+    $color: auto,
+    $hover-color: auto,
+    $border-width: $buttono-border-width,
+    $border-color: 'same-as-bg',
+    $border-hover-color: 'same-as-bg',
+    $radius: $buttono-radius
+  ) {
+  @if $bg-hover == auto {
+    $bg-hover: scale-color($bg, $lightness: $buttono-function-factor);
+  }
+
+  @if ($border-color == auto) and not($bg == null) {
+    $border-color: scale-color($bg, $lightness: $buttono-function-factor);
+  }
+
+  @if ($border-hover-color == auto) and not($bg-hover == null) {
+    $border-hover-color: scale-color($bg-hover, $lightness: $buttono-function-factor);
+  }
+
+  @if $border-color == 'same-as-bg' {
+    $border-color: $bg;
+  }
+
+  @if $border-hover-color == 'same-as-bg' {
+    $border-hover-color: $bg-hover;
+  }
+
+  $bg-lightness: 0;
+  $bg-hover-lightness: 0;
+
+  @if not($bg == null) {
+    $bg-lightness: lightness($bg);
+  }
+
+  @if $bg == transparent {
+    $bg-lightness: 71%;
+  }
+
+  @if not($bg-hover == null) {
+    $bg-hover-lightness: lightness($bg-hover);
+  }
+
+  @if $color == auto {
+    $color: if($bg-lightness > 70%, $buttono-font-color-alt, $buttono-font-color);
+  }
+
+  @if $hover-color == auto {
+    $hover-color: if($bg-hover-lightness > 70%, $buttono-font-color-alt, $buttono-font-color);
+  }
+
+  background-color: $bg;
+  border-color: $border-color;
+  border-radius: $radius;
+  color: $color;
+
+  @if not ($border-width == $buttono-border-width) {
+    border-width: $border-width;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-hover;
+    border-color: $border-hover-color;
+    color: $hover-color;
+  }
+
+  &:disabled {
+    &:hover,
+    &:focus {
+      background-color: $bg;
+    }
+  }
+}
