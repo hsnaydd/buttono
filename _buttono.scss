@@ -62,7 +62,7 @@ $buttono-disabled-opacity: 0.7;
   }
 }
 
-@mixin buttono-size($padding-ends: $buttono-padding-vertical, $padding-sides: $buttono-padding-horizontal, $font-size: null) {
+@mixin buttono-size-modifier($padding-ends: $buttono-padding-vertical, $padding-sides: $buttono-padding-horizontal, $font-size: null) {
   @if $padding-ends {
     @if $padding-sides {
       padding: $padding-ends $padding-sides;
@@ -78,7 +78,7 @@ $buttono-disabled-opacity: 0.7;
   font-size: $font-size;
 }
 
-@mixin buttono-modifier(
+@mixin buttono-style-modifier(
     $bg: $buttono-bg-color,
     $bg-hover: $buttono-bg-hover,
     $color: auto,
