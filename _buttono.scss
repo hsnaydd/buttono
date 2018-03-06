@@ -20,7 +20,7 @@ $buttono-transition-property: background-color, color, border-color;
 $buttono-disabled-opacity: 0.7;
 
 @mixin buttono-block(
-  $ease:true,
+  $ease: true,
   $border-width: $buttono-border-width,
   $font-family: $buttono-font-family,
   $font-size: $buttono-font-size,
