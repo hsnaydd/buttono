@@ -16,9 +16,9 @@ $buttono-font-color-alt: #333 !default;
 $buttono-padding-ends: 10px !default;
 $buttono-padding-sides: 20px !default;
 $buttono-border-width: 0 !default;
-$buttono-transition-duration: 0.4s;
-$buttono-transition-property: background-color, color, border-color;
-$buttono-disabled-opacity: 0.7;
+$buttono-transition-duration: 0.4s !default;
+$buttono-transition-property: background-color, color, border-color !default;
+$buttono-disabled-opacity: 0.7 !default;
 
 @mixin buttono-block(
   $ease: true,
