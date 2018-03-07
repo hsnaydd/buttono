@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 $buttono-function-factor: -20% !default;
+$buttono-bg-lightness-threshold: 70% !default;
 $buttono-font-family: null !default;
 $buttono-bg-color: #008cba !default;
 $buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
@@ -86,7 +87,8 @@ $buttono-disabled-opacity: 0.7;
     $border-width: $buttono-border-width,
     $border-color: 'same-as-bg',
     $border-hover-color: 'same-as-bg',
-    $radius: $buttono-radius
+    $radius: $buttono-radius,
+    $bg-lightness-threshold: $buttono-bg-lightness-threshold
   ) {
   @if $bg-hover == auto {
     $bg-hover: scale-color($bg, $lightness: $buttono-function-factor);
@@ -116,7 +118,7 @@ $buttono-disabled-opacity: 0.7;
   }
 
   @if $bg == transparent {
-    $bg-lightness: 71%;
+    $bg-lightness: $bg-lightness-threshold + 1%;
   }
 
   @if not($bg-hover == null) {
@@ -124,11 +126,19 @@ $buttono-disabled-opacity: 0.7;
   }
 
   @if $color == auto {
-    $color: if($bg-lightness > 70%, $buttono-font-color-alt, $buttono-font-color);
+    $color: if(
+      $bg-lightness > $bg-lightness-threshold,
+      $buttono-font-color-alt,
+      $buttono-font-color
+    );
   }
 
   @if $hover-color == auto {
-    $hover-color: if($bg-hover-lightness > 70%, $buttono-font-color-alt, $buttono-font-color);
+    $hover-color: if(
+      $bg-hover-lightness > $bg-lightness-threshold,
+      $buttono-font-color-alt,
+      $buttono-font-color
+    );
   }
 
   background-color: $bg;
