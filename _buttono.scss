@@ -13,12 +13,11 @@ $buttono-font-size: 16px !default;
 $buttono-line-height: (24 / 16) !default;
 $buttono-font-color: #fff !default;
 $buttono-font-color-alt: #333 !default;
-$buttono-padding-ends: 10px !default;
-$buttono-padding-sides: 20px !default;
+$buttono-padding: 10px 20px !default;
 $buttono-border-width: 0 !default;
 $buttono-transition-duration: 0.4s !default;
 $buttono-transition-property: background-color, color, border-color !default;
-$buttono-disabled-opacity: 0.7 !default;
+$button-opacity-disabled: 0.7 !default;
 
 @mixin buttono-block(
   $ease: true,
@@ -26,8 +25,7 @@ $buttono-disabled-opacity: 0.7 !default;
   $font-family: $buttono-font-family,
   $font-size: $buttono-font-size,
   $line-height: $buttono-line-height,
-  $padding-ends: $buttono-padding-ends,
-  $padding-sides: $buttono-padding-sides,
+  $padding: $buttono-padding,
   $transition-property: $buttono-transition-property,
   $transition-duration: $buttono-transition-duration,
   $display: inline-block
@@ -38,7 +36,7 @@ $buttono-disabled-opacity: 0.7 !default;
   font-family: $buttono-font-family;
   font-size: $buttono-font-size;
   line-height: $buttono-line-height;
-  padding: $buttono-padding-ends $buttono-padding-sides;
+  padding: $padding;
   text-align: center;
   user-select: none;
 
@@ -59,11 +57,11 @@ $buttono-disabled-opacity: 0.7 !default;
   &:disabled {
     box-shadow: none;
     cursor: not-allowed;
-    opacity: $buttono-disabled-opacity;
+    opacity: $button-opacity-disabled;
   }
 }
 
-@mixin buttono-size-modifier($padding-ends: $buttono-padding-vertical, $padding-sides: $buttono-padding-horizontal, $font-size: null) {
+@mixin buttono-size-modifier($padding-ends: null, $padding-sides: null, $font-size: null) {
   @if $padding-ends {
     @if $padding-sides {
       padding: $padding-ends $padding-sides;
