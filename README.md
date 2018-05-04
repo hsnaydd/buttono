@@ -43,7 +43,7 @@ $ yarn add buttono
 | Name                            | Type   | Description | Default Value |
 | ------------------------------- | ------ | ----------- | ------------- |
 | $buttono-function-factor        | Number | -20%        | Background color lightness on hover for buttons. |
-| $buttono-bg-lightness-threshold | Number | 70%         | Background lightness threshold. With this variable, the mixin decides the text color of the button. if the background color lightness is greater than the threshold, the mixin choose the alternative color.  |
+| $buttono-bg-lightness-threshold | Number | 70%         | Background lightness threshold. With this variable, the mixin decides the text color of the button. if the background color lightness is greater than the threshold, the mixin chooses the alternative color.  |
 | $buttono-font-family            | Font   | null        | Font family for button elements. |
 | $buttono-bg-color               | Color  | #008cba     | Default background color for `buttono-style-modifier` mixin. |
 | $buttono-bg-hover:              | Color  | scale-color($buttono-bg-color, $lightness: $buttono-function-factor) | Default Background color. |
