@@ -182,6 +182,53 @@ $buttono-transition-property: background-color, color, border-color !default;
 $buttono-opacity-disabled: 0.5 !default;
 ```
 
+### Mixins
+
+We use these mixins to build the final CSS output of buttono component. You can overwrite the mixins CSS with the parameters described below.
+
+```scss
+@mixin buttono-block(
+
+  // Transition duration for buttons.
+  // Type: Number
+  $transition-duration: $buttono-transition-duration,
+
+  // Transition Property for buttons
+  // Type: List
+  $transition-property: $buttono-transition-property,
+
+  // Border width for buttons
+  // Type: Number
+  $border-width: $buttono-border-width,
+
+  // Font family for buttons
+  // Type: Font
+  $font-family: $buttono-font-family,
+
+  // Font size for buttons
+  // Type: Number
+  $font-size: $buttono-font-size,
+
+  // Line height for buttons
+  // Type: Number
+  $line-height: $buttono-line-height,
+
+  // Padding inside buttons.
+  // Type: Number
+  $padding: $buttono-padding,
+
+  // Display property for buttons
+  // Type: List
+  $display: inline-block,
+
+  // Opacity for a disabled button.
+  // Type: Number
+  $opacity-disabled: $buttono-opacity-disabled
+) {
+  // ... mixin content ...
+}
+```
+
 ## Development
 
 TODO
