@@ -113,24 +113,74 @@ $buttono-font-family: Roboto;
 
 ### Variables
 
-| Name                            | Type   | Description | Default Value |
-| ------------------------------- | ------ | ----------- | ------------- |
-| $buttono-function-factor        | Number | -20%        | Background color lightness on hover for buttons. |
-| $buttono-bg-lightness-threshold | Number | 70%         | Background lightness threshold. With this variable, the mixin decides the text color of the button. if the background color lightness is greater than the threshold, the mixin chooses the alternative color.  |
-| $buttono-font-family            | Font   | null        | Font family for button elements. |
-| $buttono-bg-color               | Color  | #008cba     | Default background color for `buttono-style-modifier` mixin. |
-| $buttono-bg-hover:              | Color  | scale-color($buttono-bg-color, $lightness: $buttono-function-factor) | Default Background color. |
-| $buttono-border-color           | Color  | $buttono-bg-hover | Default border color.
-| $buttono-radius                 | Number | 3px         | Default border radius. |
-| $buttono-font-size              | Number | 16px        | Default font size. |
-| $buttono-line-height            | Number | (24 / 16)   | Default line-height. |
-| $buttono-font-color             | Color  | #fff        | Font color for buttons. |
-| $buttono-font-color-alt         | Color  | #333        | Alternative font color for buttons. |
-| $buttono-padding                | List   | 10px 20px   | Padding inside buttons. |
-| $buttono-border-width           | Number | 0           | Border width for buttons. |
-| $buttono-transition-duration    | Number | 0.4s        | Transition duration for buttons. |
-| $buttono-transition-property    | List   | background-color, color, border-color | Transition property for buttons. |
-| $button-opacity-disabled        | Number | 0.5         | Opacity for a disabled button. |
+```scss
+
+// Background color lightness on hover for buttons.
+// Type: Number
+$buttono-function-factor: -20% !default;
+
+// Background lightness threshold. With this variable, the mixin decides
+// the text color of the button. if the background color lightness is
+// greater than the threshold, the mixin chooses the alternative color.
+// Type: Number
+$buttono-bg-lightness-threshold: 70% !default;
+
+// Font family for button elements.
+// Type: Font
+$buttono-font-family: null !default;
+
+// Default background color for `buttono-style-modifier` mixin.
+// Type: Color
+$buttono-bg-color: #008cba !default;
+
+// Default Background color.
+// Type: Color
+$buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
+
+// Default border color
+// Type: Color
+$buttono-border-color: $buttono-bg-hover !default;
+
+// Default border radius.
+// Type: Number
+$buttono-radius: 3px !default;
+
+// Default font size.
+// Type: Number
+$buttono-font-size: 16px !default;
+
+// Default line-height.
+// Number
+$buttono-line-height: (24 / 16) !default;
+
+// Font color for buttons.
+// Type: Color
+$buttono-font-color: #fff !default;
+
+// Alternative font color for buttons.
+// Type: Color
+$buttono-font-color-alt: #333 !default;
+
+// Padding inside buttons.
+// Type: List
+$buttono-padding: 10px 20px !default;
+
+// Border width for buttons.
+// Type: Number
+$buttono-border-width: 0 !default;
+
+// Transition duration for buttons.
+// Type: Number
+$buttono-transition-duration: 0.4s !default;
+
+// Type: List
+// Transition property for buttons.
+$buttono-transition-property: background-color, color, border-color !default;
+
+// Opacity for a disabled button.
+// Type: Number
+$buttono-opacity-disabled: 0.5 !default;
+```
 
 ## Development
 
