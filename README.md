@@ -23,6 +23,8 @@ $ yarn add buttono
 ## Usage
 
 ```scss
+$buttono-font-family: Roboto;
+
 .c-button {
   @include buttono-block();
 
@@ -35,6 +37,77 @@ $ yarn add buttono
   }
 }
 ```
+
+<details>
+  <summary>Output</summary>
+
+```css
+.c-button {
+  border: 0 solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-align: center;
+  transition-duration: 0.4s;
+  user-select: none;
+  transition-property: background-color, color, border-color;
+  vertical-align: middle;
+}
+
+.c-button:hover,
+.c-button:focus {
+  text-decoration: none;
+}
+
+.c-button:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.c-button--primary {
+  background-color: #008cba;
+  border-color: #008cba;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.c-button--primary:hover,
+.c-button--primary:focus {
+  background-color: #007095;
+  border-color: #007095;
+  color: #fff;
+}
+
+.c-button--primary:disabled:hover,
+.c-button--primary:disabled:focus {
+  background-color: #008cba;
+}
+
+.c-button--secondary {
+  background-color: lightblue;
+  border-color: lightblue;
+  border-radius: 3px;
+  color: #333;
+}
+
+.c-button--secondary:hover,
+.c-button--secondary:focus {
+  background-color: #007095;
+  border-color: #007095;
+  color: #fff;
+}
+
+.c-button--secondary:disabled:hover,
+.c-button--secondary:disabled:focus {
+  background-color: lightblue;
+}
+
+```
+</details>
 
 ## Configuration
 
