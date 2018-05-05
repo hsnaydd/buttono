@@ -17,31 +17,31 @@ $buttono-padding: 10px 20px !default;
 $buttono-border-width: 0 !default;
 $buttono-transition-duration: 0.4s !default;
 $buttono-transition-property: background-color, color, border-color !default;
-$button-opacity-disabled: 0.7 !default;
+$buttono-opacity-disabled: 0.7 !default;
 
 @mixin buttono-block(
-  $ease: true,
+  $transition-duration: $buttono-transition-duration,
+  $transition-property: $buttono-transition-property,
   $border-width: $buttono-border-width,
   $font-family: $buttono-font-family,
   $font-size: $buttono-font-size,
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
-  $transition-property: $buttono-transition-property,
-  $transition-duration: $buttono-transition-duration,
-  $display: inline-block
+  $display: inline-block,
+  $opacity-disabled: $buttono-opacity-disabled
   ) {
-  border: $buttono-border-width solid transparent;
+  border: $border-width solid transparent;
   cursor: pointer;
   display: $display;
-  font-family: $buttono-font-family;
-  font-size: $buttono-font-size;
-  line-height: $buttono-line-height;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
   padding: $padding;
   text-align: center;
+  transition-duration: $transition-duration;
   user-select: none;
 
-  @if ($ease == true) {
-    transition-duration: $transition-duration;
+  @if not ($transition-duration == null) {
     transition-property: $transition-property;
   }
 
@@ -57,7 +57,7 @@ $button-opacity-disabled: 0.7 !default;
   &:disabled {
     box-shadow: none;
     cursor: not-allowed;
-    opacity: $button-opacity-disabled;
+    opacity: $opacity-disabled;
   }
 }
 
