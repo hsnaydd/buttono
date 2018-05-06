@@ -7,7 +7,6 @@ $buttono-bg-lightness-threshold: 70% !default;
 $buttono-font-family: null !default;
 $buttono-bg-color: #008cba !default;
 $buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
-$buttono-border-color: $buttono-bg-hover !default;
 $buttono-radius: 3px !default;
 $buttono-font-size: 16px !default;
 $buttono-line-height: (24 / 16) !default;

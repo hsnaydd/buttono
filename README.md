@@ -137,9 +137,6 @@ $buttono-bg-color: #008cba !default;
 // Type: Color
 $buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
 
-// Default border color
-// Type: Color
-$buttono-border-color: $buttono-bg-hover !default;
 
 // Default border radius.
 // Type: Number
