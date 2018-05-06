@@ -133,10 +133,11 @@ $buttono-font-family: null !default;
 // Type: Color
 $buttono-bg-color: #008cba !default;
 
-// Default Background color.
-// Type: Color
-$buttono-bg-hover: scale-color($buttono-bg-color, $lightness: $buttono-function-factor) !default;
-
+// Default Background color on hover.
+// `auto` value means that the mixin generates the background
+// color on hover itself
+// Type: Color | auto
+$buttono-bg-hover: auto !default;
 
 // Default border radius.
 // Type: Number
