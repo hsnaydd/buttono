@@ -79,7 +79,8 @@ $buttono-opacity-disabled: 0.7 !default;
 @mixin buttono-style-modifier(
     $bg: $buttono-bg-color,
     $bg-hover: $buttono-bg-hover,
-    $color: auto,
+    $color: $buttono-font-color,
+    $color-alt: $buttono-font-color-alt,
     $hover-color: auto,
     $border-width: $buttono-border-width,
     $border-color: 'same-as-bg',
@@ -122,26 +123,13 @@ $buttono-opacity-disabled: 0.7 !default;
     $bg-hover-lightness: lightness($bg-hover);
   }
 
-  @if $color == auto {
-    $color: if(
-      $bg-lightness > $bg-lightness-threshold,
-      $buttono-font-color-alt,
-      $buttono-font-color
-    );
-  }
-
-  @if $hover-color == auto {
-    $hover-color: if(
-      $bg-hover-lightness > $bg-lightness-threshold,
-      $buttono-font-color-alt,
-      $buttono-font-color
-    );
-  }
+  $calculated-color: if($bg-lightness > $bg-lightness-threshold, $color-alt, $color);
+  $calculated-hover-color: if($bg-hover-lightness > $bg-lightness-threshold, $color-alt, $color);
 
   background-color: $bg;
   border-color: $border-color;
   border-radius: $radius;
-  color: $color;
+  color: $calculated-color;
 
   @if not ($border-width == $buttono-border-width) {
     border-width: $border-width;
@@ -151,7 +139,7 @@ $buttono-opacity-disabled: 0.7 !default;
   &:focus {
     background-color: $bg-hover;
     border-color: $border-hover-color;
-    color: $hover-color;
+    color: $calculated-hover-color;
   }
 
   &:disabled {
