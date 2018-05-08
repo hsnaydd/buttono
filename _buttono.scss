@@ -60,22 +60,6 @@ $buttono-opacity-disabled: 0.7 !default;
   }
 }
 
-@mixin buttono-size-modifier($padding-ends: null, $padding-sides: null, $font-size: null) {
-  @if $padding-ends {
-    @if $padding-sides {
-      padding: $padding-ends $padding-sides;
-    } @else {
-      padding-bottom: $padding-ends;
-      padding-top: $padding-ends;
-    }
-  } @else {
-    padding-left: $padding-sides;
-    padding-right: $padding-sides;
-  }
-
-  font-size: $font-size;
-}
-
 @mixin buttono-style-modifier(
     $bg: $buttono-bg-color,
     $bg-hover: $buttono-bg-hover,
