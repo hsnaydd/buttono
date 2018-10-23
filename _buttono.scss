@@ -147,12 +147,9 @@ $buttono-opacity-disabled: 0.7 !default;
   @if $include-disabled-styles {
     &:disabled,
     &[aria-disabled='true'] {
-      &:hover,
-      &:focus {
-        background-color: $bg;
-        border-color: $border-color;
-        color: $color;
-      }
+      background-color: $bg;
+      border-color: $border-color;
+      color: $color;
     }
   }
 }
