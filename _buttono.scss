@@ -71,8 +71,8 @@ $buttono-opacity-disabled: 0.7 !default;
     $color: auto,
     $color-hover: auto,
     $border-width: $buttono-border-width,
-    $border-color: 'same-as-bg',
-    $border-color-hover: 'same-as-bg',
+    $border-color: undefined,
+    $border-color-hover: undefined,
     $border-radius: $buttono-border-radius,
     $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
     $include-disabled-styles: $buttono-include-disabled-styles
@@ -89,11 +89,11 @@ $buttono-opacity-disabled: 0.7 !default;
     $border-color-hover: scale-color($background-color-hover, $lightness: $buttono-function-factor);
   }
 
-  @if $border-color == 'same-as-bg' {
+  @if $border-color == undefined {
     $border-color: $background-color;
   }
 
-  @if $border-color-hover == 'same-as-bg' {
+  @if $border-color-hover == undefined {
     $border-color-hover: $background-color-hover;
   }
 
