@@ -16,6 +16,7 @@ $buttono-padding: 10px 20px !default;
 $buttono-border-width: 0 !default;
 $buttono-transition-duration: 0.4s !default;
 $buttono-transition-property: background-color, color, border-color !default;
+$buttono-include-disabled-styles: true !default;
 $buttono-opacity-disabled: 0.7 !default;
 
 @mixin buttono-block(
@@ -27,6 +28,7 @@ $buttono-opacity-disabled: 0.7 !default;
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
   $display: inline-block,
+  $include-disabled-styles: $buttono-include-disabled-styles,
   $opacity-disabled: $buttono-opacity-disabled
   ) {
   border: $border-width solid transparent;
@@ -53,10 +55,13 @@ $buttono-opacity-disabled: 0.7 !default;
     text-decoration: none;
   }
 
-  &:disabled {
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: $opacity-disabled;
+  @if $include-disabled-styles {
+    &:disabled,
+    &[aria-disabled='true'] {
+      box-shadow: none;
+      cursor: not-allowed;
+      opacity: $opacity-disabled;
+    }
   }
 }
 
@@ -69,7 +74,8 @@ $buttono-opacity-disabled: 0.7 !default;
     $border-color: 'same-as-bg',
     $border-hover-color: 'same-as-bg',
     $radius: $buttono-radius,
-    $bg-lightness-threshold: $buttono-bg-lightness-threshold
+    $bg-lightness-threshold: $buttono-bg-lightness-threshold,
+    $include-disabled-styles: $buttono-include-disabled-styles
   ) {
   @if $bg-hover == auto {
     $bg-hover: scale-color($bg, $lightness: $buttono-function-factor);
@@ -138,10 +144,15 @@ $buttono-opacity-disabled: 0.7 !default;
     color: $hover-color;
   }
 
-  &:disabled {
-    &:hover,
-    &:focus {
-      background-color: $bg;
+  @if $include-disabled-styles {
+    &:disabled,
+    &[aria-disabled='true'] {
+      &:hover,
+      &:focus {
+        background-color: $bg;
+        border-color: $border-color;
+        color: $color;
+      }
     }
   }
 }
