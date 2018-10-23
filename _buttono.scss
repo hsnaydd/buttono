@@ -75,7 +75,10 @@ $buttono-opacity-disabled: 0.7 !default;
     $border-color-hover: undefined,
     $border-radius: $buttono-border-radius,
     $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
-    $include-disabled-styles: $buttono-include-disabled-styles
+    $include-disabled-styles: $buttono-include-disabled-styles,
+    $background-color-disabled: undefined,
+    $border-color-disabled: undefined,
+    $color-disabled: undefined
   ) {
   @if $background-color-hover == auto {
     $background-color-hover: scale-color($background-color, $lightness: $buttono-function-factor);
@@ -144,12 +147,24 @@ $buttono-opacity-disabled: 0.7 !default;
     color: $color-hover;
   }
 
+  @if $background-color-disabled == undefined {
+    $background-color-disabled: $background-color;
+  }
+
+  @if $border-color-disabled == undefined {
+    $border-color-disabled: $background-color;
+  }
+
+  @if $color-disabled == undefined {
+    $color-disabled: $color;
+  }
+
   @if $include-disabled-styles {
     &:disabled,
     &[aria-disabled='true'] {
-      background-color: $background-color;
-      border-color: $border-color;
-      color: $color;
+      background-color: $background-color-disabled;
+      border-color: $border-color-disabled;
+      color: $color-disabled;
     }
   }
 }
