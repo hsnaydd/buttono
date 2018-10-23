@@ -3,15 +3,15 @@
 // --------------------------------------------------
 
 $buttono-function-factor: -20% !default;
-$buttono-bg-lightness-threshold: 70% !default;
+$buttono-background-color-lightness-threshold: 70% !default;
 $buttono-font-family: null !default;
-$buttono-bg-color: #008cba !default;
-$buttono-bg-hover: auto !default;
-$buttono-radius: 3px !default;
+$buttono-background-color: #008cba !default;
+$buttono-background-color-hover: auto !default;
+$buttono-border-radius: 3px !default;
 $buttono-font-size: 16px !default;
 $buttono-line-height: (24 / 16) !default;
-$buttono-font-color: #fff !default;
-$buttono-font-color-alt: #333 !default;
+$buttono-color: #fff !default;
+$buttono-color-alt: #333 !default;
 $buttono-padding: 10px 20px !default;
 $buttono-border-width: 0 !default;
 $buttono-transition-duration: 0.4s !default;
@@ -28,8 +28,8 @@ $buttono-opacity-disabled: 0.7 !default;
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
   $display: inline-block,
-  $include-disabled-styles: $buttono-include-disabled-styles,
-  $opacity-disabled: $buttono-opacity-disabled
+  $opacity-disabled: $buttono-opacity-disabled,
+  $include-disabled-styles: $buttono-include-disabled-styles
   ) {
   border: $border-width solid transparent;
   cursor: pointer;
@@ -66,71 +66,71 @@ $buttono-opacity-disabled: 0.7 !default;
 }
 
 @mixin buttono-style-modifier(
-    $bg: $buttono-bg-color,
-    $bg-hover: $buttono-bg-hover,
+    $background-color: $buttono-background-color,
+    $background-color-hover: $buttono-background-color-hover,
     $color: auto,
-    $hover-color: auto,
+    $color-hover: auto,
     $border-width: $buttono-border-width,
     $border-color: 'same-as-bg',
-    $border-hover-color: 'same-as-bg',
-    $radius: $buttono-radius,
-    $bg-lightness-threshold: $buttono-bg-lightness-threshold,
+    $border-color-hover: 'same-as-bg',
+    $border-radius: $buttono-border-radius,
+    $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
     $include-disabled-styles: $buttono-include-disabled-styles
   ) {
-  @if $bg-hover == auto {
-    $bg-hover: scale-color($bg, $lightness: $buttono-function-factor);
+  @if $background-color-hover == auto {
+    $background-color-hover: scale-color($background-color, $lightness: $buttono-function-factor);
   }
 
-  @if ($border-color == auto) and not($bg == null) {
-    $border-color: scale-color($bg, $lightness: $buttono-function-factor);
+  @if ($border-color == auto) and not($background-color == null) {
+    $border-color: scale-color($background-color, $lightness: $buttono-function-factor);
   }
 
-  @if ($border-hover-color == auto) and not($bg-hover == null) {
-    $border-hover-color: scale-color($bg-hover, $lightness: $buttono-function-factor);
+  @if ($border-color-hover == auto) and not($background-color-hover == null) {
+    $border-color-hover: scale-color($background-color-hover, $lightness: $buttono-function-factor);
   }
 
   @if $border-color == 'same-as-bg' {
-    $border-color: $bg;
+    $border-color: $background-color;
   }
 
-  @if $border-hover-color == 'same-as-bg' {
-    $border-hover-color: $bg-hover;
+  @if $border-color-hover == 'same-as-bg' {
+    $border-color-hover: $background-color-hover;
   }
 
-  $bg-lightness: 0;
-  $bg-hover-lightness: 0;
+  $background-color-lightness: 0;
+  $background-color-hover-lightness: 0;
 
-  @if not($bg == null) {
-    $bg-lightness: lightness($bg);
+  @if not($background-color == null) {
+    $background-color-lightness: lightness($background-color);
   }
 
-  @if $bg == transparent {
-    $bg-lightness: $bg-lightness-threshold + 1%;
+  @if $background-color == transparent {
+    $background-color-lightness: $bg-lightness-threshold + 1%;
   }
 
-  @if not($bg-hover == null) {
-    $bg-hover-lightness: lightness($bg-hover);
+  @if not($background-color-hover == null) {
+    $background-color-hover-lightness: lightness($background-color-hover);
   }
 
   @if $color == auto {
     $color: if(
-      $bg-lightness > $bg-lightness-threshold,
-      $buttono-font-color-alt,
-      $buttono-font-color
+      $background-color-lightness > $background-color-lightness-threshold,
+      $buttono-color-alt,
+      $buttono-color
     );
   }
 
-  @if $hover-color == auto {
-    $hover-color: if(
-      $bg-hover-lightness > $bg-lightness-threshold,
-      $buttono-font-color-alt,
-      $buttono-font-color
+  @if $color-hover == auto {
+    $color-hover: if(
+      $background-color-hover-lightness > $background-color-lightness-threshold,
+      $buttono-color-alt,
+      $buttono-color
     );
   }
 
-  background-color: $bg;
+  background-color: $background-color;
   border-color: $border-color;
-  border-radius: $radius;
+  border-radius: $border-radius;
   color: $color;
 
   @if not ($border-width == $buttono-border-width) {
@@ -139,15 +139,15 @@ $buttono-opacity-disabled: 0.7 !default;
 
   &:hover,
   &:focus {
-    background-color: $bg-hover;
-    border-color: $border-hover-color;
-    color: $hover-color;
+    background-color: $background-color-hover;
+    border-color: $border-color-hover;
+    color: $color-hover;
   }
 
   @if $include-disabled-styles {
     &:disabled,
     &[aria-disabled='true'] {
-      background-color: $bg;
+      background-color: $background-color;
       border-color: $border-color;
       color: $color;
     }
