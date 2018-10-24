@@ -108,7 +108,7 @@ $buttono-opacity-disabled: 0.7 !default;
   }
 
   @if $background-color == transparent {
-    $background-color-lightness: $bg-lightness-threshold + 1%;
+    $background-color-lightness: $background-color-lightness-threshold + 1%;
   }
 
   @if not($background-color-hover == null) {
