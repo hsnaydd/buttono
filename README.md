@@ -33,7 +33,7 @@ $buttono-font-family: Roboto;
   }
 
   &--secondary {
-    @include buttono-style-modifier($bg: lightblue);
+    @include buttono-style-modifier($background-color: lightblue);
   }
 }
 ```
@@ -62,7 +62,8 @@ $buttono-font-family: Roboto;
   text-decoration: none;
 }
 
-.c-button:disabled {
+.c-button:disabled,
+.c-button[aria-disabled='true'] {
   box-shadow: none;
   cursor: not-allowed;
   opacity: 0.7;
@@ -82,9 +83,11 @@ $buttono-font-family: Roboto;
   color: #fff;
 }
 
-.c-button--primary:disabled:hover,
-.c-button--primary:disabled:focus {
+.c-button--primary:disabled,
+.c-button--primary[aria-disabled='true'] {
   background-color: #008cba;
+  border-color: #008cba;
+  color: #fff;
 }
 
 .c-button--secondary {
@@ -96,17 +99,20 @@ $buttono-font-family: Roboto;
 
 .c-button--secondary:hover,
 .c-button--secondary:focus {
-  background-color: #007095;
-  border-color: #007095;
+  background-color: #6fbbd3;
+  border-color: #6fbbd3;
   color: #fff;
 }
 
-.c-button--secondary:disabled:hover,
-.c-button--secondary:disabled:focus {
+.c-button--secondary:disabled,
+.c-button--secondary[aria-disabled='true'] {
   background-color: lightblue;
+  border-color: lightblue;
+  color: #333;
 }
 
 ```
+
 </details>
 
 ## Configuration
