@@ -1,6 +1,6 @@
 # Buttono
 
-Buttono is sass mixin based on BEM naming convention. It helps you to create nice buttons in an easy way.
+Buttono is a sass mixin based on BEM naming convention. It helps you to create nice buttons in an easy way.
 
 ## Demo
 
@@ -11,13 +11,13 @@ TODO
 ### Using npm
 
 ```sh
-$ npm install buttono --save
+npm install buttono --save
 ```
 
 ### Using Yarn
 
 ```sh
-$ yarn add buttono
+yarn add buttono
 ```
 
 ## Usage
@@ -193,6 +193,8 @@ $buttono-opacity-disabled: 0.5 !default;
 ### Mixins
 
 We use these mixins to build the final CSS output of buttono component. You can overwrite the mixins CSS with the parameters described below.
+
+#### Block
 
 ```scss
 @mixin buttono-block(
