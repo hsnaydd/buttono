@@ -122,67 +122,71 @@ $buttono-font-family: Roboto;
 ```scss
 
 // Background color lightness on hover for buttons.
-// Type: Number
+// Type: number
 $buttono-function-factor: -20% !default;
 
 // Background lightness threshold. With this variable, the mixin decides
 // the text color of the button. if the background color lightness is
 // greater than the threshold, the mixin chooses the alternative color.
-// Type: Number
-$buttono-bg-lightness-threshold: 70% !default;
+// Type: number
+$buttono-background-color-lightness-threshold: 70% !default;
 
 // Font family for button elements.
-// Type: Font
+// Type: string
 $buttono-font-family: null !default;
 
 // Default background color for `buttono-style-modifier` mixin.
-// Type: Color
-$buttono-bg-color: #008cba !default;
+// Type: color
+$buttono-background-color: #008cba !default;
 
 // Default Background color on hover.
 // `auto` value means that the mixin generates the background
 // color on hover itself
-// Type: Color | auto
-$buttono-bg-hover: auto !default;
+// Type: color | auto
+$buttono-background-color-hover: auto !default;
 
 // Default border radius.
-// Type: Number
-$buttono-radius: 3px !default;
+// Type: number
+$buttono-border-radius: 3px !default;
 
 // Default font size.
-// Type: Number
+// Type: number
 $buttono-font-size: 16px !default;
 
 // Default line-height.
-// Number
+// Type: number
 $buttono-line-height: (24 / 16) !default;
 
 // Font color for buttons.
-// Type: Color
-$buttono-font-color: #fff !default;
+// Type: color
+$buttono-color: #fff !default;
 
 // Alternative font color for buttons.
-// Type: Color
-$buttono-font-color-alt: #333 !default;
+// Type: color
+$buttono-color-alt: #333 !default;
 
 // Padding inside buttons.
-// Type: List
+// Type: list
 $buttono-padding: 10px 20px !default;
 
 // Border width for buttons.
-// Type: Number
+// Type: number
 $buttono-border-width: 0 !default;
 
 // Transition duration for buttons.
-// Type: Number
+// Type: number
 $buttono-transition-duration: 0.4s !default;
 
-// Type: List
 // Transition property for buttons.
+// Type: list
 $buttono-transition-property: background-color, color, border-color !default;
 
+// You can specify whether to include "disabled styles" through this variable
+// Type: boolean
+$buttono-include-disabled-styles: true !default;
+
 // Opacity for a disabled button.
-// Type: Number
+// Type: number
 $buttono-opacity-disabled: 0.5 !default;
 ```
 
