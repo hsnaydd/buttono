@@ -204,40 +204,48 @@ We use these mixins to build the final CSS output of buttono component. You can 
 @mixin buttono-block(
 
   // Transition duration for buttons.
-  // Type: Number
+  // Type: number
   $transition-duration: $buttono-transition-duration,
 
   // Transition Property for buttons
-  // Type: List
+  // Type: list
   $transition-property: $buttono-transition-property,
 
   // Border width for buttons
-  // Type: Number
+  // Type: number
   $border-width: $buttono-border-width,
 
   // Font family for buttons
-  // Type: Font
+  // Type: string
   $font-family: $buttono-font-family,
 
   // Font size for buttons
-  // Type: Number
+  // Type: number
   $font-size: $buttono-font-size,
 
   // Line height for buttons
-  // Type: Number
+  // Type: number
   $line-height: $buttono-line-height,
 
   // Padding inside buttons.
-  // Type: Number
+  // Type: number
   $padding: $buttono-padding,
 
   // Display property for buttons
-  // Type: List
+  // Type: list
   $display: inline-block,
 
   // Opacity for a disabled button.
-  // Type: Number
+  // Type: number
   $opacity-disabled: $buttono-opacity-disabled
+
+  // You can specify whether to include "disabled styles" through this variable
+  // Type: boolean
+  $include-disabled-styles: $buttono-include-disabled-styles
+) {
+  // ... mixin content ...
+}
+```
 ) {
   // ... mixin content ...
 }
