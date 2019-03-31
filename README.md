@@ -246,10 +246,6 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // ... mixin content ...
 }
 ```
-) {
-  // ... mixin content ...
-}
-```
 
 ## Development
 
