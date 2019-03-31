@@ -6,18 +6,22 @@ Buttono is a sass mixin based on BEM naming convention. It helps you to create n
 
 TODO
 
-## Installing
-
-### Using npm
+## Getting Started
 
 ```sh
 npm install buttono --save
 ```
 
-### Using Yarn
+or
 
 ```sh
 yarn add buttono
+```
+
+and Import Buttono as follows (note that the exact path will differ depending on your folder structure):
+
+```scss
+@import "node_modules/buttono/buttono";
 ```
 
 ## Usage
