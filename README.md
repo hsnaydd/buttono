@@ -18,7 +18,7 @@ or
 yarn add buttono
 ```
 
-and Import Buttono as follows (note that the exact path will differ depending on your folder structure):
+and import Buttono as follows (note that the exact path will differ depending on your folder structure):
 
 ```scss
 @import "node_modules/buttono/buttono";
