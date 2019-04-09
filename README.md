@@ -198,6 +198,8 @@ $buttono-opacity-disabled: 0.5 !default;
 
 We use these mixins to build the final CSS output of buttono component. You can overwrite the mixins CSS with the parameters described below.
 
+> _if you want to remove any property from the mixin output, pass the argument with null value._
+
 #### Block
 
 ```scss
@@ -242,6 +244,85 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // You can specify whether to include "disabled styles" through this variable
   // Type: boolean
   $include-disabled-styles: $buttono-include-disabled-styles
+) {
+  // ... mixin content ...
+}
+```
+
+#### Style Modifier
+
+```scss
+@mixin buttono-style-modifier(
+  // Background color for button.
+  // Type: color
+  $background-color: $buttono-background-color,
+
+  // Background color on hover for button.
+  // `auto` value means that the mixin generates the background
+  // color on hover itself
+  // Type: color | auto
+  $background-color-hover: $buttono-background-color-hover,
+
+  // Font color for button.
+  // `auto` value means that the mixin decides which color to apply to the button
+  // if the background color lightness is
+  // lower than the threshold, the mixin chooses the normal color,
+  // if not chooses the alternative color.
+  // Type: color | auto
+  $color: auto,
+
+  // Font color for button on hover.
+  // `auto` value means that the mixin decides which color to apply to the button
+  // if the background color hover lightness is
+  // lower than the threshold, the mixin chooses the normal color,
+  // if not chooses the alternative color.
+  // Type: color | auto
+  $color-hover: auto,
+
+  // Border width for buttons.
+  // Type: number
+  $border-width: $buttono-border-width,
+
+  // Border color for buttons.
+  // if you want to remove this propery from mixin output, pass this argument with null value
+  // if the argument value is `undefined` the mixin will set the background color to border color.
+  // Type: color | undefined
+  $border-color: undefined,
+
+  // Border color for buttons on hover.
+  // `undefined` value means that the mixin will set the background color to border color.
+  // `auto` value means that the mixin will generate the background color for hover state
+  // Type: color | undefined | auto
+  $border-color-hover: undefined,
+
+  // Border radius for buttons.
+  // Type: number
+  $border-radius: $buttono-border-radius,
+
+  // Background color lightness threshold
+  // if you want to overwrite the global background color lightness threshold,
+  // pass this argument with the value that you want.
+  // Type: number
+  $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
+
+  // You can overwrite the global include-disabled-styles variable with this argument.
+  // Type: boolean
+  $include-disabled-styles: $buttono-include-disabled-styles,
+
+  // Background color for button on disabled status.
+  // `undefined` value means that the background color in disabled state will be the same with the background color in normal state
+  // Type: color | undefined
+  $background-color-disabled: undefined,
+
+  // Border color for button on disabled status.
+  // `undefined` value means that the border color in disabled state will be the same with the background color in normal state
+  // Type: color | undefined
+  $border-color-disabled: undefined,
+
+  // Font color for button on disabled status.
+  // `undefined` value means that the font color in disabled state will be the same with the font color in normal state
+  // Type: color | undefined
+  $color-disabled: undefined
 ) {
   // ... mixin content ...
 }
