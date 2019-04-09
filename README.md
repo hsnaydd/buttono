@@ -27,7 +27,7 @@ and import Buttono as follows (note that the exact path will differ depending on
 ## Usage
 
 ```scss
-$buttono-font-family: Roboto;
+$buttono-font-family: Helvetica;
 
 .c-button {
   @include buttono-block();
@@ -50,7 +50,7 @@ $buttono-font-family: Roboto;
   border: 0 solid transparent;
   cursor: pointer;
   display: inline-block;
-  font-family: Roboto;
+  font-family: Helvetica;
   font-size: 16px;
   line-height: 1.5;
   padding: 10px 20px;
