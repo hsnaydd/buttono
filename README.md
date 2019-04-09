@@ -198,7 +198,7 @@ $buttono-opacity-disabled: 0.5 !default;
 
 We use these mixins to build the final CSS output of buttono component. You can overwrite the mixins CSS with the parameters described below.
 
-> _if you want to remove any property from the mixin output, pass the argument with null value._
+> _if you want to remove any property from the mixin output, pass the argument with `null` value._
 
 #### Block
 
