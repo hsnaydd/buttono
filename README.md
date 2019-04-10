@@ -336,6 +336,10 @@ TODO
 
 It does not use any tool for browser support. Using autoprefixer for browser support is up to you. I strongly recommend you consider using [normalize.css](https://necolas.github.io/normalize.css/) to avoid inconsistency.
 
+## Change log
+
+You can follow the change log from the [Releases page](/releases).
+
 ## License
 
 Copyright (c) 2017 Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
