@@ -334,7 +334,7 @@ It does not use any tool for browser support. Using autoprefixer for browser sup
 
 ## Change log
 
-You can follow the change log from the [Releases page](/releases).
+You can follow the change log from the [Releases page](https://github.com/hsnaydd/buttono/releases).
 
 ## License
 
