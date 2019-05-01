@@ -1,6 +1,13 @@
-# Buttono
+<h1 align="center">
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/hsnaydd/buttono/master/buttono.svg?sanitize=true" alt="Buttono logo" width="300">
+  <br>
+  <br>
+  <br>
+</h1>
 
-Buttono is a sass mixin based on BEM naming convention. It helps you to create nice buttons in an easy way.
+<p align="center">Buttono is a sass mixin based on BEM naming convention. It helps you to create nice buttons in an easy way.</p>
 
 ## Demo
 
