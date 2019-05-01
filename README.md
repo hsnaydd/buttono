@@ -328,10 +328,6 @@ We use these mixins to build the final CSS output of buttono component. You can 
 }
 ```
 
-## Development
-
-TODO
-
 ## Browser support
 
 It does not use any tool for browser support. Using autoprefixer for browser support is up to you. I strongly recommend you consider using [normalize.css](https://necolas.github.io/normalize.css/) to avoid inconsistency.
