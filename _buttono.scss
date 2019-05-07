@@ -30,7 +30,7 @@ $buttono-opacity-disabled: 0.7 !default;
   $display: inline-block,
   $opacity-disabled: $buttono-opacity-disabled,
   $include-disabled-styles: $buttono-include-disabled-styles
-  ) {
+) {
   border: $border-width solid transparent;
   cursor: pointer;
   display: $display;
@@ -42,7 +42,7 @@ $buttono-opacity-disabled: 0.7 !default;
   transition-duration: $transition-duration;
   user-select: none;
 
-  @if not ($transition-duration == null) {
+  @if not($transition-duration == null) {
     transition-property: $transition-property;
   }
 
@@ -66,20 +66,20 @@ $buttono-opacity-disabled: 0.7 !default;
 }
 
 @mixin buttono-style-modifier(
-    $background-color: $buttono-background-color,
-    $background-color-hover: $buttono-background-color-hover,
-    $color: auto,
-    $color-hover: auto,
-    $border-width: $buttono-border-width,
-    $border-color: undefined,
-    $border-color-hover: undefined,
-    $border-radius: $buttono-border-radius,
-    $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
-    $include-disabled-styles: $buttono-include-disabled-styles,
-    $background-color-disabled: undefined,
-    $border-color-disabled: undefined,
-    $color-disabled: undefined
-  ) {
+  $background-color: $buttono-background-color,
+  $background-color-hover: $buttono-background-color-hover,
+  $color: auto,
+  $color-hover: auto,
+  $border-width: $buttono-border-width,
+  $border-color: undefined,
+  $border-color-hover: undefined,
+  $border-radius: $buttono-border-radius,
+  $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
+  $include-disabled-styles: $buttono-include-disabled-styles,
+  $background-color-disabled: undefined,
+  $border-color-disabled: undefined,
+  $color-disabled: undefined
+) {
   @if $background-color-hover == auto {
     $background-color-hover: scale-color($background-color, $lightness: $buttono-function-factor);
   }
@@ -136,7 +136,7 @@ $buttono-opacity-disabled: 0.7 !default;
   border-radius: $border-radius;
   color: $color;
 
-  @if not ($border-width == $buttono-border-width) {
+  @if not($border-width == $buttono-border-width) {
     border-width: $border-width;
   }
 
