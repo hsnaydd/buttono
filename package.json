@@ -1,7 +1,7 @@
 {
   "name": "buttono",
   "description": "A flexible Sass mixin for creating BEM-style buttons.",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "main": "_buttono.scss",
   "repository": {
     "type": "git",
@@ -22,23 +22,23 @@
   "author": "Hasan Aydoğdu <hsnaydd@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
     "prettier": "^1.10.2",
     "prettier-stylelint": "^0.4.2",
-    "stylelint": "^8.4.0",
-    "stylelint-config-prettier": "^2.0.0",
-    "stylelint-config-sass-guidelines": "^4.1.0",
-    "stylelint-declaration-block-no-ignored-properties": "^1.0.2",
+    "stylelint": "^10.0.1",
+    "stylelint-config-prettier": "^5.1.0",
+    "stylelint-config-sass-guidelines": "^6.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
     "stylelint-declaration-strict-value": "^1.0.4",
-    "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.3.0"
+    "stylelint-order": "^3.0.0",
+    "stylelint-scss": "^3.6.1"
   },
   "scripts": {
-    "lint": "stylelint --syntax scss \"demo/src/*.scss _buttono.scss\"",
+    "lint": "stylelint 'demo/src/*.scss' '_buttono.scss' --syntax scss",
     "fmt": "prettier-stylelint --quiet --write \"*.scss\"",
     "start": "gulp serve",
     "build": "gulp build"
