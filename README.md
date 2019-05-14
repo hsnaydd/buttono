@@ -3,22 +3,14 @@
   <img src="https://raw.githubusercontent.com/hsnaydd/buttono/master/buttono.svg?sanitize=true" alt="Buttono logo" width="300">
 </p>
 
-<p align="center">
-Buttono is a <a href="https://sass-lang.com/">Sass</a> mixin based on <strong>BEM</strong> naming convention. It helps you to create nice buttons in an easy way.
-</p>
+<p align="center">Buttono is a <a href="https://sass-lang.com/">Sass</a> mixin based on <strong>BEM</strong> naming convention. It helps you to create nice buttons in an easy way.</p>
 
 <br>
 
 <p align="center">
-  <a aria-label="npm version" href="https://www.npmjs.com/package/hsnaydd/buttono">
-    <img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg">
-  </a>
-  <a aria-label="license" href="/LICENSE">
-    <img alt="Lisence" src="https://img.shields.io/github/license/hsnaydd/buttono.svg">
-  </a>
-  <a aria-label="circleci" href="https://circleci.com/gh/hsnaydd/buttono/tree/master">
-    <img alt="Build Status" src="https://circleci.com/gh/hsnaydd/buttono/tree/master.svg?style=shield">
-  </a>
+  <a href="https://www.npmjs.com/package/hsnaydd/buttono"><img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg"></a>
+  <a href="/LICENSE"><img alt="Lisence" src="https://img.shields.io/github/license/hsnaydd/buttono.svg"></a>
+  <a href="https://circleci.com/gh/hsnaydd/buttono/tree/master"><img alt="Build Status" src="https://circleci.com/gh/hsnaydd/buttono/tree/master.svg?style=shield"></a>
 <p>
 
 ------
