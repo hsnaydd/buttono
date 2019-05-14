@@ -8,15 +8,9 @@
 <br>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/hsnaydd/buttono">
-    <img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg">
-  </a>
-  <a href="/LICENSE">
-    <img alt="Lisence" src="https://img.shields.io/github/license/hsnaydd/buttono.svg">
-  </a>
-  <a href="https://circleci.com/gh/hsnaydd/buttono/tree/master">
-    <img alt="Build Status" src="https://circleci.com/gh/hsnaydd/buttono/tree/master.svg?style=shield">
-  </a>
+  <a href="https://www.npmjs.com/package/hsnaydd/buttono"><img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg"></a>
+  <a href="/LICENSE"><img alt="Lisence" src="https://img.shields.io/github/license/hsnaydd/buttono.svg"></a>
+  <a href="https://circleci.com/gh/hsnaydd/buttono/tree/master"><img alt="Build Status" src="https://circleci.com/gh/hsnaydd/buttono/tree/master.svg?style=shield"></a>
 <p>
 
 ------
