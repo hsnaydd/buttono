@@ -139,7 +139,12 @@ $buttono-font-family: Helvetica;
 
 </details>
 
-## Configuration
+## Documentation
+
+- [Variables](#variables)
+- [Mixins](#mixins)
+  - [Block](#block)
+  - [Style Modifier](#style-modifier)
 
 ### Variables
 
