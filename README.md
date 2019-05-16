@@ -363,4 +363,4 @@ You can follow the change log from the [Releases page](https://github.com/hsnayd
 
 ## License
 
-Copyright (c) 2017 Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
+Copyright (c) 2018-2019  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
