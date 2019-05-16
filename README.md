@@ -15,6 +15,13 @@
 
 ------
 
+## Why use it?
+
+- Most of the time you will need only one color to create a button.
+- The buttons you create with buttono will look the same in all modern browsers. You won't have to worry about that.
+- Yes buttono following the BEM methodology, but you can use it with all the conventions without any problem.
+- Thanks to its flexible structure, you can configure it for any situation.
+
 ## Demo
 
 TODO
