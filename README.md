@@ -242,6 +242,10 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // Type: number
   $border-width: $buttono-border-width,
 
+  // Cursor for buttons
+  // Type: string
+  $cursor: pointer,
+
   // Font family for buttons
   // Type: string
   $font-family: $buttono-font-family,
@@ -257,6 +261,10 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // Padding inside buttons.
   // Type: number
   $padding: $buttono-padding,
+
+  // Text align for buttons
+  // Type: string
+  $text-align: center,
 
   // Display property for buttons
   // Type: list

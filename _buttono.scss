@@ -23,21 +23,23 @@ $buttono-opacity-disabled: 0.7 !default;
   $transition-duration: $buttono-transition-duration,
   $transition-property: $buttono-transition-property,
   $border-width: $buttono-border-width,
+  $cursor: pointer,
   $font-family: $buttono-font-family,
   $font-size: $buttono-font-size,
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
+  $text-align: center,
   $display: inline-block,
   $include-disabled-styles: $buttono-include-disabled-styles
 ) {
   border: $border-width solid transparent;
-  cursor: pointer;
+  cursor: $cursor;
   display: $display;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
   padding: $padding;
-  text-align: center;
+  text-align: $text-align;
   transition-duration: $transition-duration;
   user-select: none;
 
