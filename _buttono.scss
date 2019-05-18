@@ -28,7 +28,6 @@ $buttono-opacity-disabled: 0.7 !default;
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
   $display: inline-block,
-  $opacity-disabled: $buttono-opacity-disabled,
   $include-disabled-styles: $buttono-include-disabled-styles
 ) {
   border: $border-width solid transparent;
@@ -60,7 +59,6 @@ $buttono-opacity-disabled: 0.7 !default;
     &[aria-disabled='true'] {
       box-shadow: none;
       cursor: not-allowed;
-      opacity: $opacity-disabled;
     }
   }
 }
@@ -75,6 +73,7 @@ $buttono-opacity-disabled: 0.7 !default;
   $border-color-hover: undefined,
   $border-radius: $buttono-border-radius,
   $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
+  $opacity-disabled: $buttono-opacity-disabled,
   $include-disabled-styles: $buttono-include-disabled-styles,
   $background-color-disabled: undefined,
   $border-color-disabled: undefined,
@@ -165,6 +164,7 @@ $buttono-opacity-disabled: 0.7 !default;
       background-color: $background-color-disabled;
       border-color: $border-color-disabled;
       color: $color-disabled;
+      opacity: $opacity-disabled;
     }
   }
 }

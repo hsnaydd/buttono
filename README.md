@@ -90,7 +90,6 @@ $buttono-font-family: Helvetica;
 .c-button[aria-disabled='true'] {
   box-shadow: none;
   cursor: not-allowed;
-  opacity: 0.7;
 }
 
 .c-button--primary {
@@ -112,6 +111,7 @@ $buttono-font-family: Helvetica;
   background-color: #008cba;
   border-color: #008cba;
   color: #fff;
+  opacity: 0.7;
 }
 
 .c-button--secondary {
@@ -133,8 +133,8 @@ $buttono-font-family: Helvetica;
   background-color: lightblue;
   border-color: lightblue;
   color: #333;
+  opacity: 0.7;
 }
-
 ```
 
 </details>
@@ -262,10 +262,6 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // Type: list
   $display: inline-block,
 
-  // Opacity for a disabled button.
-  // Type: number
-  $opacity-disabled: $buttono-opacity-disabled
-
   // You can specify whether to include "disabled styles" through this variable
   // Type: boolean
   $include-disabled-styles: $buttono-include-disabled-styles
@@ -329,6 +325,10 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // pass this argument with the value that you want.
   // Type: number
   $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
+
+  // Opacity for a disabled button.
+  // Type: number
+  $opacity-disabled: $buttono-opacity-disabled
 
   // You can overwrite the global include-disabled-styles variable with this argument.
   // Type: boolean
