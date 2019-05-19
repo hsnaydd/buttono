@@ -267,7 +267,7 @@ We use these mixins to build the final CSS output of buttono component. You can 
   $text-align: center,
 
   // Display property for buttons
-  // Type: list
+  // Type: string
   $display: inline-block,
 
   // You can specify whether to include "disabled styles" through this variable
