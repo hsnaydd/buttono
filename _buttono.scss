@@ -29,6 +29,7 @@ $buttono-opacity-disabled: 0.7 !default;
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
   $text-align: center,
+  $vertical-align: middle,
   $display: inline-block,
   $include-disabled-styles: $buttono-include-disabled-styles
 ) {
@@ -42,13 +43,10 @@ $buttono-opacity-disabled: 0.7 !default;
   text-align: $text-align;
   transition-duration: $transition-duration;
   user-select: none;
+  vertical-align: $vertical-align;
 
   @if not($transition-duration == null) {
     transition-property: $transition-property;
-  }
-
-  @if ($display == inline-block) {
-    vertical-align: middle;
   }
 
   &:hover,

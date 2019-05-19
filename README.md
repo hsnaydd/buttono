@@ -266,6 +266,10 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // Type: string
   $text-align: center,
 
+  // Vertical align for buttons
+  // Type: string
+  $vertical-align: middle,
+
   // Display property for buttons
   // Type: string
   $display: inline-block,
