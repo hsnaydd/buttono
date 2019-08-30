@@ -93,28 +93,28 @@ $buttono-font-family: Helvetica;
 }
 
 .c-button--primary {
-  background-color: #008cba;
-  border-color: #008cba;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
   border-radius: 3px;
-  color: #fff;
+  color: #333;
 }
 
 .c-button--primary:hover {
-  background-color: #007095;
-  border-color: #007095;
-  color: #fff;
+  background-color: #b3b3b3;
+  border-color: #b3b3b3;
+  color: #333;
 }
 
 .c-button--primary:focus {
-  outline: 2px dotted #008cba;
+  outline: 2px dotted #333;
   outline-offset: 1px;
 }
 
 .c-button--primary:disabled,
 .c-button--primary[aria-disabled='true'] {
-  background-color: #008cba;
-  border-color: #008cba;
-  color: #fff;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #333;
   opacity: 0.7;
 }
 
