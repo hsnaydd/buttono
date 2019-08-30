@@ -15,11 +15,12 @@
 
 ------
 
-## Why use it?
+## Advantages
 
 - Most of the time you will need only one color to create a button.
 - The buttons you create with buttono will look the same in all modern browsers. You won't have to worry about that.
 - Yes buttono following the BEM methodology, but you can use it with all the conventions without any problem.
+- No need to worry about `focus` styles for accessibility.
 - Thanks to its flexible structure, you can configure it for any situation.
 
 ## Demo
@@ -99,11 +100,15 @@ $buttono-font-family: Helvetica;
   color: #fff;
 }
 
-.c-button--primary:hover,
-.c-button--primary:focus {
+.c-button--primary:hover {
   background-color: #007095;
   border-color: #007095;
   color: #fff;
+}
+
+.c-button--primary:focus {
+  outline: 2px dotted #008cba;
+  outline-offset: 1px;
 }
 
 .c-button--primary:disabled,
@@ -121,11 +126,15 @@ $buttono-font-family: Helvetica;
   color: #333;
 }
 
-.c-button--secondary:hover,
-.c-button--secondary:focus {
+.c-button--secondary:hover {
   background-color: #6fbbd3;
   border-color: #6fbbd3;
   color: #fff;
+}
+
+.c-button--secondary:focus {
+  outline: 2px dotted #333;
+  outline-offset: 1px;
 }
 
 .c-button--secondary:disabled,
@@ -217,6 +226,27 @@ $buttono-include-disabled-styles: true !default;
 // Opacity for a disabled button.
 // Type: number
 $buttono-opacity-disabled: 0.5 !default;
+
+// You can specify whether to include "focus styles" through this variable
+// Type: boolean
+$buttono-include-focus-styles: true !default;
+
+// Default outline width on focus state
+// Type: number
+$buttono-outline-width-focus: 2px !default;
+
+// Default outline style on focus state
+// Type: string
+$buttono-outline-style-focus: dotted !default;
+
+// Default outline color in focus state
+// `auto` value means that the mixin generates the outline color on focus itself
+// Type: color | auto
+$buttono-outline-color-focus: auto !default;
+
+// Default outline offset in focus state
+// Type: string
+$buttono-outline-offset-focus: 1px !default;
 ```
 
 ### Mixins
@@ -359,7 +389,28 @@ We use these mixins to build the final CSS output of buttono component. You can 
   // Font color for button on disabled status.
   // `undefined` value means that the font color in disabled state will be the same with the font color in normal state
   // Type: color | undefined
-  $color-disabled: undefined
+  $color-disabled: undefined,
+
+  // You can specify whether to include "focus styles" through this variable
+  // Type: boolean
+  $include-focus-styles: $buttono-include-focus-styles,
+
+  // Outline width on focus state
+  // Type: number
+  $outline-width-focus: $buttono-outline-width-focus,
+
+  // Outline style on focus state
+  // Type: string
+  $outline-style-focus: $buttono-outline-style-focus,
+
+  // Outline color in focus state
+  // `auto` value means that the mixin generates the outline color on focus itself
+  // Type: color | auto
+  $outline-color-focus: $buttono-outline-color-focus,
+
+  // Outline offset in focus state
+  // Type: string
+  $outline-offset-focus: $buttono-outline-offset-focus
 ) {
   // ... mixin content ...
 }
