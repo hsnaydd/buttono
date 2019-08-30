@@ -174,7 +174,7 @@ $buttono-font-family: null !default;
 
 // Default background color for `buttono-style-modifier` mixin.
 // Type: color
-$buttono-background-color: #008cba !default;
+$buttono-background-color: #e0e0e0 !default;
 
 // Default Background color on hover.
 // `auto` value means that the mixin generates the background
