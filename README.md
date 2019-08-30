@@ -90,7 +90,6 @@ $buttono-font-family: Helvetica;
 .c-button:disabled,
 .c-button[aria-disabled='true'] {
   box-shadow: none;
-  cursor: not-allowed;
 }
 
 .c-button--primary {

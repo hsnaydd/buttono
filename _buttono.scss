@@ -63,7 +63,6 @@ $buttono-outline-offset-focus: 1px !default;
     &:disabled,
     &[aria-disabled='true'] {
       box-shadow: none;
-      cursor: not-allowed;
     }
   }
 }
