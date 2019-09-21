@@ -39,7 +39,6 @@ $buttono-outline-offset-focus: 1px !default;
   $include-disabled-styles: $buttono-include-disabled-styles
 ) {
   border: $border-width solid transparent;
-  cursor: $cursor;
   display: $display;
   font-family: $font-family;
   font-size: $font-size;
@@ -49,6 +48,10 @@ $buttono-outline-offset-focus: 1px !default;
   transition-duration: $transition-duration;
   user-select: none;
   vertical-align: $vertical-align;
+
+  &:not(:disabled):not([aria-disabled='true']) {
+    cursor: $cursor;
+  }
 
   @if not($transition-duration == null) {
     transition-property: $transition-property;
