@@ -22,24 +22,20 @@
   "author": "Hasan Aydoğdu <hsnaydd@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@atolye15/stylelint-config": "^1.2.0",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "prettier": "^1.10.2",
-    "prettier-stylelint": "^0.4.2",
     "stylelint": "^10.0.1",
     "stylelint-config-prettier": "^5.1.0",
-    "stylelint-config-sass-guidelines": "^6.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
-    "stylelint-declaration-strict-value": "^1.0.4",
-    "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.6.1"
+    "stylelint-prettier": "^1.1.1"
   },
   "scripts": {
     "lint": "stylelint 'demo/src/*.scss' '_buttono.scss' --syntax scss",
-    "fmt": "prettier-stylelint --quiet --write \"*.scss\"",
+    "format:css": "yarn lint --fix",
     "start": "gulp serve",
     "build": "gulp build"
   },
