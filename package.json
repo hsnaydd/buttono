@@ -23,14 +23,14 @@
   "license": "MIT",
   "devDependencies": {
     "@atolye15/stylelint-config": "^1.2.0",
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
-    "prettier": "^1.10.2",
-    "stylelint": "^10.0.1",
-    "stylelint-config-prettier": "^5.1.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-prettier": "^5.2.0",
     "stylelint-prettier": "^1.1.1"
   },
   "scripts": {

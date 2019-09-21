@@ -4,9 +4,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const browserSync = require('browser-sync');
+const browserSyncBase = require('browser-sync');
 
-const reload = browserSync.reload;
+const browserSync = browserSyncBase.create();
 
 const browserSyncConfigs = {
   notify: false,
@@ -24,9 +24,16 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('demo/dist'));
 });
 
-gulp.task('build', ['styles']);
+gulp.task('build', gulp.series('styles'));
+
+// Reload
+gulp.task('reload', cb => {
+  browserSync.reload();
+  cb();
+});
 
 gulp.task('serve', () => {
-  browserSync(browserSyncConfigs);
-  gulp.watch(['demo/src/**/*.scss'], ['styles', reload]);
+  browserSync.init(browserSyncConfigs);
+
+  gulp.watch(['_buttono.scss', 'demo/src/**/*.scss'], gulp.series('styles', 'reload'));
 });
