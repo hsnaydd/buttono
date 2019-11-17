@@ -23,26 +23,13 @@
   "license": "MIT",
   "devDependencies": {
     "@atolye15/stylelint-config": "^1.3.0",
-    "autoprefixer": "^9.7.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
     "prettier": "^1.19.1",
     "stylelint": "^12.0.0",
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-prettier": "^1.1.1"
   },
   "scripts": {
-    "lint": "stylelint 'demo/src/*.scss' '_buttono.scss' --syntax scss",
-    "format:css": "yarn lint --fix",
-    "start": "gulp serve",
-    "build": "gulp build"
-  },
-  "browserslist": [
-    ">1%",
-    "last 4 versions",
-    "Firefox ESR",
-    "ie >= 10"
-  ]
+    "lint": "stylelint '_buttono.scss' --syntax scss",
+    "format": "yarn lint --fix"
+  }
 }
