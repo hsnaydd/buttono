@@ -1,19 +1,6 @@
 {
-  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
-  "plugins": [
-    "stylelint-declaration-strict-value",
-    "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-scss"
-  ],
+  "extends": ["@atolye15/stylelint-config", "stylelint-prettier/recommended"],
   "rules": {
-    "media-query-list-comma-space-after": "always-single-line",
-    "selector-class-pattern": null,
-    "scale-unlimited/declaration-strict-value": [
-      ["color", "z-index"], {
-        ignoreKeywords: "inherit"
-      }
-    ],
-    "plugin/declaration-block-no-ignored-properties": true,
-    "max-nesting-depth": 2
+    "meowtec/no-px": null,
   }
 }

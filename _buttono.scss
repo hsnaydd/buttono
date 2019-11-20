@@ -5,7 +5,7 @@
 $buttono-function-factor: -20% !default;
 $buttono-background-color-lightness-threshold: 70% !default;
 $buttono-font-family: null !default;
-$buttono-background-color: #008cba !default;
+$buttono-background-color: #e0e0e0 !default;
 $buttono-background-color-hover: auto !default;
 $buttono-border-radius: 3px !default;
 $buttono-font-size: 16px !default;
@@ -18,36 +18,43 @@ $buttono-transition-duration: 0.4s !default;
 $buttono-transition-property: background-color, color, border-color !default;
 $buttono-include-disabled-styles: true !default;
 $buttono-opacity-disabled: 0.7 !default;
+$buttono-include-focus-styles: true !default;
+$buttono-outline-width-focus: 2px !default;
+$buttono-outline-style-focus: dotted !default;
+$buttono-outline-color-focus: auto !default;
+$buttono-outline-offset-focus: 1px !default;
 
 @mixin buttono-block(
   $transition-duration: $buttono-transition-duration,
   $transition-property: $buttono-transition-property,
   $border-width: $buttono-border-width,
+  $cursor: pointer,
   $font-family: $buttono-font-family,
   $font-size: $buttono-font-size,
   $line-height: $buttono-line-height,
   $padding: $buttono-padding,
+  $text-align: center,
+  $vertical-align: middle,
   $display: inline-block,
-  $opacity-disabled: $buttono-opacity-disabled,
   $include-disabled-styles: $buttono-include-disabled-styles
 ) {
-  border: $border-width solid transparent;
-  cursor: pointer;
   display: $display;
+  padding: $padding;
+  border: $border-width solid transparent;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
-  padding: $padding;
-  text-align: center;
+  text-align: $text-align;
   transition-duration: $transition-duration;
   user-select: none;
+  vertical-align: $vertical-align;
+
+  &:not(:disabled):not([aria-disabled='true']) {
+    cursor: $cursor;
+  }
 
   @if not($transition-duration == null) {
     transition-property: $transition-property;
-  }
-
-  @if ($display == inline-block) {
-    vertical-align: middle;
   }
 
   &:hover,
@@ -59,8 +66,6 @@ $buttono-opacity-disabled: 0.7 !default;
     &:disabled,
     &[aria-disabled='true'] {
       box-shadow: none;
-      cursor: not-allowed;
-      opacity: $opacity-disabled;
     }
   }
 }
@@ -75,10 +80,16 @@ $buttono-opacity-disabled: 0.7 !default;
   $border-color-hover: undefined,
   $border-radius: $buttono-border-radius,
   $background-color-lightness-threshold: $buttono-background-color-lightness-threshold,
+  $opacity-disabled: $buttono-opacity-disabled,
   $include-disabled-styles: $buttono-include-disabled-styles,
   $background-color-disabled: undefined,
   $border-color-disabled: undefined,
-  $color-disabled: undefined
+  $color-disabled: undefined,
+  $include-focus-styles: $buttono-include-focus-styles,
+  $outline-width-focus: $buttono-outline-width-focus,
+  $outline-style-focus: $buttono-outline-style-focus,
+  $outline-color-focus: $buttono-outline-color-focus,
+  $outline-offset-focus: $buttono-outline-offset-focus
 ) {
   @if $background-color-hover == auto {
     $background-color-hover: scale-color($background-color, $lightness: $buttono-function-factor);
@@ -140,11 +151,25 @@ $buttono-opacity-disabled: 0.7 !default;
     border-width: $border-width;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $background-color-hover;
     border-color: $border-color-hover;
     color: $color-hover;
+  }
+
+  @if $outline-color-focus == auto {
+    $outline-color-focus: if(
+      $background-color-lightness > $background-color-lightness-threshold,
+      $color,
+      $background-color
+    );
+  }
+
+  @if $include-focus-styles {
+    &:focus {
+      outline: $outline-width-focus $outline-style-focus $outline-color-focus;
+      outline-offset: $outline-offset-focus;
+    }
   }
 
   @if $background-color-disabled == undefined {
@@ -165,6 +190,7 @@ $buttono-opacity-disabled: 0.7 !default;
       background-color: $background-color-disabled;
       border-color: $border-color-disabled;
       color: $color-disabled;
+      opacity: $opacity-disabled;
     }
   }
 }
