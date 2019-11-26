@@ -1,0 +1,11 @@
+{
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "path-intellisense.mappings": {
+    "@components": "${workspaceRoot}/src/components",
+    "@objects": "${workspaceRoot}/src/objects",
+    "@templates": "${workspaceRoot}/src/templates"
+  }
+}

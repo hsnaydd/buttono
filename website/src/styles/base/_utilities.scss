@@ -1,0 +1,623 @@
+//
+// Utilities
+//
+// These are helper classes that can speed up your development and reduce CSS property declarations.
+// > Most of the utility classes do not contain any `!important` declarations. If you require such overrides
+// feel free to add.
+//
+
+//
+// Common
+//
+// | <span style="width: 210px; display: block">Class<span> | Description |
+// | -------------------------- | ------------- |
+// | `.u-clearfix`              | Clear any floats within an element. Can also be used as a mixin. `@include clearfix` |
+// | `.u-float-right`           | Set `float: right` |
+// | `.u-float-left`            | Set `float: left` |
+// | `.u-float-none`            | Set `float: none` |
+// | `.u-border-radius-50%   `  | Set `border-radius: 50%` |
+// | `.u-position-static`       | Set `position: static` |
+// | `.u-position-relative`     | Set `position: relative` |
+// | `.u-overflow-hidden`       | Set `overflow: hidden` |
+// | `.u-img-fluid`             | Responsive images (ensure images don't scale beyond their parents) |
+// | `.u-text-truncate`         | For longer content, you can add this class to truncate the text with an ellipsis. Requires `display: inline-block` or `display: block`. Can also be used as a mixin. `@include text-truncate`|
+// | `.u-table-layout-fixed`    | Set `table-layout: fixed`  |
+// | `.u-user-select-none`      | Prevents the text from being selectable |
+// | `.u-pointer-events-none`   | Make element not react to pointer events, like `:hover` or `click`. |
+// | `.u-cursor-pointer`        | Set the mouse cursor to a pointer and indicate a link. |
+//
+
+.u-clearfix {
+  @include clearfix;
+}
+
+.u-img-fluid {
+  @include img-fluid;
+}
+
+.u-text-truncate {
+  @include text-truncate;
+}
+
+//
+// Colors
+//
+
+//
+// Colors
+//
+// | Class              | Description   |
+// | ------------------ | ------------- |
+// | `.u-color-muted`   | <span class="u-color-muted">Set the text color of an element to muted color.</span> |
+// | `.u-color-primary` | <span class="u-color-primary">Set the text color of an element to primary color.</span> |
+// | `.u-color-success` | <span class="u-color-success">Set the text color of an element to success color.</span> |
+// | `.u-color-alert`   | <span class="u-color-alert">Set the text color of an element to alert color.</span> |
+// | `.u-color-warning` | <span class="u-color-warning">Set the text color of an element to warning color.</span> |
+//
+
+//
+// Background
+//
+// | Class                         | Description   |
+// | ----------------------------- | ------------- |
+// | `.u-background-color-primary` | <span class="u-background-color-primary u-pad-2xsmall">Set the bg color of an element.</span> |
+// | `.u-background-color-success` | <span class="u-background-color-success u-pad-2xsmall">Set the bg color of an element.</span> |
+// | `.u-background-color-alert`   | <span class="u-background-color-alert u-pad-2xsmall">Set the bg color of an element.</span> |
+// | `.u-background-color-warning` | <span class="u-background-color-warning u-pad-2xsmall">Set the bg color of an element.</span> |
+//
+
+//
+// Display
+//
+// | Class                      | Description |
+// | -------------------------- | ----------- |
+// | `.u-display-block`         | Set the box type of the element to `block`. |
+// | `.u-display-inline-block`  | Set the box type of the element to `inline-block` |
+// | `.u-display-inline`        | Set the box type of the element to `inline`. |
+// | `.u-display-table`         | Set the box type of the element to `table`. |
+// | `.u-display-table-row`     | Set the box type of the element to `table-row`. |
+// | `.u-display-table-cell`    | Set the box type of the element to `table-cell`. |
+// | `.u-display-flex`          | Set the box type of the element to `flex`. You can use this class with responsive breakpoints;<br> `.u-display-flex@{breakpoint}-{up or down}` |
+// | `.u-display-inline-flex`   | Set the box type of the element to `inline-flex`. |
+// | `.u-display-none`          | Set the box type of the element to `none`. You can use this class with responsive breakpoints;<br> `.u-display-none@{breakpoint}-{up or down}` |
+//
+
+//
+// Flex
+//
+// | Class                     | Description |
+// | ------------------------- | ----------- |
+// | `.u-flex-1`               | Allow a flex item to grow and shrink as needed, ignoring its initial size. |
+// | `.u-flex-none`            | Prevent a flex item from growing or shrinking. |
+// | `.u-flex-grow-1`          | Allow a flex item to grow to fill any available space. |
+// | `.u-flex-shrink-0`        | Prevent a flex item from shrinking. |
+//
+
+//
+// Direction
+//
+// | Class                               | Description |
+// | ----------------------------------- | ----------- |
+// | `.u-flex-direction-row`             | Position flex items in the normal horizontal direction. |
+// | `.u-flex-direction-row-reverse`     | Position flex items in the reverse horizontal direction. |
+// | `.u-flex-direction-column`          | Position flex items vertically. |
+// | `.u-flex-direction-column-reverse`  | Position flex items vertically in the reverse direction. |
+//
+
+//
+// Wrapping
+//
+// | Class                          | Description |
+// | ------------------------------ | ----------- |
+// | `.u-flex-wrap-no-wrap`         | Don't allow flex items to wrap. |
+// | `.u-flex-wrap-wrap`            | Allow flex items to wrap in the normal direction. |
+// | `.u-flex-wrap-wrap-reverse`    | Allow flex items to wrap in the reverse direction. |
+//
+
+//
+// Justify Content
+//
+// | Class                              | Description |
+// | ---------------------------------- | ----------- |
+// | `.u-justify-content-flex-start`    | Justify items against the start of the container. |
+// | `.u-justify-content-center`        | Justify items in the center of the container. |
+// | `.u-justify-content-flex-end`      | Justify items against the end of the container. |
+// | `.u-justify-content-space-between` | Justify items by adding an equal amount of space between each one. |
+// | `.u-justify-content-space-around`  | Justify items by adding an equal amount of space around each one. |
+//
+
+//
+// Align Items
+//
+// | Class                      | Description |
+// | -------------------------- | ----------- |
+// | `.u-align-items-stretch`   | Stretch items to fill the cross axis. |
+// | `.u-align-items-flex-start`| Align items against the start of the cross axis. |
+// | `.u-align-items-center`    | Align items along the center of the cross axis. |
+// | `.u-align-items-flex-end`  | Align items against the end of the cross axis. |
+// | `.u-align-items-baseline`  | Align the baselines of each item. |
+//
+
+//
+// Align Content
+//
+// `align-content` does not take left and right values!
+//
+// | Class                            | Description |
+// | ---------------------------------| ----------- |
+// | `.u-align-content-stretch`       | Distribute items evenly Stretch 'auto'-sized items to fit the container |
+// | `.u-align-content-flex-start`    | Pack flex items from the start |
+// | `.u-align-content-center`        | Pack items around the center |
+// | `.u-align-content-flex-end`      | Pack flex items from the end |
+// | `.u-align-content-space-between` | Distribute items evenly The first item is flush with the start, the last is flush with the end |
+// | `.u-align-content-space-around`  | Distribute items evenly Items have a half-size space on either end |
+//
+
+//
+// Align Self
+//
+// | Class                      | Description |
+// | -------------------------- | ----------- |
+// | `.u-align-self-auto`       | Align item based on the container's `align-items` property. |
+// | `.u-align-self-flex-start` | Align item against the start of the cross axis. |
+// | `.u-align-self-center`     | Align item along the center of the cross axis. |
+// | `.u-align-self-flex-end`   | Align item against the end of the cross axis. |
+// | `.u-align-self-stretch`    | Stretch item to fill the cross axis. |
+//
+
+//
+// Sizing
+//
+// | Class                     | Description |
+// | ------------------------- | ----------- |
+// | `.u-max-width-100%`       | Set the element's maximum width to `100%`. |
+// | `.u-min-width-0`          | Set the element's minimum width to `0`. |
+// | `.u-min-width-100%`       | Set the element's minimum width to `100%`. |
+// | `.u-width-100%`           | Set the element's width to `100%`. You can use this class with responsive breakpoints;<br> `.u-width-100%@{breakpoint}-{up or down}` |
+// | `.u-width-auto`           | Set the element's width to `auto`. You can use this class with responsive breakpoints;<br> `.u-width-auto@{breakpoint}-{up or down}` |
+// | `.u-width-50%`            | Set the element's width to `50%`. |
+// | `.u-height-100%`          | Set the element's height to `100%`. |
+// | `.u-height-100vh`         | Set the element's height to `100vh`. |
+//
+
+//
+// Font-Sizing
+//
+// | Class                  | Description |
+// | ---------------------- | ----------- |
+// | `.u-font-size-2xsmall` | Set the text size to 0.625rem (10px). |
+// | `.u-font-size-xsmall`  | Set the text size to .75rem (12px). |
+// | `.u-font-size-small`   | Set the text size to 0.875rem (14px). |
+// | `.u-font-size-base`    | Set the text size to 1rem (16px). |
+// | `.u-font-size-medium`  | Set the text size to 1.125rem (18px). |
+// | `.u-font-size-large`   | Set the text size to 1.25rem (20px) |
+// | `.u-font-size-xlarge`  | Set the text size to 1.5rem (24px). |
+//
+
+//
+// Text
+//
+// | Class                           | Description |
+// | ------------------------------- | ----------- |
+// | `.u-word-break-break-all`       | Break words between any two letters |
+// | `.u-white-space-nowrap`         | Prevent text from wrapping within an element. |
+// | `.u-text-decoration-underline`  | Underlines the text within an element. |
+// | `.u-text-decoration-none     `  | Disables any text decorations previously applied to an element. |
+// | `.u-text-decoration-none:hover` | Disables any text decorations previously applied to an element when visible on hover |
+//
+
+.u-text-decoration-none\:hover:hover {
+  // stylelint-disable-next-line declaration-no-important
+  text-decoration: none !important;
+}
+
+//
+// Alignment
+//
+// | Class                   | Description |
+// | ----------------------- | ----------- |
+// | `.u-text-align-left`    | Align text to the left. |
+// | `.u-text-align-right`   | Align text to the right. |
+// | `.u-text-align-center`  | Align text to the center. |
+// | `.u-text-align-justify` | Justify text. |
+//
+
+//
+// Transformation
+//
+// | Class                          | Description |
+// | ------------------------------ | ----------- |
+// | `.u-text-transform-lowercase`  | Makes all text lowercase within an element. |
+// | `.u-text-transform-uppercase`  | Makes all text uppercase within an element. |
+// | `.u-text-transform-capitalize` | Capitalizes the text within an element. |
+//
+
+//
+// Font Weights
+//
+// | Class                     | Description |
+// | ------------------------- | ----------- |
+// | `.u-font-weight-300` | Set the font weight of an element to 300. |
+// | `.u-font-weight-400` | Set the font weight of an element to 400. |
+// | `.u-font-weight-500` | Set the font weight of an element to 500. |
+// | `.u-font-weight-600` | Set the font weight of an element to 600. |
+// | `.u-font-weight-700` | Set the font weight of an element to 700. |
+//
+
+//
+// Vertical Align
+//
+// | Class                           | Description |
+// | ------------------------------- | ----------- |
+// | `.u-vertical-align-top`         | Align the top of an element and its descendants with the top of the entire line. |
+// | `.u-vertical-align-bottom`      | Align the bottom of an element and its descendants with the bottom of the entire line. |
+// | `.u-vertical-align-middle`      | Align the middle of an element with the baseline plus half the x-height of the parent. |
+// | `.u-vertical-align-baseline`    | Align the baseline of an element with the baseline of its parent. (Initial value) |
+// | `.u-vertical-align-text-bottom` | Align the bottom of an element with the bottom of the parent element's font. |
+//
+
+//
+// Spacing
+//
+// Control an element's margin using the `.u-{property}-{side?}-{size}` utility.
+// For example, `.u-margin-top` would add margin to the top of the element.
+// You can also use this class with responsive breakpoints; `.u-margin-{side?}-{size}@{breakpoint}-{up or down}`.
+//
+// **Where sides is one of:**
+// - `top` - for classes that set `margin-top` or `padding-top`
+// - `bottom` - for classes that set `margin-bottom` or `padding-bottom`
+// - `left` - for classes that set `margin-left` or `padding-left`
+// - `right` - for classes that set `margin-right` or `padding-right`
+// - `sides` - for classes that set both `*-left` and `*-right`
+// - `ends` - for classes that set both `*-top` and `*-bottom`
+//
+// **Where size is one of:**
+// - undefined - (by default) for classes that set the margin `$g-gaps[normal]` or padding to `$g-pads[normal]`
+// - `auto` - for classes that set the margin `auto` (exist only for margins!)
+// - `0` - for classes that set the margin `0` (exist only for margins!)
+// - `small` - (by default) for classes that set the margin `$g-gaps[small]` or padding to `$g-pads[small]`
+// - `xsmall` - (by default) for classes that set the margin `$g-gaps[xsmall]` or padding to `$g-pads[xsmall]`
+// - `2xsmall` - (by default) for classes that set the margin `$g-gaps[2xsmall]` or padding to `$g-pads[2xsmall]`
+// - `medium` - (by default) for classes that set the margin `$g-gaps[medium]` or padding to `$g-pads[medium]`
+// - `large` - (by default) for classes that set the margin `$g-gaps[large]` or padding to `$g-pads[large]`
+// - `xlarge` - (by default) for classes that set the margin `$g-gaps[xlarge]` or padding to `$g-pads[xlarge]`
+// - `2xlarge` - (by default) for classes that set the padding to `$g-pads[xlarge]` (not available for margin!)
+//
+// **Examples**
+//
+// ```css
+// .u-margin-top {
+//   margin-top: gap(); // ~24px  by default
+// }
+//
+// .u-margin-left-small {
+//   margin-left: gap(small); // ~16px by default
+// }
+//
+// .u-padding-sides-medium {
+//   padding-left: pad(medium); // ~40px by default
+//   padding-right: pad(medium);
+// }
+//
+// .u-padding {
+//   padding: pad(); // ~32px by default
+// }
+// ```
+//
+
+//
+// Utilities
+//
+// Example Config:
+//
+// $g-utilities: (
+//   'float': (
+//     property: float,
+//     values: left right none,
+//   ),
+//   'color': (
+//     'display': (
+//       property: display,
+//       values: block
+//         (
+//           value: none,
+//           responsive: (
+//             md: up,
+//             sm: all,
+//           ),
+//         )
+//         inline inline-block table table-row table-cell
+//         (
+//           value: flex,
+//           responsive: true,
+//         )
+//         (
+//           value: inline-flex,
+//           responsive: (
+//             md: up,
+//           )
+//           sm,
+//         ),
+//     ),
+//     'font-size': (
+//       property: font-size,
+//       values: (
+//         'small': (
+//           value: $g-font-size-small,
+//           responsive: true,
+//         ),
+//         'base': (
+//           value: $g-font-size-base,
+//           responsive: (
+//             md: up,
+//             xs: all,
+//           ),
+//         ),
+//         'medium': $g-font-size-medium,
+//       ),
+//     ),
+//     'border-right': (
+//       property: border-right,
+//       values: (
+//         '': (
+//           value: 1px solid $g-border-color,
+//           responsive: (
+//             md: down,
+//           ),
+//         ),
+//       ),
+//     ),
+//   ),
+// );
+
+$margin-utility-values: transform-spaces-map-to-utilty-values(
+  map-merge(
+    (
+      'auto': auto,
+      '0': 0,
+    ),
+    $g-gaps
+  )
+);
+$padding-utility-values: transform-spaces-map-to-utilty-values($g-pads);
+
+$g-utilities: (
+  'float': (
+    property: float,
+    values: left right none,
+  ),
+  'border-radius': (
+    property: border-radius,
+    values: (
+      '50' + quote(\%): 50%,
+    ),
+  ),
+  'position': (
+    property: position,
+    values: static relative,
+  ),
+  'overflow': (
+    property: overflow,
+    values: hidden,
+  ),
+  'table-layout': (
+    property: table-layout,
+    values: fixed,
+  ),
+  'user-select': (
+    property: user-select,
+    values: none,
+  ),
+  'pointer-events': (
+    property: pointer-events,
+    values: none,
+  ),
+  'cursor': (
+    property: cursor,
+    values: pointer,
+  ),
+  'color': (
+    property: color,
+    values: (
+      'muted': $g-text-muted-color,
+      'primary': $primary-color,
+      'success': $success-color,
+      'alert': $alert-color,
+      'warning': $warning-color,
+    ),
+  ),
+  'background-color': (
+    property: background-color,
+    values: (
+      'primary': $primary-color,
+      'success': $success-color,
+      'alert': $alert-color,
+      'warning': $warning-color,
+    ),
+  ),
+  'display': (
+    property: display,
+    values: block
+      (
+        value: none,
+        responsive: true,
+      )
+      inline inline-block table table-row table-cell
+      (
+        value: flex,
+        responsive: true,
+      )
+      inline-flex,
+  ),
+  'flex': (
+    property: flex,
+    values: 1 none,
+  ),
+  'flex-grow': (
+    property: flex-grow,
+    values: 1,
+  ),
+  'flex-shrink': (
+    property: flex-shrink,
+    values: 0,
+  ),
+  'flex-direction': (
+    property: flex-direction,
+    values: row row-reverse column column-reverse,
+  ),
+  'flex-wrap': (
+    property: flex-wrap,
+    values: wrap nowrap wrap-reverse,
+  ),
+  'justify-content': (
+    property: justify-content,
+    values: flex-start flex-end center space-between space-around,
+  ),
+  'align-items': (
+    property: align-items,
+    values: flex-start flex-end center baseline stretch,
+  ),
+  'align-content': (
+    property: align-content,
+    values: flex-start flex-end center space-between space-around stretch,
+  ),
+  'align-self': (
+    property: align-self,
+    values: auto flex-start flex-end center stretch,
+  ),
+  'max-width': (
+    property: max-width,
+    values: (
+      '100' + quote(\%): 100%,
+    ),
+  ),
+  'min-width': (
+    property: min-width,
+    values: (
+      '100' + quote(\%): 100%,
+      '0': 0,
+    ),
+  ),
+  'width': (
+    property: width,
+    values: (
+      '100' + quote(\%):
+        (
+          value: 100%,
+          responsive: true,
+        ),
+      'auto': (
+        value: auto,
+        responsive: true,
+      ),
+      '50' + quote(\%): 50%,
+    ),
+  ),
+  'height': (
+    property: height,
+    values: (
+      '100' + quote(\%): 100%,
+      '100vh': 100vh,
+    ),
+  ),
+  'font-size': (
+    property: font-size,
+    values: (
+      '2xsmall': $g-font-size-2xsmall,
+      'xsmall': $g-font-size-xsmall,
+      'small': $g-font-size-small,
+      'base': $g-font-size-base,
+      'medium': $g-font-size-medium,
+      'large': $g-font-size-large,
+      'xlarge': $g-font-size-xlarge,
+    ),
+  ),
+  'word-break': (
+    property: word-break,
+    values: break-all,
+  ),
+  'white-space': (
+    property: white-space,
+    values: nowrap,
+  ),
+  'text-decoration': (
+    property: text-decoration,
+    values: underline none,
+  ),
+  'text-align': (
+    property: text-align,
+    values: left right center justify,
+  ),
+  'text-transform': (
+    property: text-transform,
+    values: lowercase uppercase capitalize,
+  ),
+  'font-weight': (
+    property: font-weight,
+    values: 300 400 500 600 700,
+  ),
+  'vertical-align': (
+    property: vertical-align,
+    values: top bottom middle baseline text-bottom,
+  ),
+  'margin': (
+    property: margin,
+    values: $margin-utility-values,
+  ),
+  'margin-top': (
+    property: margin-top,
+    values: $margin-utility-values,
+  ),
+  'margin-bottom': (
+    property: margin-bottom,
+    values: $margin-utility-values,
+  ),
+  'margin-left': (
+    property: margin-left,
+    values: $margin-utility-values,
+  ),
+  'margin-right': (
+    property: margin-right,
+    values: $margin-utility-values,
+  ),
+  'margin-sides': (
+    property: margin-left margin-right,
+    values: $margin-utility-values,
+  ),
+  'margin-ends': (
+    property: margin-top margin-bottom,
+    values: $margin-utility-values,
+  ),
+  'padding': (
+    property: padding,
+    values: $padding-utility-values,
+  ),
+  'padding-top': (
+    property: padding-top,
+    values: $padding-utility-values,
+  ),
+  'padding-bottom': (
+    property: padding-bottom,
+    values: $padding-utility-values,
+  ),
+  'padding-left': (
+    property: padding-left,
+    values: $padding-utility-values,
+  ),
+  'padding-right': (
+    property: padding-right,
+    values: $padding-utility-values,
+  ),
+  'padding-sides': (
+    property: padding-left padding-right,
+    values: $padding-utility-values,
+  ),
+  'padding-ends': (
+    property: padding-top padding-bottom,
+    values: $padding-utility-values,
+  ),
+);
+
+@each $key, $utility in $g-utilities {
+  @include generate-utility($utility, $key);
+}

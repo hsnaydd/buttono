@@ -1,0 +1,218 @@
+//
+// BASE
+// --------------------------------------------------
+
+//
+// Scaffolding
+// -------------------------
+
+// Body reset
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+// 2. Change the default tap highlight to be completely transparent in iOS.
+
+html {
+  box-sizing: border-box; // 1
+  -webkit-tap-highlight-color: transparent; // 2
+}
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  // stylelint-disable at-rule-no-vendor-prefix
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+//
+// Body
+//
+// 1. Set an explicit initial text-align value so that we can later use the
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+  background-color: $g-body-bg;
+  color: $g-text-color;
+  font-family: $g-font-family-base;
+  font-size: $g-font-size-base;
+  line-height: $g-line-height-base;
+  text-align: left; // 1
+}
+
+[role='button'] {
+  cursor: pointer;
+}
+
+// Links
+
+a {
+  color: $g-link-color;
+  text-decoration: none;
+  transition: $g-link-transition;
+
+  &:hover {
+    color: $g-link-hover-color;
+    text-decoration: $g-link-hover-decoration;
+  }
+}
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+  margin: 0;
+}
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+// Horizontal rules
+
+hr {
+  border: 0;
+  border-top: 1px solid;
+  margin-top: $g-line-height-computed;
+  margin-bottom: $g-line-height-computed;
+  color: $g-hr-border-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.heading {
+  @include heading-styles();
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: $g-line-height-computed;
+  margin-bottom: $g-line-height-computed;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: ($g-line-height-computed / 1.5);
+  margin-bottom: ($g-line-height-computed / 1.5);
+}
+
+h1,
+.h1 {
+  font-size: $g-font-size-h1;
+}
+
+h2,
+.h2 {
+  font-size: $g-font-size-h2;
+}
+
+h3,
+.h3 {
+  font-size: $g-font-size-h3;
+}
+
+h4,
+.h4 {
+  font-size: $g-font-size-h4;
+}
+
+h5,
+.h5 {
+  font-size: $g-font-size-h5;
+}
+
+h6,
+.h6 {
+  font-size: $g-font-size-h6;
+}
+
+//
+// Body text
+//
+
+p {
+  margin-top: ($g-line-height-computed / 1.5);
+  margin-bottom: 0;
+}
+
+//
+// Emphasis & misc
+//
+
+mark {
+  padding: 0.2em;
+}
+
+//
+// Lists
+//
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($g-line-height-computed / 1.5);
+
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $g-line-height-computed;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+//
+// Misc
+//
+
+// Addresses
+address {
+  margin-bottom: $g-line-height-computed;
+  font-style: normal;
+  line-height: inherit;
+}

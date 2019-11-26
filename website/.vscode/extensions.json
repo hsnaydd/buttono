@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "guillaumedoutriaux.name-that-color", // Name That Colors
+    "esbenp.prettier-vscode", // Prettier
+    "shinnn.stylelint", // Stylelint
+    "dbaeumer.vscode-eslint", // Eslint
+    "mblode.twig-language-2", // Twig Language
+    "naumovs.color-highlight", // Color Highlight
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "formulahendry.auto-close-tag", // Auto Close Tag
+    "editorconfig.editorconfig", // Editor Config
+    "zignd.html-css-class-completion", // IntelliSense for CSS class names in HTML
+    "mrmlnc.vscode-scss", // SCSS IntelliSense
+    "christian-kohler.path-intellisense" // Path IntelliSense
+  ]
+}
