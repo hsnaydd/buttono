@@ -258,11 +258,11 @@ $info-color: color-palette('info', 500);
 // Project Color Configs
 // -------------------------
 
-$g-body-bg: $color-white !default;
-$g-text-color: color-palette('gray', 900) !default;
+$g-body-bg: color-palette('primary', 500) !default;
+$g-text-color: $color-white !default;
 $g-headings-color: inherit !default;
-$g-link-color: $primary-color !default;
-$g-link-hover-color: darken($g-link-color, 15%) !default;
+$g-link-color: color-palette('primary', 200) !default;
+$g-link-hover-color: color-palette('primary', 300) !default;
 $g-border-color: color-palette('gray', 100) !default;
-$g-text-muted-color: color-palette('gray', 600) !default;
+$g-text-muted-color: color-palette('primary', 100) !default;
 $g-hr-border-color: $g-border-color !default;
