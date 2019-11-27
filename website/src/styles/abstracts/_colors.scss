@@ -1,26 +1,231 @@
 //
+// Colors
+//
+// Styleguide Colors
+
+//
 // Palletes
-// -------------------------
+//
+// Styleguide Colors.Palettes
+
+//
+// Primary Palette
+//
+// Colors:
+// 50: #efeffb
+// 100: #d7d7f4
+// 200: #b2b2e9
+// 300: #7b7bbf
+// 400: #474780
+// 500: #12122c
+// 600: #0d0d25
+// 700: #09091f
+// 800: #050519
+// 900: #030315
+//
+// Styleguide Colors.Palettes.1-Primary
+
+$color-palette-primary: (
+  50: #efeffb,
+  100: #d7d7f4,
+  200: #b2b2e9,
+  300: #7b7bbf,
+  400: #474780,
+  500: #12122c,
+  600: #0d0d25,
+  700: #09091f,
+  800: #050519,
+  900: #030315,
+);
+
+//
+// Secondary Palette
+//
+// Colors:
+// 50: #f2f0ff
+// 100: #dfdaff
+// 200: #bfb4ff
+// 300: #9e90ff
+// 400: #8474ff
+// 500: #5a46ff
+// 600: #4333db
+// 700: #2f23b7
+// 800: #1f1693
+// 900: #140d7a
+//
+// Styleguide Colors.Palettes.2-Secondary
+
+$color-palette-secondary: (
+  50: #f2f0ff,
+  100: #dfdaff,
+  200: #bfb4ff,
+  300: #9e90ff,
+  400: #8474ff,
+  500: #5a46ff,
+  600: #4333db,
+  700: #2f23b7,
+  800: #1f1693,
+  900: #140d7a,
+);
 
 //
 // Gray Palette
 //
+// Colors:
+// 50: #f7f7f8
+// 100: #efeff1
+// 200: #e0e0e4
+// 300: #c4c5ca
+// 400: #a1a2a7
+// 500: #74757a
+// 600: #56565e
+// 700: #3c3c45
+// 800: #282831
+// 900: #191922
+//
+// Styleguide Colors.Palettes.3-Gray
 
 $color-palette-gray: (
-  50: #fafafa,
-  100: #f5f5f5,
-  200: #eee,
-  300: #e0e0e0,
-  400: #bdbdbd,
-  500: #9e9e9e,
-  600: #757575,
-  700: #616161,
-  800: #424242,
-  900: #212121,
+  50: #f7f7f8,
+  100: #efeff1,
+  200: #e0e0e4,
+  300: #c4c5ca,
+  400: #a1a2a7,
+  500: #74757a,
+  600: #56565e,
+  700: #3c3c45,
+  800: #282831,
+  900: #191922,
+);
+
+//
+// Success Palette
+//
+// Colors:
+// 50: #f7fde7
+// 100: #effcd0
+// 200: #dbfaa2
+// 300: #bef171
+// 400: #a0e44d
+// 500: #76d319
+// 600: #5bb512
+// 700: #44970c
+// 800: #307a07
+// 900: #216504
+//
+// Styleguide Colors.Palettes.4-Success
+
+$color-palette-success: (
+  50: #f7fde7,
+  100: #effcd0,
+  200: #dbfaa2,
+  300: #bef171,
+  400: #a0e44d,
+  500: #76d319,
+  600: #5bb512,
+  700: #44970c,
+  800: #307a07,
+  900: #216504,
+);
+
+//
+// Warning Palette
+//
+// Colors:
+// 50: #fef7e6
+// 100: #fef0ce
+// 200: #fedc9d
+// 300: #fec46c
+// 400: #fdab48
+// 500: #fc840c
+// 600: #d86608
+// 700: #b54c06
+// 800: #923503
+// 900: #782502
+//
+// Styleguide Colors.Palettes.5-Warning
+
+$color-palette-warning: (
+  50: #fef7e6,
+  100: #fef0ce,
+  200: #fedc9d,
+  300: #fec46c,
+  400: #fdab48,
+  500: #fc840c,
+  600: #d86608,
+  700: #b54c06,
+  800: #923503,
+  900: #782502,
+);
+
+//
+// Danger Palette
+//
+// Colors:
+// 50: #feebe6
+// 100: #feded6
+// 200: #feb6ae
+// 300: #fe8685
+// 400: #fd6774
+// 500: #fc3559
+// 600: #d82657
+// 700: #b51a53
+// 800: #92104c
+// 900: #780a48
+//
+// Styleguide Colors.Palettes.6-Danger
+
+$color-palette-danger: (
+  50: #feebe6,
+  100: #feded6,
+  200: #feb6ae,
+  300: #fe8685,
+  400: #fd6774,
+  500: #fc3559,
+  600: #d82657,
+  700: #b51a53,
+  800: #92104c,
+  900: #780a48,
+);
+
+//
+// Info Palette
+//
+// Colors:
+// 50: #e6fffb
+// 100: #cbfef7
+// 200: #98fdf7
+// 300: #64f9fb
+// 400: #3ee7f8
+// 500: #00cbf4
+// 600: #009ed1
+// 700: #0077af
+// 800: #00558d
+// 900: #003d75
+//
+// Styleguide Colors.Palettes.7-Info
+
+$color-palette-info: (
+  50: #e6fffb,
+  100: #cbfef7,
+  200: #98fdf7,
+  300: #64f9fb,
+  400: #3ee7f8,
+  500: #00cbf4,
+  600: #009ed1,
+  700: #0077af,
+  800: #00558d,
+  900: #003d75,
 );
 
 $g-color-palettes: (
+  'primary': $color-palette-primary,
+  'secondary': $color-palette-secondary,
   'gray': $color-palette-gray,
+  'success': $color-palette-success,
+  'warning': $color-palette-warning,
+  'danger': $color-palette-danger,
+  'info': $color-palette-info,
 );
 
 //
@@ -42,12 +247,12 @@ $color-black: #000;
 // Project Colors
 //
 
-$primary-color: #008cba;
-$secondary-color: #e7e7e7;
-$alert-color: #f04124;
-$success-color: #43ac6a;
-$warning-color: #f08a24;
-$info-color: #a0d3e8;
+$primary-color: color-palette('primary', 500);
+$secondary-color: color-palette('secondary', 500);
+$alert-color: color-palette('danger', 500);
+$success-color: color-palette('success', 500);
+$warning-color: color-palette('warning', 500);
+$info-color: color-palette('info', 500);
 
 //
 // Project Color Configs
