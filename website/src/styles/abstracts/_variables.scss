@@ -24,7 +24,9 @@ $g-font-size-root: 16px !default; // stylelint-disable-line meowtec/no-px
 // stylelint-disable-next-line meowtec/no-px
 $g-font-size-base-px: 16px;
 $g-font-size-base: px-to-rem($g-font-size-base-px) !default;
-$g-font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+$g-font-family-primary: 'Rubik';
+$g-font-family-sans-serif: $g-font-family-primary, Arial, sans-serif !default;
 $g-font-family-base: $g-font-family-sans-serif !default;
 
 $g-font-size-h1: px-to-em(36px) !default;

@@ -19,3 +19,7 @@
 //  Mixin Usage
 //  @include font-face($fontName, $fontFolder, $fontFileName, $fontWeight: normal, $fontStyle: normal);
 //
+
+@include font-face('Rubik', 'Rubik', 'Rubik-Regular');
+@include font-face('Rubik', 'Rubik', 'Rubik-Medium', $fontWeight: 500);
+@include font-face('Rubik', 'Rubik', 'Rubik-Bold', $fontWeight: 700);
