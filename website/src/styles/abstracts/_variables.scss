@@ -29,22 +29,29 @@ $g-font-family-primary: 'Rubik';
 $g-font-family-sans-serif: $g-font-family-primary, Arial, sans-serif !default;
 $g-font-family-base: $g-font-family-sans-serif !default;
 
-$g-font-size-h1: px-to-em(44px) !default;
-$g-font-size-h2: px-to-em(32px) !default;
-$g-font-size-h3: px-to-em(24px) !default;
-$g-font-size-h4: px-to-em(18px) !default;
-$g-font-size-h5: 1em !default;
-$g-font-size-h6: px-to-em(14px) !default;
-
 // Unit-less `line-height` for use in components like buttons.
 $g-line-height-base: (24 / 18) !default; // 20/14
 // Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $g-line-height-computed: px-to-rem(($g-font-size-base-px * $g-line-height-base)) !default;
 
+$g-font-size-h1: px-to-em(44px) !default;
+$g-font-size-h2: px-to-em(32px) !default;
+$g-font-size-h3: px-to-em(24px) !default;
+$g-font-size-h4: px-to-em(18px) !default;
+$g-font-size-h5: 1rem !default;
+$g-font-size-h6: px-to-em(14px) !default;
+
+$g-line-height-h1: (56/44) !default;
+$g-line-height-h2: (40/32) !default;
+$g-line-height-h3: (32/24) !default;
+$g-line-height-h4: (28/18) !default;
+$g-line-height-h5: (24/16) !default;
+$g-line-height-h6: (20/14) !default;
+
 // By default, this inherits from the `<body>`.
 $g-headings-font-family: inherit !default;
 $g-headings-font-weight: 500 !default;
-$g-headings-line-height: 1.1 !default;
+$g-headings-line-height: null !default;
 
 // FONT SIZING
 // -------------------------
@@ -154,5 +161,5 @@ $grid-gutter-width: px-to-rem(32px) !default;
 
 //
 // Z-index
-// Site genelinde kullanılan z-indexler burada tanımlanmalıdır
+// The global z-index variables should be listed below.
 // -------------------------
