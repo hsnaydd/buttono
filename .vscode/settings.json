@@ -1,4 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "stylelint.enable": true
+  "stylelint.autoFixOnSave": true
 }
