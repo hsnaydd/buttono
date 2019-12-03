@@ -12,7 +12,7 @@ export default {
   verbose: false,
   builder: 'node_modules/@atolye15/kss-node-twig-builder',
   homepage: '../../README.md',
-  title: 'Atölye Style Guide',
+  title: 'Buttono Style Guide',
   namespace: [],
   // This following option is a special option for `@atolye15/kss-node-twig-builder`
   // May not work with other builders
