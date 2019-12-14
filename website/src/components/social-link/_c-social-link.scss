@@ -1,0 +1,19 @@
+//
+// Social Link
+//
+// ExampleBgColor: #12122C
+//
+// Markup: social-link.styleguide.twig
+//
+// Styleguide Components.Social-Link
+
+.c-social-link {
+  display: inline-flex;
+  color: color-palette('primary', 300);
+  font-size: px-to-rem(32px);
+
+  &:hover {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
