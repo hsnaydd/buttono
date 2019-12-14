@@ -20,7 +20,7 @@ export function syncImages() {
   return gulp
     .src('dummy.ext', { allowEmpty: true })
     .pipe(
-      dirSync(`${paths.img}`, `${paths.dist}/${paths.assets.images}`, {
+      dirSync(`${paths.img}`, `${paths.styleguide.dist}/${paths.styleguide.assets.images}`, {
         ignore: ['.gitkeep'],
         nodelete: `${appConfig.spriteFileBaseName}`,
       }),

@@ -3,7 +3,9 @@ import gulp, { parallel } from 'gulp';
 import paths from '../../../config/paths';
 
 export function copyImages() {
-  return gulp.src(`${paths.img}/**/*`).pipe(gulp.dest(`${paths.dist}/${paths.assets.images}`));
+  return gulp
+    .src(`${paths.img}/**/*`)
+    .pipe(gulp.dest(`${paths.styleguide.dist}/${paths.styleguide.assets.images}`));
 }
 
 export function copyFonts() {
