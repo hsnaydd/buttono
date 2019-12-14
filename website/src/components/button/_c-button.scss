@@ -1,0 +1,193 @@
+//
+// Buttons
+//
+// Styleguide Components.Buttons
+
+// Solid Buttons
+//
+// HideDefault: true
+//
+// Markup: button.styleguide.twig
+//
+// .c-button--primary - Primary
+// .c-button--success - Success
+// .c-button--danger - Danger
+// .c-button--warning - Warning
+// .c-button--info - Info
+// .c-button--light - Light
+// .c-button--dark - Dark
+//
+// Styleguide Components.Buttons.1-Solid-Buttons
+
+// Outline Buttons
+//
+// HideDefault: true
+//
+// Markup: button.styleguide.twig
+//
+// .c-button--outline-primary - Primary
+// .c-button--outline-success - Success
+// .c-button--outline-danger - Danger
+// .c-button--outline-warning - Warning
+// .c-button--outline-info - Info
+// .c-button--outline-light - Light
+// .c-button--outline-dark - Dark
+//
+// Styleguide Components.Buttons.2-Outline-Buttons
+
+.c-button {
+  @import '../../../../buttono';
+
+  $buttono-font-family: $g-font-family-primary;
+  $buttono-font-size: px-to-rem(16px);
+  $buttono-line-height: (24/16);
+  $buttono-padding: px-to-rem(8px) px-to-rem(32px);
+  $buttono-color-alt: color-palette('primary', 900);
+  $buttono-border-radius: px-to-rem(4px);
+
+  @include buttono-block($display: inline-flex);
+  min-height: px-to-rem(56px);
+  align-items: center;
+  font-weight: 500;
+
+  &--primary {
+    @include buttono-style-modifier(
+      $background-color: color-palette('secondary', 500),
+      $background-color-hover: color-palette('secondary', 600),
+      $background-color-disabled: color-palette('secondary', 200),
+      $opacity-disabled: null
+    );
+  }
+
+  &--success {
+    @include buttono-style-modifier(
+      $background-color: color-palette('success', 500),
+      $background-color-hover: color-palette('success', 600)
+    );
+  }
+
+  &--danger {
+    @include buttono-style-modifier(
+      $background-color: color-palette('danger', 500),
+      $background-color-hover: color-palette('danger', 700)
+    );
+  }
+
+  &--warning {
+    @include buttono-style-modifier(
+      $background-color: color-palette('warning', 500),
+      $background-color-hover: color-palette('warning', 700)
+    );
+  }
+
+  &--info {
+    @include buttono-style-modifier(
+      $background-color: color-palette('info', 500),
+      $background-color-hover: color-palette('info', 600)
+    );
+  }
+
+  &--light {
+    @include buttono-style-modifier(
+      $background-color: color-palette('gray', 300),
+      $background-color-hover: color-palette('gray', 400),
+      $background-color-disabled: color-palette('gray', 100),
+      $opacity-disabled: null,
+      $color-disabled: #999
+    );
+  }
+
+  &--dark {
+    @include buttono-style-modifier(
+      $background-color: color-palette('gray', 900),
+      $background-color-hover: color-palette('gray', 700),
+      $background-color-disabled: color-palette('gray', 300),
+      $opacity-disabled: null,
+      $color-disabled: #999
+    );
+  }
+
+  //
+  // Outline
+  //
+
+  &--outline-primary {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('secondary', 500),
+      $background-color: transparent,
+      $background-color-hover: color-palette('secondary', 500),
+      $border-color-disabled: color-palette('secondary', 300),
+      $color-disabled: color-palette('secondary', 300)
+    );
+  }
+
+  &--outline-success {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('success', 500),
+      $background-color: transparent,
+      $background-color-hover: color-palette('success', 500),
+      $border-color-disabled: color-palette('success', 300)
+    );
+  }
+
+  &--outline-danger {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('danger', 500),
+      $background-color: transparent,
+      $background-color-hover: color-palette('danger', 500),
+      $border-color-disabled: color-palette('danger', 200)
+    );
+  }
+
+  &--outline-warning {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('warning', 500),
+      $background-color: transparent,
+      $background-color-hover: color-palette('warning', 500),
+      $border-color-disabled: color-palette('warning', 200)
+    );
+  }
+
+  &--outline-info {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('info', 500),
+      $background-color: transparent,
+      $background-color-hover: color-palette('info', 500),
+      $border-color-disabled: color-palette('info', 200)
+    );
+  }
+
+  &--outline-light {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $color-disabled: #999,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('gray', 200),
+      $background-color: transparent,
+      $background-color-hover: color-palette('gray', 300),
+      $border-color-disabled: color-palette('gray', 100)
+    );
+  }
+
+  &--outline-dark {
+    @include buttono-style-modifier(
+      $color: $color-white,
+      $color-disabled: #999,
+      $border-width: px-to-rem(2px),
+      $border-color: color-palette('gray', 900),
+      $background-color: transparent,
+      $background-color-hover: color-palette('gray', 900),
+      $border-color-disabled: color-palette('gray', 300)
+    );
+  }
+}
