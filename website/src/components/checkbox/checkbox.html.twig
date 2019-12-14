@@ -1,0 +1,8 @@
+<label class="{{ html_classes('c-checkbox', className) }}">
+  <input class="c-checkbox__inp" type="checkbox" {{ html_attributes({ name: name, checked: checked, disabled: disabled }) }}>
+  <span aria-hidden="true" class="c-checkbox__mask"></span>
+  {% if label %}
+    <span class="c-checkbox__label">{{ label }}</span>
+  {% endif %}
+</label>
+

@@ -1,0 +1,70 @@
+//
+// Checkbox
+//
+// ExampleBgColor: #12122C
+//
+// Markup: checkbox.styleguide.twig
+//
+//
+// Styleguide Components.Checkbox
+
+.c-checkbox {
+  $size: px-to-rem(18px);
+  $radius: px-to-rem(2px);
+  $border-width: px-to-rem(1px);
+  $checkmark-size: px-to-rem(16px);
+  $z-index: 0;
+
+  position: relative;
+  z-index: $z-index;
+  display: inline-flex;
+  align-items: center;
+
+  //
+  // Elements
+  // -------------------------
+
+  &__inp {
+    @include visually-hidden();
+
+    &:focus + .c-checkbox__mask {
+      outline: px-to-rem(2px) dotted color-palette('primary', 100);
+      outline-offset: 1px;
+    }
+
+    &:checked + .c-checkbox__mask {
+      background-image: url('../img/checkbox-check.svg');
+    }
+
+    &:disabled + .c-checkbox__mask {
+      background-color: color-palette('primary', 200);
+      border-color: color-palette('primary', 100);
+      cursor: default;
+      opacity: 0.6;
+    }
+  }
+
+  //
+  // Mask
+  //
+
+  &__mask {
+    width: $size;
+    height: $size;
+    flex-shrink: 0;
+    border: $border-width solid $color-white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $checkmark-size $checkmark-size;
+    border-radius: $radius;
+    cursor: pointer;
+  }
+
+  &__label {
+    align-self: center;
+    margin-left: gap(xsmall);
+    font-size: $g-font-size-small;
+    font-weight: 500;
+    line-height: (24 / 16);
+  }
+}

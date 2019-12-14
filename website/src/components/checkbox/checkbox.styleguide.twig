@@ -1,0 +1,38 @@
+<div class="u-padding-xsmall">
+  <div>
+    {% include "./checkbox.html.twig" with {
+      name: 'checkbox0',
+      label: 'Optional Label',
+      className: modifier_class,
+      checked: false,
+      disabled: false
+    } only %}
+  </div>
+  <div>
+    {% include "./checkbox.html.twig" with {
+      name: 'checkbox1',
+      label: 'Checked',
+      className: modifier_class,
+      checked: true,
+      disabled: false
+    } only %}
+  </div>
+  <div>
+    {% include "./checkbox.html.twig" with {
+      name: 'checkbox2',
+      label: 'Disabled',
+      className: modifier_class,
+      checked: false,
+      disabled: true
+    } only %}
+  </div>
+  <div>
+    {% include "./checkbox.html.twig" with {
+      name: 'checkbox3',
+      label: 'Disabled Checked',
+      className: modifier_class,
+      checked: true,
+      disabled: true
+    } only %}
+  </div>
+</div>
