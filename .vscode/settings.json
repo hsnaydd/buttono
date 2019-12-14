@@ -1,4 +1,9 @@
 {
   "editor.formatOnSave": true,
-  "stylelint.autoFixOnSave": true
+  "stylelint.autoFixOnSave": true,
+  "path-intellisense.mappings": {
+    "@components": "${workspaceRoot}/website/src/components",
+    "@objects": "${workspaceRoot}/website/src/objects",
+    "@templates": "${workspaceRoot}/website/src/templates"
+  }
 }
