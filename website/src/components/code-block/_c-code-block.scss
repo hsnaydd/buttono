@@ -1,0 +1,23 @@
+//
+// Code Block
+//
+// Markup: code-block.styleguide.twig
+//
+// .c-code-block--rounded - Rounded
+//
+// Styleguide Components.Code-Block
+
+.c-code-block {
+  font-size: px-to-rem(20px);
+
+  // We deliberately increased specificity to avoid overwriting problems
+  & > &__code {
+    max-height: px-to-rem(544px);
+    border-radius: var(--c-code-block-border-radius);
+  }
+
+  &--rounded {
+    // stylelint-disable-next-line meowtec/no-px
+    --c-code-block-border-radius: #{px-to-rem(8px)};
+  }
+}

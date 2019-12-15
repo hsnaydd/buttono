@@ -1,3 +1,1 @@
-(() => {
-  // Scripts..
-})();
+import './libs/prismjs';

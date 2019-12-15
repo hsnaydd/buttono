@@ -9,6 +9,7 @@
     "@babel/register": "^7.7.0",
     "autoprefixer": "^9.7.1",
     "babel-eslint": "^10.0.3",
+    "babel-plugin-prismjs": "^1.1.1",
     "browser-sync": "^2.26.7",
     "chalk": "^3.0.0",
     "classnames": "^2.2.6",
@@ -56,5 +57,7 @@
     "start": "gulp start",
     "styleguide": "gulp styleguide"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prismjs": "^1.17.1"
+  }
 }
