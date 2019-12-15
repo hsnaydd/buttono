@@ -1,0 +1,29 @@
+{% set var = 'value' %}
+<div class="c-example">
+  <div class="c-example__header">
+    {% include "@components/checkbox/checkbox.html.twig" with {
+      name: 'checkbox1',
+      label: 'Show Disabled States',
+      className: 'u-margin-left-large',
+      checked: false,
+      disabled: false,
+    } only %}
+
+    {% include "@components/edit-example-button/edit-example-button.html.twig" with {
+      className: null,
+      attributes: {
+        href: '',
+      },
+      text: 'Edit on Codepen',
+      iconName: 'codepen'
+    } only %}
+  </div>
+  <div class="c-example__preview">
+    {% block preview %}{% endblock %}
+  </div>
+  <div class="c-example__code-block">
+    {% embed "@components/code-block/code-block-html.twig" with { codeBlock: block('codeBlock') } only %}
+      {% block code %}{{ codeBlock }}{% endblock %}
+    {% endembed %}
+  </div>
+</div>

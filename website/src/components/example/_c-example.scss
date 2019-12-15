@@ -1,0 +1,31 @@
+//
+// Example
+//
+// ExampleBgColor: #12122C
+//
+// Markup: example.styleguide.twig
+//
+// Styleguide Components.Example
+
+.c-example {
+  //
+  // Elements
+  // -------------------------
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__preview {
+    display: flex;
+    padding: pad(large) pad(medium);
+    background-color: color-palette('primary', 800);
+    border-top-left-radius: px-to-rem(8px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}
