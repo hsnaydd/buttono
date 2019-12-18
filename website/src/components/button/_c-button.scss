@@ -44,6 +44,7 @@
   $buttono-padding: px-to-rem(8px) px-to-rem(32px);
   $buttono-color-alt: color-palette('primary', 900);
   $buttono-border-radius: px-to-rem(4px);
+  $buttono-transition-duration: 0.2s;
 
   @include buttono-block($display: inline-flex);
   min-height: px-to-rem(56px);
