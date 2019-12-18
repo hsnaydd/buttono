@@ -1,7 +1,7 @@
 
 {% embed "./example.html.twig" with {} only %}
 {% block preview %}
-  {% embed "@components/button/button.html.twig" with { tag: 'button', className: 'c-button--primary', attributes: {} } only %}
+  {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'primary', className: null, attributes: {} } only %}
     {% block text %}
       Primary
     {% endblock %}

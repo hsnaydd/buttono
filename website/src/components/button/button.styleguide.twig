@@ -1,17 +1,17 @@
 <div style="background-color: #030315; padding: 8px">
-  {% include "button.html.twig" with { tag: 'button', className: modifier_class, attributes: {} } only %}
-  {% embed "button.html.twig" with { tag: 'a', className: modifier_class, attributes: { href: '#' } } only %}
+  {% include "button.html.twig" with { tag: 'button', theme: modifier_class, className: null, attributes: {} } only %}
+  {% embed "button.html.twig" with { tag: 'a', theme: modifier_class, className: null, attributes: { href: '#' } } only %}
     {% block text %}
       Link
     {% endblock %}
   {% endembed %}
-  {% embed "button.html.twig" with { tag: 'button', className: modifier_class, attributes: {} } only %}
+  {% embed "button.html.twig" with { tag: 'button', theme: modifier_class, className: null, attributes: {} } only %}
     {% block text %}
     {% include "@components/icon/icon.html.twig" with { name: 'codepen', className:'u-margin-right-xsmall u-font-size-large' } only %}
     Button
     {% endblock %}
   {% endembed %}
-  {% embed "button.html.twig" with { tag: 'button', className: modifier_class, attributes: { disabled: true } } only %}
+  {% embed "button.html.twig" with { tag: 'button', theme: modifier_class, className: null, attributes: { disabled: true } } only %}
     {% block text %}
       Disabled
     {% endblock %}
