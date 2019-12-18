@@ -22,7 +22,7 @@
     {% block preview %}{% endblock %}
   </div>
   <div class="c-example__code-block">
-    {% embed "@components/code-block/code-block-html.twig" with { codeBlock: block('codeBlock') } only %}
+    {% embed "@components/code-block/code-block.html.twig" with { codeBlock: block('codeBlock') } only %}
       {% block code %}{{ codeBlock }}{% endblock %}
     {% endembed %}
   </div>
