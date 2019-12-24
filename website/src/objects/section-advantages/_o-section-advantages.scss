@@ -1,0 +1,30 @@
+//
+// Section Advantages
+//
+// Markup: section-advantages.styleguide.twig
+//
+// Styleguide Objects.Section-Advantages
+
+.o-section-advantages {
+  padding-top: px-to-rem(258px);
+  padding-bottom: px-to-rem(160px);
+  background-color: color-palette('primary', 600);
+
+  //
+  // Elements
+  // -------------------------
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo-icon {
+    margin-top: px-to-em(3px, 32px);
+    margin-left: px-to-rem(-5px);
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

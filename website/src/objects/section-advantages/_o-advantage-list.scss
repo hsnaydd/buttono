@@ -1,0 +1,18 @@
+//
+// Advantage List
+//
+
+.o-advantage-list {
+  @include list-unstyled($margin-bottom: px-to-rem(96px));
+
+  //
+  // Elements
+  // -------------------------
+  &__item {
+    margin-top: px-to-rem(96px);
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}
