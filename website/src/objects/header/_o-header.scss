@@ -1,0 +1,28 @@
+//
+// Header
+//
+// ExampleBgColor: #12122C
+//
+// Markup: header.styleguide.twig
+//
+// Styleguide Objects.Header
+
+.o-header {
+  &__inner {
+    display: flex;
+    min-height: px-to-rem(160px);
+    padding-top: pad();
+    padding-bottom: pad();
+  }
+  //
+  // Elements
+  // -------------------------
+  &__logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}
