@@ -1,0 +1,31 @@
+<div class="o-section-intro">
+  <div class="container">
+     <section class="o-section-intro__content">
+      <h1 class="o-section-intro__title">A flexible Sass mixin for creating BEM-style buttons.</h1>
+      {% embed "@components/button/button.html.twig" with { tag: 'button', className: null, theme: 'primary', attributes: {} } only %}
+        {% block text %}
+        View on Github
+        {% endblock %}
+      {% endembed %}
+     </section>
+      {% embed "@components/code-block/code-block.html.twig" with { className: 'o-section-intro__code c-code-block--rounded' } only %}
+{% block code %}
+.c-button {
+  @import "node_modules/buttono/buttono";
+
+  $buttono-font-family: Helvetica;
+
+  @include buttono-block();
+
+  &--primary {
+    @include buttono-style-modifier();
+  }
+
+  &--secondary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+}
+{% endblock %}
+  {% endembed %}
+  </div>
+</div>

@@ -8,16 +8,18 @@
 // Styleguide Components.Code-Block
 
 .c-code-block {
+  $radius: px-to-rem(8px);
+  $code-max-height: px-to-rem(544px);
+
   font-size: px-to-rem(20px);
 
   // We deliberately increased specificity to avoid overwriting problems
-  & > &__code {
-    max-height: px-to-rem(544px);
+  &__code {
+    max-height: var(--c-code-block-max-height, #{$code-max-height});
     border-radius: var(--c-code-block-border-radius);
   }
 
   &--rounded {
-    // stylelint-disable-next-line meowtec/no-px
-    --c-code-block-border-radius: #{px-to-rem(8px)};
+    --c-code-block-border-radius: #{$radius};
   }
 }
