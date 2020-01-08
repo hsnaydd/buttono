@@ -115,18 +115,19 @@
   &--outline-primary {
     @include buttono-style-modifier(
       $color: $color-white,
+      $color-disabled: #999,
       $border-width: px-to-rem(2px),
       $border-color: color-palette('secondary', 500),
       $background-color: transparent,
       $background-color-hover: color-palette('secondary', 500),
-      $border-color-disabled: color-palette('secondary', 300),
-      $color-disabled: color-palette('secondary', 300)
+      $border-color-disabled: color-palette('secondary', 300)
     );
   }
 
   &--outline-success {
     @include buttono-style-modifier(
       $color: $color-white,
+      $color-disabled: #999,
       $border-width: px-to-rem(2px),
       $border-color: color-palette('success', 500),
       $background-color: transparent,
@@ -138,6 +139,7 @@
   &--outline-danger {
     @include buttono-style-modifier(
       $color: $color-white,
+      $color-disabled: #999,
       $border-width: px-to-rem(2px),
       $border-color: color-palette('danger', 500),
       $background-color: transparent,
@@ -149,6 +151,7 @@
   &--outline-warning {
     @include buttono-style-modifier(
       $color: $color-white,
+      $color-disabled: #999,
       $border-width: px-to-rem(2px),
       $border-color: color-palette('warning', 500),
       $background-color: transparent,
@@ -160,6 +163,7 @@
   &--outline-info {
     @include buttono-style-modifier(
       $color: $color-white,
+      $color-disabled: #999,
       $border-width: px-to-rem(2px),
       $border-color: color-palette('info', 500),
       $background-color: transparent,
@@ -173,7 +177,7 @@
       $color: $color-white,
       $color-disabled: #999,
       $border-width: px-to-rem(2px),
-      $border-color: color-palette('gray', 200),
+      $border-color: color-palette('gray', 300),
       $background-color: transparent,
       $background-color-hover: color-palette('gray', 300),
       $border-color-disabled: color-palette('gray', 100)
