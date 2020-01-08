@@ -1,10 +1,11 @@
-{% set var = 'value' %}
-<div class="c-example">
+<div class="{{ html_classes('c-example js-example', className) }}">
   <div class="c-example__header">
     {% include "@components/checkbox/checkbox.html.twig" with {
-      name: 'checkbox1',
+      id: false,
+      name: 'example-checkbox' ~ exampleId,
       label: 'Show Disabled States',
       className: 'u-margin-left-large',
+      inputClassName: 'js-example-checkbox',
       checked: false,
       disabled: false,
     } only %}
@@ -18,11 +19,13 @@
       iconName: 'codepen'
     } only %}
   </div>
-  <div class="c-example__preview">
-    {% block preview %}{% endblock %}
-  </div>
+  <fieldset class="c-example__preview-wrapper js-example-fieldset">
+    <div class="c-example__preview">
+      {% block preview %}{% endblock %}
+    </div>
+  </fieldset>
   <div class="c-example__code-block">
-    {% embed "@components/code-block/code-block.html.twig" with { codeBlock: block('codeBlock') } only %}
+    {% embed "@components/code-block/code-block.html.twig" with { className: null, codeBlock: block('codeBlock') } only %}
       {% block code %}{{ codeBlock }}{% endblock %}
     {% endembed %}
   </div>

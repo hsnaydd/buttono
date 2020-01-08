@@ -1,0 +1,37 @@
+//
+// Section Examples
+//
+// ExampleBgColor: #12122c
+//
+// Markup: section-examples.styleguide.twig
+//
+// Styleguide Objects.Section-Examples
+
+.o-section-examples {
+  padding-top: px-to-rem(136px);
+  padding-bottom: px-to-rem(160px);
+
+  //
+  // Elements
+  // -------------------------
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__logo-icon {
+    margin-top: px-to-em(3px, 32px);
+    margin-right: px-to-rem(-5px);
+    margin-left: px-to-rem(-5px);
+  }
+
+  &__example {
+    margin-top: px-to-rem(96px);
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

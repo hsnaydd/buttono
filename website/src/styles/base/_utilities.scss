@@ -39,6 +39,10 @@
   @include text-truncate;
 }
 
+.u-visually-hidden {
+  @include visually-hidden();
+}
+
 //
 // Colors
 //
@@ -430,6 +434,7 @@ $g-utilities: (
     property: background-color,
     values: (
       'primary': $primary-color,
+      'primary-600': color-palette('primary', 600),
       'success': $success-color,
       'alert': $alert-color,
       'warning': $warning-color,

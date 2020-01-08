@@ -1,5 +1,5 @@
 
-{% embed "./example.html.twig" with {} only %}
+{% embed "./example.html.twig" with { className: null, exampleId: 1 } only %}
 {% block preview %}
   {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'primary', className: null, attributes: {} } only %}
     {% block text %}

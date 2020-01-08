@@ -16,13 +16,21 @@
     justify-content: space-between;
   }
 
+  &__preview-wrapper {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
   &__preview {
     display: flex;
     padding: pad(large) pad(medium);
+    margin: 0;
     background-color: color-palette('primary', 800);
     border-top-left-radius: px-to-rem(8px);
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   //
