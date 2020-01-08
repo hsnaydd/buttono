@@ -1,8 +1,8 @@
 <div class="o-section-advantages">
   <section class="container">
-    <h2 class="o-section-advantages__title">
+    <h2 class="o-section-advantages__title" aria-label="Great things about Buttono">
       Great things about Button
-      {% include "@components/icon/icon.html.twig" with { name: 'logo', className: 'o-section-advantages__logo-icon' } only %}
+      {% include "@components/icon/icon.html.twig" with { name: 'logo', className: 'o-section-advantages__logo-icon', attributes: { 'aria-hidden': 'true' } } only %}
     </h2>
     <ul class="o-advantage-list row">
       <li class="o-advantage-list__item col col--sm-6">
