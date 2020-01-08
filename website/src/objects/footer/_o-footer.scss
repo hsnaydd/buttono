@@ -1,0 +1,24 @@
+//
+// Footer
+//
+// Markup: footer.styleguide.twig
+//
+// Styleguide Objects.Footer
+
+.o-footer {
+  //
+  // Elements
+  // -------------------------
+  &__inner {
+    display: flex;
+    min-height: px-to-rem(120px);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: pad();
+    padding-bottom: pad();
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

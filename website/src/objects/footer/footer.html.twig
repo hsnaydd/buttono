@@ -1,0 +1,22 @@
+<footer class="o-footer u-background-color-primary-600">
+  <div class="container o-footer__inner">
+    <span class="u-font-weight-500">Crafted passionately by <a href="#">Hasan Aydoğdu</a> &amp; <a href="">Ali Kemal Akçay</a></span>
+    <div class="u-display-flex">
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'github',
+        className: null,
+        attributes: { href: '', target: '_blank', title: 'Github' }
+      } only %}
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'codepen',
+        className: 'u-margin-left-medium',
+        attributes: { href: '', target: '_blank', title: 'Github' }
+      } only %}
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'twitter',
+        className: 'u-margin-left-medium',
+        attributes: { href: '', target: '_blank', title: 'Github' }
+      } only %}
+    </div>
+  </div>
+</footer>
