@@ -14,7 +14,7 @@
   font-size: px-to-rem(20px);
 
   // We deliberately increased specificity to avoid overwriting problems
-  &__code {
+  & > &__code {
     max-height: var(--c-code-block-max-height, #{$code-max-height});
     border-radius: var(--c-code-block-border-radius);
   }
