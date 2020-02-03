@@ -1,6 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "stylelint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "path-intellisense.mappings": {
     "@components": "${workspaceRoot}/website/src/components",
     "@objects": "${workspaceRoot}/website/src/objects",
