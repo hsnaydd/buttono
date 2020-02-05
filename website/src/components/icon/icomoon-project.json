@@ -8,34 +8,41 @@
     {
       "selection": [
         {
-          "order": 5,
+          "order": 8,
           "id": 7,
           "name": "twitter",
           "prevSize": 24
         },
         {
-          "order": 6,
+          "order": 9,
           "id": 6,
           "name": "github",
           "prevSize": 24
         },
         {
-          "order": 4,
+          "order": 10,
           "id": 2,
           "name": "check",
           "prevSize": 24
         },
         {
-          "order": 3,
+          "order": 11,
           "id": 1,
           "name": "logo",
           "prevSize": 24
         },
         {
-          "order": 2,
+          "order": 12,
           "id": 0,
           "name": "codepen",
           "prevSize": 24
+        },
+        {
+          "order": 13,
+          "ligatures": "favorite",
+          "id": 8,
+          "prevSize": 24,
+          "name": "favorite"
         }
       ],
       "id": 0,
@@ -123,6 +130,19 @@
           "tags": [
             "codepen"
           ]
+        },
+        {
+          "id": 8,
+          "paths": [
+            "M512 910l-62-56q-106-96-154-142t-107-114-81-123-22-113q0-98 67-166t167-68q116 0 192 90 76-90 192-90 100 0 167 68t67 166q0 78-52 162t-113 146-199 186z"
+          ],
+          "attrs": [],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "favorite"
+          ],
+          "grid": 24
         }
       ],
       "invisible": false,
