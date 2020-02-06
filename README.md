@@ -341,7 +341,7 @@ You can follow the change log from the [Releases page](https://github.com/hsnayd
 
 ## Thanks
 
-Huge thanks to [Ali Kemal Akçay](https://dribbble.com/akemal) for his awesome website design and also thanks to [Erdem](https://dribbble.com/erdemkirmitci) for the beautiful logo.
+Huge thanks to [Ali Kemal Akçay](https://dribbble.com/akemal) for his awesome website design and also thanks to [Erdem Kirmitci](https://dribbble.com/erdemkirmitci) for the beautiful logo.
 
 ## License
 
