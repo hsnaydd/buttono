@@ -38,15 +38,13 @@
 .c-button {
   @import '../../../../buttono';
 
-  $buttono-font-family: $g-font-family-primary;
-  $buttono-font-size: px-to-rem(16px);
-  $buttono-line-height: (24/16);
   $buttono-padding: px-to-rem(8px) px-to-rem(32px);
   $buttono-color-alt: color-palette('primary', 900);
   $buttono-border-radius: px-to-rem(4px);
   $buttono-transition-duration: 0.2s;
 
   @include buttono-block($display: inline-flex);
+
   min-height: px-to-rem(56px);
   align-items: center;
   font-weight: 500;
@@ -54,58 +52,32 @@
   &--primary {
     @include buttono-style-modifier(
       $background-color: color-palette('secondary', 500),
-      $background-color-hover: color-palette('secondary', 600),
-      $background-color-disabled: color-palette('secondary', 200),
-      $opacity-disabled: null
+      $background-color-hover: color-palette('secondary', 600)
     );
   }
 
   &--success {
-    @include buttono-style-modifier(
-      $background-color: color-palette('success', 500),
-      $background-color-hover: color-palette('success', 600)
-    );
+    @include buttono-style-modifier($background-color: color-palette('success', 500));
   }
 
   &--danger {
-    @include buttono-style-modifier(
-      $background-color: color-palette('danger', 500),
-      $background-color-hover: color-palette('danger', 700)
-    );
+    @include buttono-style-modifier($background-color: color-palette('danger', 500));
   }
 
   &--warning {
-    @include buttono-style-modifier(
-      $background-color: color-palette('warning', 500),
-      $background-color-hover: color-palette('warning', 700)
-    );
+    @include buttono-style-modifier($background-color: color-palette('warning', 500));
   }
 
   &--info {
-    @include buttono-style-modifier(
-      $background-color: color-palette('info', 500),
-      $background-color-hover: color-palette('info', 600)
-    );
+    @include buttono-style-modifier($background-color: color-palette('info', 500));
   }
 
   &--light {
-    @include buttono-style-modifier(
-      $background-color: color-palette('gray', 300),
-      $background-color-hover: color-palette('gray', 400),
-      $background-color-disabled: color-palette('gray', 100),
-      $opacity-disabled: null,
-      $color-disabled: #999
-    );
+    @include buttono-style-modifier($background-color: color-palette('gray', 300));
   }
 
   &--dark {
-    @include buttono-style-modifier(
-      $background-color: color-palette('gray', 900),
-      $background-color-hover: color-palette('gray', 700),
-      $background-color-disabled: color-palette('gray', 300),
-      $opacity-disabled: null,
-      $color-disabled: #999
-    );
+    @include buttono-style-modifier($background-color: color-palette('gray', 900));
   }
 
   //

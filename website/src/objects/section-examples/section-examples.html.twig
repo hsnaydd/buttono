@@ -34,15 +34,14 @@
 .c-button {
   @import 'node_modules/buttono/buttono';
 
-  $buttono-font-family: 'Rubik';
-  $buttono-font-size: 1rem;
-  $buttono-line-height: 1.5;
   $buttono-padding: 0.5rem 2rem;
   $buttono-color-alt: #030315;
   $buttono-border-radius: 0.25rem;
   $buttono-transition-duration: 0.2s;
 
   @include buttono-block($display: inline-flex);
+
+  // Extra styles
   min-height: 3.5rem;
   align-items: center;
   font-weight: 500;
@@ -50,58 +49,32 @@
   &--primary {
     @include buttono-style-modifier(
       $background-color: #5a46ff,
-      $background-color-hover: #4333db,
-      $background-color-disabled: #bfb4ff,
-      $opacity-disabled: null
+      $background-color-hover: #4333db
     );
   }
 
   &--success {
-    @include buttono-style-modifier(
-      $background-color: #76d319,
-      $background-color-hover: #5bb512
-    );
+    @include buttono-style-modifier($background-color: #76d319);
   }
 
   &--danger {
-    @include buttono-style-modifier(
-      $background-color: #fc3559,
-      $background-color-hover: #b51a53
-    );
+    @include buttono-style-modifier($background-color: #fc3559);
   }
 
   &--warning {
-    @include buttono-style-modifier(
-      $background-color: #fc840c,
-      $background-color-hover: #b54c06
-    );
+    @include buttono-style-modifier($background-color: #fc840c);
   }
 
   &--info {
-    @include buttono-style-modifier(
-      $background-color: #00cbf4,
-      $background-color-hover: #009ed1
-    );
+    @include buttono-style-modifier($background-color: #00cbf4);
   }
 
   &--light {
-    @include buttono-style-modifier(
-      $background-color: #c4c5ca,
-      $background-color-hover: #a1a2a7,
-      $background-color-disabled: #efeff1,
-      $opacity-disabled: null,
-      $color-disabled: #999
-    );
+    @include buttono-style-modifier($background-color: #c4c5ca);
   }
 
   &--dark {
-    @include buttono-style-modifier(
-      $background-color: #191922,
-      $background-color-hover: #3c3c45,
-      $background-color-disabled: #c4c5ca,
-      $opacity-disabled: null,
-      $color-disabled: #999
-    );
+    @include buttono-style-modifier($background-color: #191922);
   }
 }
 {% endblock %}
@@ -134,15 +107,14 @@
 .c-button {
   @import 'node_modules/buttono/buttono';
 
-  $buttono-font-family: 'Rubik';
-  $buttono-font-size: 1rem;
-  $buttono-line-height: 1.5;
   $buttono-padding: 0.5rem 2rem;
   $buttono-color-alt: #030315;
   $buttono-border-radius: 0.25rem;
   $buttono-transition-duration: 0.2s;
 
   @include buttono-block($display: inline-flex);
+
+  // Extra styles
   min-height: 3.5rem;
   align-items: center;
   font-weight: 500;
