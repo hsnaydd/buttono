@@ -11,7 +11,9 @@
   $radius: px-to-rem(8px);
   $code-max-height: px-to-rem(544px);
 
-  font-size: px-to-rem(20px);
+  @include media-breakpoint-up(md) {
+    font-size: $g-font-size-medium;
+  }
 
   // We deliberately increased specificity to avoid overwriting problems
   & > &__code {

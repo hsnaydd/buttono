@@ -3,9 +3,13 @@
 //
 // Markup: footer.styleguide.twig
 //
-// Styleguide Objects.Footer
+// Styleguide Components.Footer
 
-.o-footer {
+@import 'c-footer-signature';
+
+.c-footer {
+  background-color: color-palette('primary', 600);
+
   //
   // Elements
   // -------------------------
@@ -16,6 +20,18 @@
     justify-content: space-between;
     padding-top: pad();
     padding-bottom: pad();
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: gap(small);
+    }
   }
 
   //

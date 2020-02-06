@@ -25,4 +25,10 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   font-weight: 500;
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: gap(xsmall);
+    font-size: $g-font-size-large;
+  }
 }

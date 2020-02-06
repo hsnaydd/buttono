@@ -1,0 +1,29 @@
+<footer class="c-footer">
+  <div class="container c-footer__inner">
+    <span class="c-footer-signature">
+      Made with
+      {% include "@components/icon/icon.html.twig" with { name: 'favorite', className: 'c-footer-signature__icon', attributes: {} } only %}
+      by
+      {% embed "@components/link-white/link-white.html.twig" with { className: 'u-margin-left-2xsmall', attributes: { href: "https://twitter.com/hsnaydd" } } only %}
+        {% block content %}Hasan Aydoğdu{% endblock %}
+      {% endembed %}
+    </span>
+    <div class="c-footer__social-links">
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'github',
+        className: null,
+        attributes: { href: 'https://github.com/hsnaydd/', title: 'Github' }
+      } only %}
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'codepen',
+        className: 'u-margin-left-medium',
+        attributes: { href: 'https://codepen.io/hsnaydd', title: 'Codepen' }
+      } only %}
+      {% include "@components/social-link/social-link.html.twig" with {
+        iconName: 'twitter',
+        className: 'u-margin-left-medium',
+        attributes: { href: 'https://twitter.com/hsnaydd', title: 'Twitter' }
+      } only %}
+    </div>
+  </div>
+</footer>

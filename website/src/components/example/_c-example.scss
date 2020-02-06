@@ -33,6 +33,17 @@
     overflow-y: hidden;
   }
 
+  &__checkbox {
+    @include media-breakpoint-up(md) {
+      margin-left: gap(large);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: gap(2xsmall);
+      margin-left: gap(2xsmall);
+    }
+  }
+
   //
   // Modifiers
   // -------------------------

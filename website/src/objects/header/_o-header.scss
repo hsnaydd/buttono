@@ -10,9 +10,16 @@
 .o-header {
   &__inner {
     display: flex;
-    min-height: px-to-rem(160px);
     padding-top: pad();
     padding-bottom: pad();
+
+    @include media-breakpoint-up(lg) {
+      min-height: px-to-rem(160px);
+    }
+
+    @include media-breakpoint-only(md) {
+      min-height: px-to-rem(120px);
+    }
   }
   //
   // Elements
