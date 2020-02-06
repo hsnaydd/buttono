@@ -339,6 +339,10 @@ It does not use any tool for browser support. Using autoprefixer for browser sup
 
 You can follow the change log from the [Releases page](https://github.com/hsnaydd/buttono/releases).
 
+## Thanks
+
+Huge thanks to [Ali Kemal Akçay](https://dribbble.com/akemal) for his awesome website design and also thanks to [Erdem](https://dribbble.com/erdemkirmitci) for the beautiful logo.
+
 ## License
 
 Copyright (c) 2018-2019  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
