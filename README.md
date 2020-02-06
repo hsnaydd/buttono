@@ -345,4 +345,4 @@ Huge thanks to [Ali Kemal Akçay](https://dribbble.com/akemal) for his awesome w
 
 ## License
 
-Copyright (c) 2018-2019  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
+Copyright (c) 2018-2020  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
