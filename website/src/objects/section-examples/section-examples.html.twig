@@ -6,7 +6,7 @@
       {% include "@components/icon/icon.html.twig" with { name: 'logo', className: 'o-section-examples__logo-icon', attributes: { 'aria-hidden': 'true' } } only %}
       me Examples
       </h2>
-      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 1 } only %}
+      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 1, codepenUrl: 'https://codepen.io/hsnaydd/pen/NWWWaqr?editors=0100' } only %}
         {% block preview %}
           {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'primary', className: null, attributes: {} } only %}
             {% block text %}Primary{% endblock %}
@@ -79,7 +79,7 @@
 }
 {% endblock %}
       {% endembed %}
-      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 2 } only %}
+      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 2, codepenUrl: 'https://codepen.io/hsnaydd/pen/XWbbgrg?editors=0100' } only %}
         {% block preview %}
           {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-primary', className: null, attributes: {} } only %}
             {% block text %}Primary{% endblock %}
