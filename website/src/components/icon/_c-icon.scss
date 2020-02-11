@@ -1,6 +1,13 @@
 //
 // Icons
 //
+// This project uses SVG sprites for icons. After completing SVG icon optimizations,
+// place your icons with `.svg` extension into `src/icons` folder.
+// Gulp will perform the necessary processes.
+//
+// > Note that `[name]` is a special placeholder that using by kss to generate icons list.
+// Do not remove this!
+//
 // Icons: src/icons
 //
 // Markup: icon.styleguide.twig
