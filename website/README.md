@@ -1,18 +1,6 @@
-# Atölye15 - Web Starter Kit
+# Buttono Website
 
-> ⚠️ **ATTENTION**: This project is in heavily under development! Documentation will be updated later.
-
-Web Starter Kit is a starter package designed for front-end developers of Atölye15. Its main goals are to save developers from redundant work needs to be done at every project's start and also creating consistent code bases between developers.
-
-## Includes
-
-- Twig (HTML Templating System)
-- Sass (CSS extension language)
-- Babel & ES2015 (Javascript compiler)
-- Eslint
-- Stylelint
-
-and many more
+This project was bootstrapped with [Atölye15 - Web Starter Kit](https://github.com/atolye15/web-starter-kit).
 
 ## System Requirements
 
@@ -20,49 +8,9 @@ and many more
 - [Yarn](https://yarnpkg.com/lang/en/)
 - [Git](http://git-scm.com/)
 
-## Browser Support
-
-- Chrome
-- Edge
-- Firefox
-- Safari
-
-## Features
-
-| Feature                  | Description                                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| Easy Initialization      | You can start to code right after you've completed the initial setup.                                                    |
-| Sass Support             | Web Starter Kit contains a SASS compiler. Basic variables, mixins and functions are ready to use.                        |
-| Performance Optimization | Images, Javascript, and CSS files are minified.                                                                          |
-| HTML Templating Engine   | Web Starter Kit uses the twig.js templating engine.                                                                      |
-| Code Linting             | Web Starter Kit contains configuration files for Stylelint and Eslint. You will find bugs and errors before they happen. |
-| ES2015 Support           |                                                                                                                          |
-
 ## Setup
 
-### 1. Installing Web Starter Kit
-
-You can download the latest version of Web Starter Kit [here](https://github.com/atolye15/web-starter-kit) or clone this repository by typing in the terminal
-
-```bash
-git clone git@github.com:atolye15/web-starter-kit.git my-new-project
-```
-
-### 2. Setting Up Git
-
-```bash
-cd my-new-project
-
-# Remove .git folder to remove git history and initialize a new one
-rm -rf .git
-git init
-
-# Create initial commit
-git add -A
-git commit -m "Initial Commit"
-```
-
-### 3. Installing Dependencies
+### 1. Installing Dependencies
 
 To download dependencies type in the terminal
 
@@ -70,25 +18,11 @@ To download dependencies type in the terminal
 yarn
 ```
 
-### 4. Starting Development Environment
+### 2. Starting Development Environment
 
 ```bash
 # Starts development environment, styleguide and watch processes.
 yarn start
-```
-
-### 5. Pushing Your Project to GitHub
-
-In order to define your remote address in your local repository type
-
-```bash
-git remote add origin git@github.com:atolye15/[your-project-name].git
-```
-
-To push your files to your remote repo type
-
-```bash
-git push origin --all
 ```
 
 ## Documentation
@@ -161,11 +95,3 @@ yarn [command]
 | build      | builds project in production mode               |
 | start      | builds project and then runs watch processes    |
 | styleguide | builds styleguide and then runs watch processes |
-
-### 3. Example Use Cases
-
-- [Adding icons](docs/Adding-icon.md)
-
-## License
-
-Web Starter Kit is [MIT licensed.](/LICENSE)
