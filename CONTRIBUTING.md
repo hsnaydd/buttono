@@ -1,6 +1,6 @@
 # Contributing to Buttono
 
-First, thank you for considering contributing to buttono! It's people like you that make the open source community such a great community!
+First, thank you for considering contributing to Buttono! It's people like you that make the open source community such a great community!
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
@@ -10,9 +10,9 @@ Following these guidelines helps to communicate that you respect the time of the
 
 The issue tracker is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
 
-* Please **do not** use the issue tracker for personal support requests.
-* Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
-* Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
+- Please **do not** use the issue tracker for personal support requests.
+- Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
+- Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
   Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
   instead. We reserve the right to delete comments which violate this rule.
 
@@ -67,13 +67,29 @@ If you'd like to make some changes yourself, see the following:
 4. Run `yarn build` to build.
 5. Start the application: `yarn start`
 6. Lint your code before submit a pull request (`yarn lint`).
-7. Finally, submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) with your changes!
+7. Update website if necessary (check [website/README.md](/website/README.md) for more information).
+8. Finally, submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) with your changes into `develop` branch!
+
+## Commit Messages
+
+Commit messages should be verb based, using the following pattern:
+
+> Note: Add the prefix `website:` to the commit messages if the changes are related to the website.
+
+- `Fix ...`
+- `Add ...`
+- `Update ...`
+- `Remove ...`
+- `website: Fix ...`
+- `website: Add ...`
+- `website: Update ...`
+- `website: Remove ...`
 
 ## Coding style
 
 Please follow the coding style of the project. buttono uses stylelint, so if possible, enable linting in your editor to get real-time feedback. The linting rules can be run manually with the following command `yarn lint`.
 
-You can also run `yarn fmt` to reformat the code.
+You can also run `yarn format` to reformat the code.
 
 Finally, when you submit a pull request, they are run again by Circle CI, but hopefully by then your code is already clean!
 

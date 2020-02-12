@@ -1,0 +1,17 @@
+{% embed "./code-block.html.twig" with { className: modifier_class } only %}
+{% block code %}
+.c-button {
+  $buttono-font-family: Helvetica;
+
+  @include buttono-block ();
+
+  &--primary {
+    @include buttono-style-modifier ();
+  }
+
+  &--secondary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+}
+{% endblock %}
+{% endembed %}

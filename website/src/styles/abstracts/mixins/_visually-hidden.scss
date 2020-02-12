@@ -1,0 +1,15 @@
+// Visual Hidden
+
+// Hides content visually, but it will remain available to assistive technologies
+
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: px-to-rem(-1px);
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

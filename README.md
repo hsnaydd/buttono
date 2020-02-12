@@ -8,24 +8,25 @@
 <br>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/hsnaydd/buttono"><img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg"></a>
+  <a href="https://www.npmjs.com/package/buttono"><img alt="npm version" src="https://img.shields.io/npm/v/buttono.svg"></a>
   <a href="/LICENSE"><img alt="Lisence" src="https://img.shields.io/github/license/hsnaydd/buttono.svg"></a>
-  <a href="https://circleci.com/gh/hsnaydd/buttono/tree/master"><img alt="Build Status" src="https://circleci.com/gh/hsnaydd/buttono/tree/master.svg?style=shield"></a>
+  <a href="https://github.com/hsnaydd/buttono/actions?workflow=CI"><img src="https://github.com/hsnaydd/buttono/workflows/CI/badge.svg" alt="Build Status" style="max-width:100%;"></a>
 <p>
 
 ------
 
 ## Advantages
 
-- Most of the time you will need only one color to create a button.
-- The buttons you create with buttono will look the same in all modern browsers. You won't have to worry about that.
-- Yes buttono following the BEM methodology, but you can use it with all the conventions without any problem.
+- Most of the time you will only need one color to create a button.
+- Even though Buttono is following the BEM methodology, you can still use it with all other conventions.
+- The buttons you create with Buttono will look exactly the same in all modern browsers.
 - No need to worry about `focus` styles for accessibility.
-- Thanks to its flexible structure, you can configure it for any situation.
+- Thanks to Buttono’s flexible structure you can configure it for any situation.
 
 ## Demo
 
-TODO
+- [https://hsnaydd.github.io/buttono](https://hsnaydd.github.io/buttono)
+- [Codepen Demos](https://codepen.io/collection/AZaJxO)
 
 ## Getting Started
 
@@ -39,25 +40,22 @@ or
 yarn add buttono
 ```
 
-and import Buttono as follows (note that the exact path will differ depending on your folder structure):
-
-```scss
-@import "node_modules/buttono/buttono";
-```
-
 ## Usage
 
 ```scss
-$buttono-font-family: Helvetica;
-
 .c-button {
+  // Note that! The exact path will differ depending on your folder structure.
+  @import "node_modules/buttono/buttono";
+
+  $buttono-font-family: Helvetica;
+
   @include buttono-block();
 
-  &--primary {
+  &--default {
     @include buttono-style-modifier();
   }
 
-  &--secondary {
+  &--primary {
     @include buttono-style-modifier($background-color: lightblue);
   }
 }
@@ -339,6 +337,10 @@ It does not use any tool for browser support. Using autoprefixer for browser sup
 
 You can follow the change log from the [Releases page](https://github.com/hsnaydd/buttono/releases).
 
+## Thanks
+
+Huge thanks to [Ali Kemal Akçay](https://dribbble.com/akemal) for his awesome UI design and also thanks to [Erdem Kirmitci](https://dribbble.com/erdemkirmitci) for the beautiful logo.
+
 ## License
 
-Copyright (c) 2018-2019  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).
+Copyright (c) 2018-2020  Hasan Aydoğdu. See the [LICENSE](/LICENSE) file for license rights and limitations (MIT).

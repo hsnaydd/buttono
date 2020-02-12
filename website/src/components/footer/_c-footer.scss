@@ -1,0 +1,40 @@
+//
+// Footer
+//
+// Markup: footer.styleguide.twig
+//
+// Styleguide Components.Footer
+
+@import 'c-footer-signature';
+
+.c-footer {
+  background-color: color-palette('primary', 600);
+
+  //
+  // Elements
+  // -------------------------
+  &__inner {
+    display: flex;
+    min-height: px-to-rem(120px);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: pad();
+    padding-bottom: pad();
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: gap(small);
+    }
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

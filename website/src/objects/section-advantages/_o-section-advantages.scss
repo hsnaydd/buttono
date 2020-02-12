@@ -1,0 +1,54 @@
+//
+// Section Advantages
+//
+// Markup: section-advantages.styleguide.twig
+//
+// Styleguide Objects.Section-Advantages
+
+.o-section-advantages {
+  background-color: color-palette('primary', 600);
+
+  @include media-breakpoint-up(md) {
+    padding-top: px-to-rem(258px);
+    padding-bottom: px-to-rem(160px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: px-to-rem(194px);
+    padding-bottom: px-to-rem(72px);
+  }
+
+  //
+  // Elements
+  // -------------------------
+
+  &__title {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo-icon {
+    flex-shrink: 0;
+    margin-top: px-to-em(3px, 32px);
+
+    @include media-breakpoint-up(md) {
+      margin-left: px-to-rem(-5px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: px-to-rem(-9px);
+    }
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

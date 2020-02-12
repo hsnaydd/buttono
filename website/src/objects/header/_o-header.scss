@@ -1,0 +1,35 @@
+//
+// Header
+//
+// ExampleBgColor: #12122C
+//
+// Markup: header.styleguide.twig
+//
+// Styleguide Objects.Header
+
+.o-header {
+  &__inner {
+    display: flex;
+    padding-top: pad();
+    padding-bottom: pad();
+
+    @include media-breakpoint-up(lg) {
+      min-height: px-to-rem(160px);
+    }
+
+    @include media-breakpoint-only(md) {
+      min-height: px-to-rem(120px);
+    }
+  }
+  //
+  // Elements
+  // -------------------------
+  &__logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

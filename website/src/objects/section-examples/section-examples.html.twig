@@ -1,0 +1,210 @@
+<div class="o-section-examples">
+  <div class="container">
+    <h2 class="o-section-examples__title" aria-label="Some Awesome Examples">
+      Some Awes
+      <span class="u-visually-hidden">o</span>
+      {% include "@components/icon/icon.html.twig" with { name: 'logo', className: 'o-section-examples__logo-icon', attributes: { 'aria-hidden': 'true' } } only %}
+      me Examples
+      </h2>
+      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 1, codepenUrl: 'https://codepen.io/hsnaydd/pen/NWWWaqr?editors=0100' } only %}
+        {% block preview %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'primary', className: null, attributes: {} } only %}
+            {% block text %}Primary{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'success', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Success{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'danger', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Danger{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'warning', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Warning{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'info', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Info{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'light', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Light{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'dark', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Dark{% endblock %}
+          {% endembed %}
+        {% endblock %}
+{% block codeBlock %}
+.c-button {
+  @import 'node_modules/buttono/buttono';
+
+  $buttono-padding: 0.5rem 2rem;
+  $buttono-color-alt: #030315;
+  $buttono-border-radius: 0.25rem;
+  $buttono-transition-duration: 0.2s;
+
+  @include buttono-block($display: inline-flex);
+
+  // Extra styles
+  min-height: 3.5rem;
+  align-items: center;
+  font-weight: 500;
+
+  &--primary {
+    @include buttono-style-modifier(
+      $background-color: #5a46ff,
+      $background-color-hover: #4333db
+    );
+  }
+
+  &--success {
+    @include buttono-style-modifier($background-color: #76d319);
+  }
+
+  &--danger {
+    @include buttono-style-modifier($background-color: #fc3559);
+  }
+
+  &--warning {
+    @include buttono-style-modifier($background-color: #fc840c);
+  }
+
+  &--info {
+    @include buttono-style-modifier($background-color: #00cbf4);
+  }
+
+  &--light {
+    @include buttono-style-modifier($background-color: #c4c5ca);
+  }
+
+  &--dark {
+    @include buttono-style-modifier($background-color: #191922);
+  }
+}
+{% endblock %}
+      {% endembed %}
+      {% embed "@components/example/example.html.twig" with { className: 'o-section-examples__example', exampleId: 2, codepenUrl: 'https://codepen.io/hsnaydd/pen/XWbbgrg?editors=0100' } only %}
+        {% block preview %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-primary', className: null, attributes: {} } only %}
+            {% block text %}Primary{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-success', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Success{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-danger', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Danger{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-warning', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Warning{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-info', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Info{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-light', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Light{% endblock %}
+          {% endembed %}
+          {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'outline-dark', className: 'u-margin-left-small', attributes: {} } only %}
+            {% block text %}Dark{% endblock %}
+          {% endembed %}
+        {% endblock %}
+{% block codeBlock %}
+.c-button {
+  @import 'node_modules/buttono/buttono';
+
+  $buttono-padding: 0.5rem 2rem;
+  $buttono-color-alt: #030315;
+  $buttono-border-radius: 0.25rem;
+  $buttono-transition-duration: 0.2s;
+
+  @include buttono-block($display: inline-flex);
+
+  // Extra styles
+  min-height: 3.5rem;
+  align-items: center;
+  font-weight: 500;
+
+  &--outline-primary {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #5a46ff,
+      $background-color: transparent,
+      $background-color-hover: #5a46ff,
+      $border-color-disabled: #9e90ff,
+      $color-disabled: #9e90ff
+    );
+  }
+
+  &--outline-success {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #76d319,
+      $background-color: transparent,
+      $background-color-hover: #76d319,
+      $border-color-disabled: #bef171
+    );
+  }
+
+  &--outline-danger {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #fc3559,
+      $background-color: transparent,
+      $background-color-hover: #fc3559,
+      $border-color-disabled: #feb6ae
+    );
+  }
+
+  &--outline-warning {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #fc840c,
+      $background-color: transparent,
+      $background-color-hover: #fc840c,
+      $border-color-disabled: #fedc9d
+    );
+  }
+
+  &--outline-info {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #00cbf4,
+      $background-color: transparent,
+      $background-color-hover: #00cbf4,
+      $border-color-disabled: #98fdf7
+    );
+  }
+
+  &--outline-light {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #c4c5ca,
+      $background-color: transparent,
+      $background-color-hover: #c4c5ca,
+      $border-color-disabled: #efeff1,
+    );
+  }
+
+  &--outline-dark {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #191922,
+      $background-color: transparent,
+      $background-color-hover: #191922,
+      $border-color-disabled: #c4c5ca
+    );
+  }
+}
+{% endblock %}
+      {% endembed %}
+  </div>
+</div>

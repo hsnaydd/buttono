@@ -1,0 +1,33 @@
+//
+// Advantage
+//
+// ExampleBgColor: #12122C
+//
+// Markup: advantage.styleguide.twig
+//
+// Styleguide Components.Advantage
+
+.c-advantage {
+  @include media-breakpoint-up(md) {
+    max-width: px-to-rem(370px);
+  }
+
+  //
+  // Elements
+  // -------------------------
+  &__number {
+    display: inline-block;
+    font-size: $g-font-size-h1;
+    font-weight: 700;
+    line-height: $g-line-height-h1;
+  }
+
+  &__second-text {
+    margin-top: gap();
+    color: color-palette('info', 500);
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

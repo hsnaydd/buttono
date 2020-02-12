@@ -1,0 +1,24 @@
+//
+// Footer Signature
+//
+
+.c-footer-signature {
+  display: inline-flex;
+  align-items: center;
+  color: color-palette('primary', 300);
+  font-weight: 500;
+  //
+  // Elements
+  // -------------------------
+
+  &__icon {
+    margin-right: gap(2xsmall);
+    margin-left: gap(2xsmall);
+    color: color-palette('danger', 500);
+    font-size: $g-font-size-medium;
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

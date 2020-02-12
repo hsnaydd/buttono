@@ -1,0 +1,50 @@
+//
+// Example
+//
+// ExampleBgColor: #12122C
+//
+// Markup: example.styleguide.twig
+//
+// Styleguide Components.Example
+
+.c-example {
+  //
+  // Elements
+  // -------------------------
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__preview-wrapper {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
+  &__preview {
+    display: flex;
+    padding: pad(large) pad(medium);
+    margin: 0;
+    background-color: color-palette('primary', 800);
+    border-top-left-radius: px-to-rem(8px);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &__checkbox {
+    @include media-breakpoint-up(md) {
+      margin-left: gap(large);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: gap(2xsmall);
+      margin-left: gap(2xsmall);
+    }
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    {% block meta %}
+      <title>Default Project</title>
+    {% endblock %}
+    <link rel=stylesheet href="css/app{% if is_production() %}.min{% endif %}.css">
+    {% block headerStylesheets %}{% endblock %}
+    {% block headerJavascripts %}{% endblock %}
+  </head>
+  <body>
+
+  {% if svgSprite %}
+    <div hidden>
+      {{ svgSprite|raw }}
+    </div>
+  {% endif %}
+
+  {% block body %}{% endblock %}
+
+  <!-- Javascript Files -->
+  {% block footerVendorJavascripts %}{% endblock %}
+  <script src="js/app{{ is_production() ? '.min'}}.js"></script>
+  {% block footerJavascripts %}{% endblock %}
+  </body>
+</html>
