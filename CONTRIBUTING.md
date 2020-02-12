@@ -74,7 +74,7 @@ If you'd like to make some changes yourself, see the following:
 
 Commit messages should be verb based, using the following pattern:
 
-> Note: Add `website:` prefix to the commit messages if the changes are related to the website.
+> Note: Add the `website:` prefix to the commit messages if the changes are related to the website.
 
 - `Fix ...`
 - `Add ...`
