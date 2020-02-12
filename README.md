@@ -17,11 +17,11 @@
 
 ## Advantages
 
-- Most of the time you will need only one color to create a button.
-- The buttons you create with buttono will look the same in all modern browsers. You won't have to worry about that.
-- Yes buttono following the BEM methodology, but you can use it with all the conventions without any problem.
+- Most of the time you will only need one color to create a button.
+- Even though Buttono is following the BEM methodology, you can still use it with all other conventions.
+- The buttons you create with Buttono will look exactly the same in all modern browsers.
 - No need to worry about `focus` styles for accessibility.
-- Thanks to its flexible structure, you can configure it for any situation.
+- Thanks to Buttono’s flexible structure you can configure it for any situation.
 
 ## Demo
 
