@@ -40,25 +40,22 @@ or
 yarn add buttono
 ```
 
-and import Buttono as follows (note that the exact path will differ depending on your folder structure):
-
-```scss
-@import "node_modules/buttono/buttono";
-```
-
 ## Usage
 
 ```scss
-$buttono-font-family: Helvetica;
-
 .c-button {
+  // Note that! The exact path will differ depending on your folder structure.
+  @import "node_modules/buttono/buttono";
+
+  $buttono-font-family: Helvetica;
+
   @include buttono-block();
 
-  &--primary {
+  &--default {
     @include buttono-style-modifier();
   }
 
-  &--secondary {
+  &--primary {
     @include buttono-style-modifier($background-color: lightblue);
   }
 }
