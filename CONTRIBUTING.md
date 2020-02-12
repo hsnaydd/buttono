@@ -10,9 +10,9 @@ Following these guidelines helps to communicate that you respect the time of the
 
 The issue tracker is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
 
-* Please **do not** use the issue tracker for personal support requests.
-* Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
-* Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
+- Please **do not** use the issue tracker for personal support requests.
+- Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
+- Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
   Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
   instead. We reserve the right to delete comments which violate this rule.
 
@@ -67,8 +67,8 @@ If you'd like to make some changes yourself, see the following:
 4. Run `yarn build` to build.
 5. Start the application: `yarn start`
 6. Lint your code before submit a pull request (`yarn lint`).
-7. Update website if necessary (check [website/README.md](/website/README.md) for more information).
-8. Finally, submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) with your changes!
+7. Update website if necessary (check [website/README.md](/website/README.md) for more information). Also add `website:` prefix to the commit messages if the changes is related with the website.
+8. Finally, submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) with your changes into `develop` branch!
 
 ## Coding style
 
