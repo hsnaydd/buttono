@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+          <title>Default Project</title>
+        <link rel=stylesheet href="css/app.min.css">
+          </head>
+  <body>
+
+      <div hidden>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewBox="0 0 24 24">
+<title>check</title>
+<path d="M10.184 14.615l8.062-8.188c0.395-0.401 1.039-0.406 1.44-0.011 0.004 0.004 0.007 0.007 0.011 0.011 0.403 0.409 0.403 1.065 0 1.474l-9.513 9.662c-0.408 0.414-1.075 0.42-1.489 0.012-0.004-0.004-0.008-0.008-0.012-0.012l-4.382-4.45c-0.403-0.409-0.403-1.065 0-1.474 0.395-0.401 1.039-0.406 1.44-0.011 0.004 0.004 0.007 0.007 0.011 0.011l2.93 2.976c0.408 0.414 1.075 0.42 1.489 0.012 0.004-0.004 0.008-0.008 0.012-0.012z"/>
+</symbol><symbol id="icon-codepen" viewBox="0 0 24 24">
+<title>codepen</title>
+<path d="M12.071 22.996l0.019-0.001c-0.019 0.002-0.038 0.003-0.057 0.004l-0.033 0.001 0.067-0.003h0.004zM12.545 22.838l-0.093 0.052 0.023-0.010 0.070-0.042zM6.999 13.221l-3.212 2.248 7.213 4.688v-4.136l-4.001-2.8zM17 13.22l-4 2.8v4.137l7.212-4.688-3.212-2.249zM12 9.72l-3.256 2.279 3.256 2.279 3.256-2.279-3.256-2.279zM21 10.42l-2.256 1.579 2.256 1.58v-3.159zM3 10.421v3.157l2.255-1.578-2.255-1.579zM11 3.842l-7.213 4.688 3.212 2.249 4.001-2.801v-4.136zM13 3.842v4.137l4 2.8 3.212-2.249-7.212-4.688zM1.423 16.316l0.001-0-0.022-0.015-0.006-0.005 0.004 0.004-0.048-0.039c-0.013-0.011-0.026-0.023-0.039-0.035-0.047-0.045-0.090-0.094-0.127-0.146-0.092-0.131-0.147-0.27-0.171-0.412-0.009-0.054-0.014-0.111-0.014-0.168v-7c0-0.057 0.005-0.113 0.014-0.168 0.024-0.141 0.079-0.28 0.167-0.405 0.025-0.035 0.051-0.068 0.079-0.099 0.016-0.018 0.033-0.035 0.051-0.052 0.013-0.013 0.026-0.025 0.040-0.036s0.029-0.023 0.043-0.035c0.018-0.014 0.036-0.027 0.055-0.039 0.002-0.001 0.004-0.002 0.006-0.004l10.009-6.506c0.032-0.020 0.066-0.039 0.1-0.056l-0.109 0.062c0.046-0.030 0.093-0.055 0.142-0.077 0.026-0.012 0.052-0.022 0.079-0.031 0.015-0.005 0.031-0.010 0.047-0.015 0.022-0.007 0.044-0.012 0.067-0.017 0.019-0.004 0.038-0.007 0.057-0.010 0.050-0.008 0.101-0.012 0.153-0.012l-0.093 0.004c0.025-0.002 0.050-0.004 0.075-0.004l0.018-0c0.006 0 0.013 0 0.019 0 0.025 0 0.049 0.002 0.074 0.004 0.020 0.002 0.040 0.004 0.060 0.007s0.038 0.007 0.057 0.011c0.022 0.004 0.044 0.010 0.066 0.016 0.017 0.005 0.033 0.010 0.049 0.016 0.026 0.009 0.052 0.019 0.078 0.030 0.011 0.005 0.021 0.010 0.032 0.015 0.035 0.017 0.069 0.035 0.101 0.056l0.009 0.006 10.104 6.578c0.013 0.011 0.026 0.023 0.039 0.035 0.018 0.018 0.035 0.035 0.052 0.053 0.028 0.031 0.054 0.064 0.079 0.099 0.088 0.126 0.143 0.264 0.167 0.406 0.009 0.054 0.014 0.111 0.014 0.168v7c0 0.057-0.005 0.113-0.014 0.168-0.024 0.141-0.079 0.28-0.167 0.405-0.001 0.002-0.003 0.004-0.005 0.006-0.037 0.052-0.079 0.101-0.126 0.145-0.013 0.013-0.026 0.025-0.040 0.036s-0.029 0.023-0.043 0.035c-0.018 0.014-0.036 0.027-0.055 0.039-0.002 0.001-0.004 0.002-0.006 0.004l-9.996 6.498c-0.036 0.024-0.074 0.045-0.113 0.064l0.016-0.010-0.049 0.025c-0.025 0.011-0.052 0.022-0.078 0.031-0.016 0.005-0.032 0.010-0.048 0.015-0.022 0.007-0.044 0.012-0.067 0.017-0.019 0.004-0.038 0.007-0.057 0.010l-0.075 0.009-0.006-0 0.019-0.001-0.090 0.004c-0.011 0-0.022-0-0.033-0.001-0.018-0.001-0.038-0.002-0.057-0.004-0.021-0.002-0.042-0.004-0.063-0.008-0.019-0.003-0.038-0.007-0.057-0.011-0.022-0.005-0.044-0.010-0.066-0.016-0.016-0.005-0.032-0.010-0.048-0.015-0.027-0.009-0.053-0.019-0.079-0.031-0.011-0.005-0.021-0.010-0.032-0.015-0.040-0.019-0.077-0.040-0.113-0.064l-10.029-6.52z"/>
+</symbol><symbol id="icon-favorite" viewBox="0 0 24 24">
+<title>favorite</title>
+<path d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z"/>
+</symbol><symbol id="icon-github" viewBox="0 0 24 24">
+<title>github</title>
+<path d="M15.881 2.369c1.76-1.119 3.074-1.473 3.97-1.343 0.078 0.011 0.145 0.026 0.2 0.042 0.272 0.081 0.494 0.278 0.605 0.54 0.51 1.191 0.604 2.514 0.278 3.757 0.848 1.080 1.314 2.418 1.315 3.803 0 4.334-1.885 6.509-5.282 7.341l-0.239 0.056 0.090 0.248c0.136 0.417 0.204 0.85 0.199 1.279l-0.012 0.257v3.697c0 0.528-0.427 0.955-0.953 0.955-0.489 0-0.892-0.369-0.947-0.844l-0.006-0.111 0.003-3.772c0.046-0.589-0.139-1.17-0.513-1.622l-0.19-0.215c-0.445-0.575-0.098-1.447 0.652-1.53 3.593-0.401 5.292-1.833 5.292-5.737-0-1.089-0.418-2.135-1.167-2.924-0.252-0.265-0.33-0.65-0.203-0.993 0.274-0.736 0.318-1.532 0.133-2.286-0.067 0.015-0.14 0.034-0.22 0.057-0.614 0.177-1.38 0.549-2.302 1.169-0.229 0.154-0.514 0.201-0.78 0.129-2.022-0.549-4.153-0.549-6.175 0-0.266 0.072-0.551 0.025-0.78-0.129-0.922-0.619-1.688-0.991-2.302-1.169-0.080-0.023-0.153-0.042-0.22-0.057-0.184 0.753-0.141 1.55 0.133 2.286 0.128 0.342 0.049 0.728-0.203 0.993-0.755 0.794-1.173 1.85-1.167 2.952 0 3.868 1.686 5.288 5.304 5.739 0.743 0.093 1.082 0.958 0.64 1.529l-0.188 0.213c-0.332 0.402-0.516 0.912-0.518 1.479l0.006 0.191v3.697c0 0.528-0.427 0.955-0.953 0.955-0.489 0-0.892-0.369-0.947-0.844l-0.006-0.111 0.001-1.661c-2.030 0.332-3.348-0.292-4.56-1.72l-0.151-0.183-0.536-0.67c-0.275-0.326-0.463-0.485-0.64-0.551l-0.172-0.054c-0.447-0.169-0.706-0.65-0.587-1.125 0.128-0.512 0.645-0.823 1.156-0.695 0.669 0.167 1.137 0.527 1.682 1.171l0.151 0.183 0.547 0.684c0.854 1.012 1.608 1.351 3.112 1.019v-0.028c-0.044-0.632 0.056-1.258 0.284-1.835-3.567-0.82-5.531-2.974-5.531-7.379-0.007-1.397 0.46-2.748 1.315-3.837-0.326-1.243-0.231-2.565 0.278-3.757 0.112-0.261 0.333-0.459 0.605-0.54 0.055-0.016 0.121-0.031 0.2-0.042 0.896-0.13 2.21 0.224 3.97 1.343 2.082-0.495 4.251-0.495 6.333 0z"/>
+</symbol><symbol id="icon-logo" viewBox="0 0 24 24">
+<title>logo</title>
+<path d="M11.318 9.052c1.576 0 3.059 0.629 4.177 1.773 2.035 2.085 1.682 4.586 1.725 4.844 0.009 1.759-1.528 3.708-2.447 4.297-3.454 2.213-6.552 0.235-6.965-0.094-1.1-0.876-1.684-1.708-1.786-2.545-0.108-0.887 0.202-1.42 0.48-1.71 0.194-0.202 0.617-0.339 0.988-0.178 0.259 0.112 0.451 0.342 0.52 0.62 0.383 1.541 1.673 2.673 3.308 2.673 1.961-0.002 3.548-1.628 3.545-3.631 0.003-2.003-1.585-3.629-3.546-3.631-1.104 0-2.085 0.52-2.732 1.332-0.3 0.377-0.799 0.52-1.247 0.357s-0.748-0.598-0.748-1.084c0-2.124 3.382-3.024 4.728-3.024zM17.797 3c0.646 0 1.164 0.518 1.18 1.178l0.014 0.57c0.068 2.51-0.284 5.498-0.969 8.071-0.073-0.237-0.159-0.47-0.256-0.699-0.193-1.992-0.584-3.921-1.188-5.725 0.036-0.527 0.066-1.053 0.051-1.582l-0.014-0.57c-0.019-0.645 0.464-1.224 1.182-1.244zM14.148 3.666c0.197 0.479 1.375 2.334 2.113 6.239-0.549-0.547-1.181-1-1.872-1.34-0.464-0.6-0.951-1.182-1.459-1.745-0.547-1.477-0.651-1.533-0.897-2.074-0.291-0.597-0.055-1.322 0.529-1.621 0.569-0.295 1.303-0.043 1.586 0.541zM9.46 5.193c0.269 0.238 1.269 0.924 2.86 2.729-0.332-0.051-0.666-0.078-1.002-0.081-0.576 0-1.312 0.111-2.068 0.333-1.062-0.971-0.685-0.599-1.26-1.086-0.512-0.417-0.597-1.178-0.19-1.702 0.394-0.507 1.167-0.596 1.659-0.194z"/>
+</symbol><symbol id="icon-twitter" viewBox="0 0 24 24">
+<title>twitter</title>
+<path d="M11.149 8.231c0.067-1.754 1.246-3.311 3.008-3.942 1.65-0.591 3.496-0.256 4.788 0.829 0.693-0.239 1.351-0.563 1.956-0.963 0.645-0.427 1.509 0.125 1.322 0.844-0.293 1.127-0.879 2.165-1.703 3.023 0.013 0.13 0.019 0.26 0.020 0.392 0 9.5-9.775 14.38-18.348 9.912-0.786-0.41-0.45-1.534 0.449-1.501 1.44 0.054 2.866-0.215 4.163-0.775-1.882-1.088-3.088-2.529-3.679-4.234-0.61-1.76-0.521-3.609-0.012-5.366 0.154-0.531 0.311-0.932 0.422-1.166 0.27-0.569 1.098-0.645 1.479-0.135 1.376 1.839 3.524 3.011 5.871 3.247l0.262 0.022 0.003-0.189zM19.545 6.618l-0.292 0.096-0.295 0.088c-0.322 0.091-0.67-0.004-0.891-0.241-0.818-0.883-2.137-1.192-3.302-0.775s-1.929 1.472-1.912 2.652v0.801c0 0.434-0.369 0.79-0.832 0.801-2.785 0.068-5.445-0.96-7.363-2.793-0.337 1.366-0.362 2.774 0.089 4.074 0.578 1.667 1.902 3.020 4.183 3.971 0.612 0.255 0.687 1.042 0.133 1.395-0.956 0.609-2.003 1.065-3.1 1.359 6.558 1.618 12.868-2.465 12.868-9.629-0.001-0.174-0.018-0.347-0.053-0.517-0.054-0.263 0.036-0.533 0.239-0.721 0.19-0.176 0.366-0.364 0.528-0.561z"/>
+</symbol></svg>
+    </div>
+  
+    <div class="o-root">
+        <header class="o-header">
+  <div class="container o-header__inner">
+    <svg class="c-logo o-header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 25"><path d="M10.318 12.714c0 .47-.048.862-.143 1.177-.09.306-.236.593-.429.847-.19.25-.418.48-.682.693-.299.24-.6.479-.902.715.71.325 1.332.816 1.815 1.43.242.308.433.642.572 1.001.14.36.209.737.209 1.133 0 .528-.106 1.049-.319 1.562a4.592 4.592 0 01-2.178 2.354A3.383 3.383 0 016.71 24H.286L0 23.56V9.04c0-.059.044-.147.132-.264C.22 8.659.301 8.6.374 8.6h5.808a3.73 3.73 0 011.562.341 4.522 4.522 0 012.233 2.222 3.65 3.65 0 01.341 1.551zM5.61 20.766c.425 0 .752-.15.979-.451.227-.3.341-.649.341-1.045 0-.352-.114-.682-.341-.99a1.078 1.078 0 00-.913-.462H3.608v2.948H5.61zm-1.914-5.962h.682c.279 0 .554-.015.825-.044.271-.03.513-.095.726-.198.21-.1.389-.256.517-.451.132-.198.198-.473.198-.825 0-.147-.022-.3-.066-.462a1.497 1.497 0 00-.198-.44c-.087-.13-.2-.243-.33-.33a.776.776 0 00-.44-.132H3.608v2.794l.088.088zm16.582 5.764c.28 0 .58-.04.902-.121.323-.08.616-.205.88-.374.265-.169.484-.378.66-.627.177-.25.264-.543.264-.88V8.93l.463-.374h2.75c.058 0 .146.044.264.132.117.088.175.169.175.242v9.922a4.27 4.27 0 01-.572 2.178 5.894 5.894 0 01-1.485 1.705c-.613.48-1.3.854-2.035 1.111-.705.256-1.45.39-2.2.396a6.705 6.705 0 01-2.243-.396 6.974 6.974 0 01-2.035-1.122c-.6-.474-1.1-1.06-1.474-1.727a4.445 4.445 0 01-.562-2.211v-9.79c0-.117.055-.22.166-.308a.54.54 0 01.34-.132h2.64l.507.308v9.658c0 .337.08.63.241.88.162.25.367.462.616.638.25.176.528.308.837.396.308.088.608.132.901.132zm9.675-8.69a.884.884 0 01-.187-.132.26.26 0 01-.099-.198v-2.64c0-.103.051-.19.154-.264a.503.503 0 01.286-.11h9.702l.44.308v2.772l-.22.264h-3.146l-.132.11v11.704l-.374.308h-2.75l-.462-.374V11.878h-3.212zm12.732 0a.884.884 0 01-.187-.132.26.26 0 01-.098-.198v-2.64c0-.103.05-.19.154-.264a.503.503 0 01.285-.11h9.703l.44.308v2.772l-.22.264h-3.147l-.132.11v11.704L49.11 24h-2.75l-.462-.374V11.878h-3.213zm12.403 4.4c0-1.1.205-2.127.616-3.08a7.84 7.84 0 011.694-2.497 8.064 8.064 0 012.508-1.683 7.701 7.701 0 013.08-.616c1.085 0 2.112.209 3.08.627.944.402 1.803.98 2.53 1.705a8.055 8.055 0 011.705 2.53c.418.968.627 1.995.627 3.08a7.498 7.498 0 01-.638 3.069 8.068 8.068 0 01-4.257 4.213c-.96.41-1.984.616-3.069.616a7.498 7.498 0 01-3.069-.638 8.017 8.017 0 01-2.508-1.727 8.164 8.164 0 01-1.683-2.53 7.727 7.727 0 01-.616-3.069zm3.586.066c0 .587.114 1.137.341 1.65.227.513.539.96.935 1.342.396.381.854.682 1.375.902.52.22 1.067.33 1.639.33.587 0 1.14-.114 1.661-.341.52-.227.975-.535 1.364-.924.389-.389.697-.843.924-1.364.227-.52.341-1.074.341-1.661s-.114-1.137-.341-1.65a4.397 4.397 0 00-2.288-2.277 4.107 4.107 0 00-1.661-.341 3.99 3.99 0 00-1.661.352 4.459 4.459 0 00-2.288 2.321 4.107 4.107 0 00-.341 1.661zm19.2 7.348l-.418.308H74.75a.422.422 0 01-.308-.132.422.422 0 01-.132-.308V8.6l.22-.22h.858l8.603 8.272V8.908l.462-.374h2.683c.074.03.165.08.276.154.11.073.165.147.165.22v15.004c0 .117-.077.198-.231.242-.118.038-.24.06-.364.066a.94.94 0 01-.22-.033l-.22-.055-8.668-8.536v8.096zM102.948 23c-4.783 3-9.072.318-9.643-.127-1.523-1.188-2.332-2.316-2.473-3.45-.15-1.203.28-1.925.665-2.318.269-.274.854-.46 1.368-.241.358.152.624.463.72.84.53 2.089 2.317 3.624 4.58 3.624a4.915 4.915 0 004.909-4.922 4.915 4.915 0 00-4.91-4.922 4.862 4.862 0 00-3.783 1.806 1.553 1.553 0 01-1.727.484 1.56 1.56 0 01-1.035-1.47c0-2.88 4.683-4.1 6.546-4.1 2.182 0 4.235.853 5.783 2.404 2.817 2.826 2.329 6.217 2.388 6.567.012 2.384-2.116 5.027-3.388 5.825zM95.302 7.014c-1.47-1.316-.949-.812-1.744-1.472a1.644 1.644 0 01-.263-2.307c.546-.687 1.616-.808 2.297-.263.372.322 1.757 1.253 3.96 3.7a9.86 9.86 0 00-1.387-.11c-.798 0-1.817.15-2.863.452zM99.887.168c.788-.4 1.804-.058 2.196.734.273.649 1.904 3.164 2.926 8.458a9.837 9.837 0 00-2.592-1.817 40.951 40.951 0 00-2.02-2.365c-.758-2.002-.902-2.078-1.242-2.812a1.641 1.641 0 01.732-2.198zm7.205 12.197c-.267-2.701-.809-5.315-1.645-7.761.05-.714.091-1.428.071-2.145l-.02-.773c-.026-.874.642-1.66 1.637-1.686.894 0 1.611.702 1.634 1.597l.02.773c.094 3.403-.393 7.454-1.342 10.942a9.609 9.609 0 00-.355-.947z"/></svg>
+  </div>
+</header>
+      <main>
+        <div class="o-section-intro">
+  <div class="container">
+     <section class="o-section-intro__content">
+      <h1 class="o-section-intro__title">A flexible Sass mixin for creating BEM-style buttons.</h1>
+      <a class="c-button c-button--primary" href="https://github.com/hsnaydd/buttono">
+        View on Github
+        </a>
+     </section>
+      <div class="c-code-block o-section-intro__code c-code-block--rounded">
+  <pre class="c-code-block__code language-scss line-numbers"><code>.c-button {
+  @import "node_modules/buttono/buttono";
+
+  $buttono-font-family: Helvetica;
+
+  @include buttono-block();
+
+  &--default {
+    @include buttono-style-modifier();
+  }
+
+  &--primary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+}
+</code></pre>
+</div>
+  </div>
+</div>
+        <div class="o-section-advantages">
+  <section class="container">
+    <h2 class="o-section-advantages__title" aria-label="Great things about Buttono">
+      Great things about Button
+      <svg class="c-icon o-section-advantages__logo-icon"aria-hidden="true">
+  <use xlink:href="#icon-logo"></use>
+</svg>
+    </h2>
+    <ul class="o-advantage-list row">
+      <li class="o-advantage-list__item col col--sm-6">
+        <div class="c-advantage u-margin-sides-auto">
+  <span class="c-advantage__number">01</span>
+  <p>
+    Most of the time you will only need one color to create a button.
+  </p>
+  <p class="c-advantage__second-text">
+    Just define a background color and you are good to go!
+  </p>
+</div>
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        <div class="c-advantage u-margin-sides-auto">
+  <span class="c-advantage__number">02</span>
+  <p>
+    Even though Buttono is following the BEM methodology, you can still use it with all other conventions.
+  </p>
+  <p class="c-advantage__second-text">
+    Buttono is non-restrictive.
+  </p>
+</div>
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        <div class="c-advantage u-margin-sides-auto">
+  <span class="c-advantage__number">03</span>
+  <p>
+    The buttons you create with Buttono will look exactly the same in all modern browsers.
+  </p>
+  <p class="c-advantage__second-text">
+    So you don’t have to worry about that!
+  </p>
+</div>
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        <div class="c-advantage u-margin-sides-auto">
+  <span class="c-advantage__number">04</span>
+  <p>
+    Buttono deals with focus styles for accessibility.
+  </p>
+  <p class="c-advantage__second-text">
+    Because accessibility matters!
+  </p>
+</div>
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        <div class="c-advantage u-margin-sides-auto">
+  <span class="c-advantage__number">05</span>
+  <p>
+    Thanks to Buttono’s flexible structure you can configure it for any situation.
+  </p>
+  <p class="c-advantage__second-text">
+    Buttono will be ready for every challenge!
+  </p>
+</div>
+      </li>
+    </ul>
+    <div class="u-text-align-center">
+      <a class="c-button c-button--primary" href="https://github.com/hsnaydd/buttono#documentation">
+See full documentation</a>
+    </div>
+  </section>
+</div>
+        <div class="o-section-examples">
+  <div class="container">
+    <h2 class="o-section-examples__title" aria-label="Some Awesome Examples">
+      Some Awes
+      <span class="u-visually-hidden">o</span>
+      <svg class="c-icon o-section-examples__logo-icon"aria-hidden="true">
+  <use xlink:href="#icon-logo"></use>
+</svg>
+      me Examples
+      </h2>
+      <div class="c-example js-example o-section-examples__example">
+  <div class="c-example__header">
+    <label class="c-checkbox c-example__checkbox">
+  <input class="c-checkbox__inp js-example-checkbox" type="checkbox" name="example-checkbox1">
+  <span aria-hidden="true" class="c-checkbox__mask"></span>
+      <span class="c-checkbox__label">Show Disabled States</span>
+  </label>
+
+
+    <a class="c-edit-example-button" href="https://codepen.io/hsnaydd/pen/NWWWaqr?editors=0100">
+  <svg class="c-icon c-edit-example-button__icon">
+  <use xlink:href="#icon-codepen"></use>
+</svg>
+  Edit on Codepen
+</a>
+  </div>
+  <fieldset class="c-example__preview-wrapper js-example-fieldset">
+    <div class="c-example__preview">
+                <button class="c-button c-button--primary" >
+Primary</button>
+          <button class="c-button c-button--success u-margin-left-small" >
+Success</button>
+          <button class="c-button c-button--danger u-margin-left-small" >
+Danger</button>
+          <button class="c-button c-button--warning u-margin-left-small" >
+Warning</button>
+          <button class="c-button c-button--info u-margin-left-small" >
+Info</button>
+          <button class="c-button c-button--light u-margin-left-small" >
+Light</button>
+          <button class="c-button c-button--dark u-margin-left-small" >
+Dark</button>
+            </div>
+  </fieldset>
+  <div class="c-example__code-block">
+    <div class="c-code-block">
+  <pre class="c-code-block__code language-scss line-numbers"><code>.c-button {
+  @import 'node_modules/buttono/buttono';
+
+  $buttono-padding: 0.5rem 2rem;
+  $buttono-color-alt: #030315;
+  $buttono-border-radius: 0.25rem;
+  $buttono-transition-duration: 0.2s;
+
+  @include buttono-block($display: inline-flex);
+
+  // Extra styles
+  min-height: 3.5rem;
+  align-items: center;
+  font-weight: 500;
+
+  &--primary {
+    @include buttono-style-modifier(
+      $background-color: #5a46ff,
+      $background-color-hover: #4333db
+    );
+  }
+
+  &--success {
+    @include buttono-style-modifier($background-color: #76d319);
+  }
+
+  &--danger {
+    @include buttono-style-modifier($background-color: #fc3559);
+  }
+
+  &--warning {
+    @include buttono-style-modifier($background-color: #fc840c);
+  }
+
+  &--info {
+    @include buttono-style-modifier($background-color: #00cbf4);
+  }
+
+  &--light {
+    @include buttono-style-modifier($background-color: #c4c5ca);
+  }
+
+  &--dark {
+    @include buttono-style-modifier($background-color: #191922);
+  }
+}
+</code></pre>
+</div>
+  </div>
+</div>
+      <div class="c-example js-example o-section-examples__example">
+  <div class="c-example__header">
+    <label class="c-checkbox c-example__checkbox">
+  <input class="c-checkbox__inp js-example-checkbox" type="checkbox" name="example-checkbox2">
+  <span aria-hidden="true" class="c-checkbox__mask"></span>
+      <span class="c-checkbox__label">Show Disabled States</span>
+  </label>
+
+
+    <a class="c-edit-example-button" href="https://codepen.io/hsnaydd/pen/XWbbgrg?editors=0100">
+  <svg class="c-icon c-edit-example-button__icon">
+  <use xlink:href="#icon-codepen"></use>
+</svg>
+  Edit on Codepen
+</a>
+  </div>
+  <fieldset class="c-example__preview-wrapper js-example-fieldset">
+    <div class="c-example__preview">
+                <button class="c-button c-button--outline-primary" >
+Primary</button>
+          <button class="c-button c-button--outline-success u-margin-left-small" >
+Success</button>
+          <button class="c-button c-button--outline-danger u-margin-left-small" >
+Danger</button>
+          <button class="c-button c-button--outline-warning u-margin-left-small" >
+Warning</button>
+          <button class="c-button c-button--outline-info u-margin-left-small" >
+Info</button>
+          <button class="c-button c-button--outline-light u-margin-left-small" >
+Light</button>
+          <button class="c-button c-button--outline-dark u-margin-left-small" >
+Dark</button>
+            </div>
+  </fieldset>
+  <div class="c-example__code-block">
+    <div class="c-code-block">
+  <pre class="c-code-block__code language-scss line-numbers"><code>.c-button {
+  @import 'node_modules/buttono/buttono';
+
+  $buttono-padding: 0.5rem 2rem;
+  $buttono-color-alt: #030315;
+  $buttono-border-radius: 0.25rem;
+  $buttono-transition-duration: 0.2s;
+
+  @include buttono-block($display: inline-flex);
+
+  // Extra styles
+  min-height: 3.5rem;
+  align-items: center;
+  font-weight: 500;
+
+  &--outline-primary {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #5a46ff,
+      $background-color: transparent,
+      $background-color-hover: #5a46ff,
+      $border-color-disabled: #9e90ff,
+      $color-disabled: #9e90ff
+    );
+  }
+
+  &--outline-success {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #76d319,
+      $background-color: transparent,
+      $background-color-hover: #76d319,
+      $border-color-disabled: #bef171
+    );
+  }
+
+  &--outline-danger {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #fc3559,
+      $background-color: transparent,
+      $background-color-hover: #fc3559,
+      $border-color-disabled: #feb6ae
+    );
+  }
+
+  &--outline-warning {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #fc840c,
+      $background-color: transparent,
+      $background-color-hover: #fc840c,
+      $border-color-disabled: #fedc9d
+    );
+  }
+
+  &--outline-info {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #00cbf4,
+      $background-color: transparent,
+      $background-color-hover: #00cbf4,
+      $border-color-disabled: #98fdf7
+    );
+  }
+
+  &--outline-light {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #c4c5ca,
+      $background-color: transparent,
+      $background-color-hover: #c4c5ca,
+      $border-color-disabled: #efeff1,
+    );
+  }
+
+  &--outline-dark {
+    @include buttono-style-modifier(
+      $color: #fff,
+      $color-disabled: #999,
+      $border-width: 0.125rem,
+      $border-color: #191922,
+      $background-color: transparent,
+      $background-color-hover: #191922,
+      $border-color-disabled: #c4c5ca
+    );
+  }
+}
+</code></pre>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+      </main>
+      <footer class="c-footer">
+  <div class="container c-footer__inner">
+    <span class="c-footer-signature">
+      Made with
+      <svg class="c-icon c-footer-signature__icon">
+  <use xlink:href="#icon-favorite"></use>
+</svg>
+      by
+      <a class="c-link-white u-margin-left-2xsmall" href="https://twitter.com/hsnaydd">
+  Hasan Aydoğdu</a>    </span>
+    <div class="c-footer__social-links">
+      <a class="c-social-link" title="Github" href="https://github.com/hsnaydd/">
+  <svg class="c-icon u-flex-shrink-0">
+  <use xlink:href="#icon-github"></use>
+</svg>
+</a>
+      <a class="c-social-link u-margin-left-medium" title="Codepen" href="https://codepen.io/hsnaydd">
+  <svg class="c-icon u-flex-shrink-0">
+  <use xlink:href="#icon-codepen"></use>
+</svg>
+</a>
+      <a class="c-social-link u-margin-left-medium" title="Twitter" href="https://twitter.com/hsnaydd">
+  <svg class="c-icon u-flex-shrink-0">
+  <use xlink:href="#icon-twitter"></use>
+</svg>
+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+  <!-- Javascript Files -->
+    <script src="js/app.min.js"></script>
+    </body>
+</html>
