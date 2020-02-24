@@ -1,0 +1,55 @@
+<div class="o-section-advantages">
+  <section class="container">
+    <h2 class="o-section-advantages__title" aria-label="Great things about Buttono">
+      Great things about Button
+      {% include "@components/icon/icon.html.twig" with { name: 'logo', className: 'o-section-advantages__logo-icon', attributes: { 'aria-hidden': 'true' } } only %}
+    </h2>
+    <ul class="o-advantage-list row">
+      <li class="o-advantage-list__item col col--sm-6">
+        {% include "@components/advantage/advantage.html.twig" with {
+            className: 'u-margin-sides-auto',
+            number: '01',
+            firstText: 'Most of the time you will only need one color to create a button.',
+            secondText: 'Just define a background color and you are good to go!',
+          } only %}
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        {% include "@components/advantage/advantage.html.twig" with {
+            className: 'u-margin-sides-auto',
+            number: '02',
+            firstText: 'Even though Buttono is following the BEM methodology, you can still use it with all other conventions.',
+            secondText: 'Buttono is non-restrictive.',
+          } only %}
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        {% include "@components/advantage/advantage.html.twig" with {
+            className: 'u-margin-sides-auto',
+            number: '03',
+            firstText: 'The buttons you create with Buttono will look exactly the same in all modern browsers.',
+            secondText: 'So you don’t have to worry about that!',
+          } only %}
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        {% include "@components/advantage/advantage.html.twig" with {
+            className: 'u-margin-sides-auto',
+            number: '04',
+            firstText: 'Buttono deals with focus styles for accessibility.',
+            secondText: 'Because accessibility matters!',
+          } only %}
+      </li>
+      <li class="o-advantage-list__item col col--sm-6">
+        {% include "@components/advantage/advantage.html.twig" with {
+            className: 'u-margin-sides-auto',
+            number: '05',
+            firstText: 'Thanks to Buttono’s flexible structure you can configure it for any situation.',
+            secondText: 'Buttono will be ready for every challenge!',
+          } only %}
+      </li>
+    </ul>
+    <div class="u-text-align-center">
+      {% embed "@components/button/button.html.twig" with { tag: 'a', theme: 'primary', className: null, attributes: { href:"https://github.com/hsnaydd/buttono#documentation" } } only %}
+        {% block text %}See full documentation{% endblock %}
+      {% endembed %}
+    </div>
+  </section>
+</div>

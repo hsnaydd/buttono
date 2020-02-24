@@ -1,0 +1,24 @@
+{% extends "../layout.html.twig" %}
+
+{% block meta %}
+  {% include "@templates/partials/page-meta-tags.html.twig" with {
+    title: 'Buttono',
+    description: "Buttono is a Sass mixin based on BEM naming convention. It helps you to create nice buttons in an easy way.",
+    ogImage: 'img/buttono-social.jpg',
+  } only %}
+{% endblock %}
+
+
+{% block body %}
+  {% embed "@objects/root/root.html.twig" only %}
+    {% block content %}
+      {% include "@objects/header/header.html.twig" %}
+      <main>
+        {% include "@objects/section-intro/section-intro.html.twig" with {} only %}
+        {% include "@objects/section-advantages/section-advantages.html.twig" with {} only %}
+        {% include "@objects/section-examples/section-examples.html.twig" with {} only %}
+      </main>
+      {% include "@components/footer/footer.html.twig" with {} only %}
+    {% endblock %}
+  {% endembed %}
+{% endblock %}

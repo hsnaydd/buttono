@@ -1,0 +1,34 @@
+//
+// Edit Example Button
+//
+// Markup: edit-example-button.styleguide.twig
+//
+// Styleguide Components.Edit-Example-Button
+
+.c-edit-example-button {
+  @import '../../../../buttono';
+
+  $buttono-font-family: $g-font-family-primary;
+  $buttono-font-size: px-to-rem(16px);
+  $buttono-line-height: (24/16);
+  $buttono-padding: px-to-rem(8px) px-to-rem(32px);
+
+  @include buttono-block($display: inline-flex);
+  @include buttono-style-modifier(
+    $background-color: color-palette('primary', 700),
+    $background-color-hover: color-palette('primary', 400),
+    $background-color-disabled: color-palette('primary', 200)
+  );
+
+  min-height: px-to-rem(72px);
+  align-items: center;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-weight: 500;
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: gap(xsmall);
+    font-size: $g-font-size-large;
+  }
+}

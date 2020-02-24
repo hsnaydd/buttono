@@ -1,0 +1,15 @@
+//
+// Link White
+//
+// ExampleBgColor: #12122C
+//
+// Markup: link-white.styleguide.twig
+//
+// Styleguide Components.Link-White
+
+.c-link-white {
+  &,
+  &:hover {
+    color: $color-white;
+  }
+}

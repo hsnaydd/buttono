@@ -1,0 +1,65 @@
+//
+// Section Intro
+//
+// ExampleBgColor: #12122c
+//
+// Markup: section-intro.styleguide.twig
+//
+// Styleguide Objects.Section-Intro
+
+.o-section-intro {
+  // stylelint-disable-next-line meowtec/no-px
+  --c-code-block-max-height: #{px-to-rem(394px)};
+
+  //
+  // Elements
+  // -------------------------
+  &__content {
+    $z-index: 1;
+
+    position: relative;
+    z-index: $z-index;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      min-height: px-to-rem(552px);
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: pad(medium);
+      padding-bottom: pad(medium);
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: pad(xsmall);
+      padding-bottom: pad(xsmall);
+    }
+  }
+
+  &__title {
+    max-width: px-to-rem(720px);
+    margin-top: gap(large);
+    margin-bottom: px-to-rem(64px);
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $g-font-size-h2;
+    }
+  }
+
+  &__code {
+    $z-index: 1;
+
+    position: relative;
+    z-index: $z-index;
+    max-width: px-to-rem(755px);
+    margin: gap(large) auto px-to-rem(-146px);
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

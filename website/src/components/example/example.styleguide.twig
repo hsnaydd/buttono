@@ -1,0 +1,33 @@
+
+{% embed "./example.html.twig" with { className: null, exampleId: 1, codepenUrl: '' } only %}
+{% block preview %}
+  {% embed "@components/button/button.html.twig" with { tag: 'button', theme: 'primary', className: null, attributes: {} } only %}
+    {% block text %}
+      Primary
+    {% endblock %}
+  {% endembed %}
+{% endblock %}
+{% block codeBlock %}
+.c-button {
+  $buttono-font-family: Helvetica;
+
+  @include buttono-block ();
+
+  &--primary {
+    @include buttono-style-modifier ();
+  }
+
+  &--secondary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+
+  &--secondary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+
+  &--secondary {
+    @include buttono-style-modifier($background-color: lightblue);
+  }
+}
+{% endblock %}
+{% endembed %}

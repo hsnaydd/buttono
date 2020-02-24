@@ -1,0 +1,32 @@
+//
+// Advantage List
+//
+
+.o-advantage-list {
+  @include list-unstyled($margin-bottom: null);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: px-to-rem(96px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: gap(xlarge);
+  }
+
+  //
+  // Elements
+  // -------------------------
+  &__item {
+    @include media-breakpoint-up(md) {
+      margin-top: px-to-rem(96px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: gap(xlarge);
+    }
+  }
+
+  //
+  // Modifiers
+  // -------------------------
+}

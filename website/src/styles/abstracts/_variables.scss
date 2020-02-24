@@ -1,0 +1,165 @@
+//
+// Variables
+//
+// --------------------------------------------------
+
+// SCAFFOLDING
+// -------------------------
+
+// Transition Duration
+$g-transition-duration: 0.4s;
+
+//  LINK
+// -------------------------
+
+$g-link-transition: color 0.15s;
+$g-link-hover-decoration: underline !default;
+
+//  TYPOGRAPHY
+// -------------------------
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$g-font-size-root: 16px !default; // stylelint-disable-line meowtec/no-px
+
+// stylelint-disable-next-line meowtec/no-px
+$g-font-size-base-px: 18px;
+$g-font-size-base: px-to-rem($g-font-size-base-px) !default;
+
+$g-font-family-primary: 'Rubik';
+$g-font-family-sans-serif: $g-font-family-primary, Arial, sans-serif !default;
+$g-font-family-base: $g-font-family-sans-serif !default;
+
+// Unit-less `line-height` for use in components like buttons.
+$g-line-height-base: (24 / 18) !default; // 20/14
+// Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$g-line-height-computed: px-to-rem(($g-font-size-base-px * $g-line-height-base)) !default;
+
+$g-font-size-h1: px-to-rem(44px) !default;
+$g-font-size-h2: px-to-rem(32px) !default;
+$g-font-size-h3: px-to-rem(24px) !default;
+$g-font-size-h4: px-to-rem(18px) !default;
+$g-font-size-h5: 1rem !default;
+$g-font-size-h6: px-to-rem(14px) !default;
+
+$g-line-height-h1: (56/44) !default;
+$g-line-height-h2: (40/32) !default;
+$g-line-height-h3: (32/24) !default;
+$g-line-height-h4: (28/18) !default;
+$g-line-height-h5: (24/16) !default;
+$g-line-height-h6: (20/14) !default;
+
+// By default, this inherits from the `<body>`.
+$g-headings-font-family: inherit !default;
+$g-headings-font-weight: 500 !default;
+$g-headings-line-height: null !default;
+
+// FONT SIZING
+// -------------------------
+
+$g-font-size-small: px-to-rem($g-font-size-base-px - 2px);
+$g-font-size-xsmall: px-to-rem($g-font-size-base-px - 4px);
+$g-font-size-2xsmall: px-to-rem($g-font-size-base-px - 6px);
+$g-font-size-medium: px-to-rem($g-font-size-base-px + 2px);
+$g-font-size-large: px-to-rem($g-font-size-base-px + 6px);
+$g-font-size-xlarge: px-to-rem($g-font-size-base-px + 8px);
+
+// GAPS
+//
+// normal: 24px <= Global line height
+// small:  16px
+// xsmall: 8px
+// 2xsmall: 4px
+// medium: 32px
+// large: 40px
+// xlarge:  48px
+// -------------------------
+$g-base-gap: px-to-rem(24);
+$g-gaps: (
+  normal: $g-base-gap,
+  small: (
+    $g-base-gap / 1.5,
+  ),
+  xsmall: (
+    $g-base-gap / 3,
+  ),
+  2xsmall: (
+    $g-base-gap / 6,
+  ),
+  medium: (
+    $g-base-gap * (4 / 3),
+  ),
+  large: (
+    $g-base-gap * (5 / 3),
+  ),
+  xlarge: (
+    $g-base-gap * 2,
+  ),
+);
+
+// PADDINGS
+//
+// medium: 40px | large: 48px | xlarge: 64px | 2xlarge: 96px
+// normal: 32px
+// small: 24px | xsmall: 16px | 2xsmall: 8px
+// -------------------------
+$g-base-padding: px-to-rem(32px);
+$g-pads: (
+  normal: $g-base-padding,
+  small: (
+    $g-base-padding * 0.75,
+  ),
+  xsmall: (
+    $g-base-padding / 2,
+  ),
+  2xsmall: (
+    $g-base-padding / 4,
+  ),
+  medium: (
+    $g-base-padding * 1.25,
+  ),
+  large: (
+    $g-base-padding * 1.5,
+  ),
+  xlarge: (
+    $g-base-padding * 2,
+  ),
+  2xlarge: (
+    $g-base-padding * 3,
+  ),
+);
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: px-to-rem(544px),
+  md: px-to-rem(768px),
+  lg: px-to-rem(992px),
+  xl: px-to-rem(1200px),
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: px-to-rem(576px),
+  md: px-to-rem(720px),
+  lg: px-to-rem(940px),
+  xl: px-to-rem(1140px),
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: px-to-rem(32px) !default;
+
+//
+// Z-index
+// The global z-index variables should be listed below.
+// -------------------------

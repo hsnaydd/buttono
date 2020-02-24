@@ -1,0 +1,22 @@
+//
+// Root
+//
+// ExampleBgColor: #12122c
+//
+// Markup: root.styleguide.twig
+//
+// Styleguide Objects.Root
+
+.o-root {
+  background-image: url('../img/intro-section-bg.svg');
+  background-position: center top px-to-rem(32px);
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(lg) {
+    background-size: px-to-rem(1097px) auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-size: 90% auto;
+  }
+}

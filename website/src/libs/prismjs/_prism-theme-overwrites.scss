@@ -1,0 +1,41 @@
+/* stylelint-disable */
+/* uncss:ignore start */
+
+code[class*='language-'],
+pre[class*='language-'] {
+  background-color: color-palette('primary', 700);
+  font-family: Courier;
+  // font-family: 'Courier New', Courier, monospace;
+}
+
+pre[class*='language-'] {
+  padding-top: px-to-em(16px, 20px);
+  padding-bottom: px-to-em(16px, 20px);
+  margin: 0;
+  scrollbar-color: color-palette('secondary', 400) color-palette('primary', 800);
+
+  &::-webkit-scrollbar {
+    width: px-to-rem(8px);
+    height: px-to-rem(8px);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: color-palette('primary', 800);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: color-palette('secondary', 400);
+    border-radius: px-to-rem(4px);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: color-palette('primary', 900);
+  }
+}
+
+.line-numbers .line-numbers-rows {
+  top: px-to-em(-4px, 20px);
+  border-right: 0;
+}
+
+/* uncss:ignore end */
