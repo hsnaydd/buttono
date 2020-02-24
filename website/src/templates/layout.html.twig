@@ -7,9 +7,20 @@
     {% block meta %}
       <title>Default Project</title>
     {% endblock %}
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     <link rel=stylesheet href="css/app{% if is_production() %}.min{% endif %}.css">
     {% block headerStylesheets %}{% endblock %}
     {% block headerJavascripts %}{% endblock %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-32151202-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-32151202-3');
+    </script>
   </head>
   <body>
 
