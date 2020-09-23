@@ -191,6 +191,7 @@ $buttono-outline-offset-focus: 1px !default;
       border-color: $border-color-disabled;
       color: $color-disabled;
       opacity: $opacity-disabled;
+      pointer-events: none;
     }
   }
 }
