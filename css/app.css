@@ -311,7 +311,6 @@ textarea,
 select,
 button {
   font-feature-settings: 'liga', 'kern';
-  -webkit-font-kerning: normal;
   -moz-font-kerning: normal;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
