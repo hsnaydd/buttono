@@ -1,7 +1,7 @@
 {
   "name": "buttono",
   "description": "A flexible Sass mixin for creating BEM-style buttons.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "_buttono.scss",
   "files": ["_buttono.scss"],
   "repository": {

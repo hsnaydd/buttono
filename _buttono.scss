@@ -2,8 +2,6 @@
 // Buttono
 // --------------------------------------------------
 
-@use "sass:math";
-
 $buttono-function-factor: -20% !default;
 $buttono-background-color-lightness-threshold: 70% !default;
 $buttono-font-family: null !default;
@@ -11,7 +9,7 @@ $buttono-background-color: #e0e0e0 !default;
 $buttono-background-color-hover: auto !default;
 $buttono-border-radius: 3px !default;
 $buttono-font-size: 16px !default;
-$buttono-line-height: math.div(24, 16) !default;
+$buttono-line-height: 1.5 !default;
 $buttono-color: #fff !default;
 $buttono-color-alt: #333 !default;
 $buttono-padding: 10px 20px !default;
