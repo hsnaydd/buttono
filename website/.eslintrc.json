@@ -10,6 +10,12 @@
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
+    },
+    {
+      "files": ["src/**/*.js"],
+      "rules": {
+        "jest/no-deprecated-functions": "off"
+      }
     }
   ]
 }
