@@ -3,7 +3,8 @@ import lazypipe from 'lazypipe';
 import postcss from 'gulp-postcss';
 import uncss from 'uncss';
 import rename from 'gulp-rename';
-import sass from 'gulp-sass';
+import sass from 'sass';
+import gulpSass from 'gulp-sass';
 import autoprefixer from 'autoprefixer';
 import mqpacker from 'css-mqpacker';
 import flexBugsFixes from 'postcss-flexbugs-fixes';
@@ -35,7 +36,7 @@ export default function styles(cb) {
 
   return gulp
     .src(appConfig.entry.styles, { sourcemaps: true })
-    .pipe(sass({ precision: 10, importer: inlineCssImporter }).on('error', errorHandler))
+    .pipe(gulpSass(sass)({ precision: 10, importer: inlineCssImporter,  }).on('error', errorHandler))
     .pipe(
       postcss([
         autoprefixer({ cascade: false }),
