@@ -7,6 +7,8 @@
 // -------------------------
 
 // Transition Duration
+@use "sass:math";
+
 $g-transition-duration: 0.4s;
 
 //  LINK
@@ -30,7 +32,7 @@ $g-font-family-sans-serif: $g-font-family-primary, Arial, sans-serif !default;
 $g-font-family-base: $g-font-family-sans-serif !default;
 
 // Unit-less `line-height` for use in components like buttons.
-$g-line-height-base: (24 / 18) !default; // 20/14
+$g-line-height-base: math.div(24, 18) !default; // 20/14
 // Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $g-line-height-computed: px-to-rem(($g-font-size-base-px * $g-line-height-base)) !default;
 
@@ -41,12 +43,12 @@ $g-font-size-h4: px-to-rem(18px) !default;
 $g-font-size-h5: 1rem !default;
 $g-font-size-h6: px-to-rem(14px) !default;
 
-$g-line-height-h1: (56/44) !default;
-$g-line-height-h2: (40/32) !default;
-$g-line-height-h3: (32/24) !default;
-$g-line-height-h4: (28/18) !default;
-$g-line-height-h5: (24/16) !default;
-$g-line-height-h6: (20/14) !default;
+$g-line-height-h1: math.div(56, 44) !default;
+$g-line-height-h2: math.div(40, 32) !default;
+$g-line-height-h3: math.div(32, 24) !default;
+$g-line-height-h4: math.div(28, 18) !default;
+$g-line-height-h5: math.div(24, 16) !default;
+$g-line-height-h6: math.div(20, 14) !default;
 
 // By default, this inherits from the `<body>`.
 $g-headings-font-family: inherit !default;
@@ -77,19 +79,19 @@ $g-base-gap: px-to-rem(24);
 $g-gaps: (
   normal: $g-base-gap,
   small: (
-    $g-base-gap / 1.5,
+    math.div($g-base-gap, 1.5),
   ),
   xsmall: (
-    $g-base-gap / 3,
+    math.div($g-base-gap, 3),
   ),
   2xsmall: (
-    $g-base-gap / 6,
+    math.div($g-base-gap, 6),
   ),
   medium: (
-    $g-base-gap * (4 / 3),
+    $g-base-gap * math.div(4, 3),
   ),
   large: (
-    $g-base-gap * (5 / 3),
+    $g-base-gap * math.div(5, 3),
   ),
   xlarge: (
     $g-base-gap * 2,
@@ -109,10 +111,10 @@ $g-pads: (
     $g-base-padding * 0.75,
   ),
   xsmall: (
-    $g-base-padding / 2,
+    $g-base-padding * 0.5,
   ),
   2xsmall: (
-    $g-base-padding / 4,
+    $g-base-padding * 0.25,
   ),
   medium: (
     $g-base-padding * 1.25,
