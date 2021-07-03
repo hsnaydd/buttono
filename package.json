@@ -22,11 +22,11 @@
   "author": "Hasan Aydoğdu <hsnaydd@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@atolye15/stylelint-config": "^1.3.0",
-    "prettier": "^1.19.1",
-    "stylelint": "^13.1.0",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-prettier": "^1.1.2"
+    "@atolye15/stylelint-config": "^1.4.0",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.2.0"
   },
   "scripts": {
     "lint": "stylelint '_buttono.scss' --syntax scss",
