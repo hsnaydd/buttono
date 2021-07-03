@@ -5,12 +5,14 @@
 //
 // Styleguide Components.Edit-Example-Button
 
+@use "sass:math";
+
 .c-edit-example-button {
   @import '../../../../buttono';
 
   $buttono-font-family: $g-font-family-primary;
   $buttono-font-size: px-to-rem(16px);
-  $buttono-line-height: (24/16);
+  $buttono-line-height: math.div(24, 16);
   $buttono-padding: px-to-rem(8px) px-to-rem(32px);
 
   @include buttono-block($display: inline-flex);

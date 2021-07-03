@@ -10,6 +10,8 @@
 // 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
 // 2. Change the default tap highlight to be completely transparent in iOS.
 
+@use "sass:math";
+
 html {
   box-sizing: border-box; // 1
   -webkit-tap-highlight-color: transparent; // 2
@@ -123,8 +125,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: ($g-line-height-computed / 1.5);
-  margin-bottom: ($g-line-height-computed / 1.5);
+  margin-top: math.div($g-line-height-computed, 1.5);
+  margin-bottom: math.div($g-line-height-computed, 1.5);
 }
 
 h1,
@@ -168,7 +170,7 @@ h6,
 //
 
 p {
-  margin-top: ($g-line-height-computed / 1.5);
+  margin-top: math.div($g-line-height-computed, 1.5);
   margin-bottom: 0;
 }
 
@@ -188,7 +190,7 @@ mark {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: ($g-line-height-computed / 1.5);
+  margin-bottom: math.div($g-line-height-computed, 1.5);
 
   ul,
   ol {

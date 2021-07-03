@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @function gap($size: normal) {
   @return map-get($g-gaps, $size);
 }
@@ -14,7 +16,7 @@
 
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div($number, $number * 0 + 1);
   }
 
   @return $number;
@@ -30,7 +32,7 @@
     @warn 'base-value: #{$base-value} is not a number';
     @return null;
   }
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
   @if (strip-unit($value) == 0) {
     $value: 0;
   } // Turn 0rem into 0
@@ -63,7 +65,7 @@
   @if ($unit == rem) {
     $base: rem-to-px($base);
   }
-  @return ($px / $base) * 1em;
+  @return math.div($px, $base) * 1em;
 }
 
 //

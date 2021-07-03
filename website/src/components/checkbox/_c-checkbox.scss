@@ -8,6 +8,8 @@
 //
 // Styleguide Components.Checkbox
 
+@use "sass:math";
+
 .c-checkbox {
   $size: px-to-rem(18px);
   $radius: px-to-rem(2px);
@@ -65,6 +67,6 @@
     margin-left: gap(xsmall);
     font-size: $g-font-size-small;
     font-weight: 500;
-    line-height: (24 / 16);
+    line-height: math.div(24, 16);
   }
 }
