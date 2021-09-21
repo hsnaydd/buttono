@@ -60,6 +60,6 @@
     "styleguide": "gulp styleguide"
   },
   "dependencies": {
-    "prismjs": "^1.24.1"
+    "prismjs": "^1.25.0"
   }
 }
